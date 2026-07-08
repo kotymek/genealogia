@@ -1,38 +1,38 @@
 [
   {
-    "imie": "Jan",
+    "imie": "Antoni",
     "nazwisko": "Markiewicz",
-    "rok": 1837,
-    "miejsce": "Poznań",
-    "lat": 52.4064,
-    "lon": 16.9252,
-    "opis": "Przykładowy przodek."
+    "rok": 1909,
+    "miejsce": "Krajenka",
+    "lat": 53.2967,
+    "lon": 16.9906,
+    "opis": "dziadek"
   },
   {
-    "imie": "Anna",
-    "nazwisko": "Nowak",
-    "rok": 1854,
-    "miejsce": "Gniezno",
-    "lat": 52.2297,
-    "lon": 21.0122,
-    "opis": "Przykładowa osoba."
+    "imie": "Bronisława",
+    "nazwisko": "Sikora",
+    "rok": 1913,
+    "miejsce": "Ludomy",
+    "lat": 52.7561,
+    "lon": 16.8194,
+    "opis": "babcia"
   },
   {
-  "imie": "Piotr",
-  "nazwisko": "Kowalski",
-  "rok": 1865,
-  "miejsce": "Wilno",
-  "lat": 54.6872,
-  "lon": 25.2797,
-  "opis": "Przykładowa osoba z Wilna."
+  "imie": "Marian",
+  "nazwisko": "Maciąg",
+  "rok": 1937,
+  "miejsce": "Wiązownica",
+  "lat": 50.5858,
+  "lon": 21.3931,
+  "opis": "dziadek"
 },
 {
-  "imie": "Maria",
-  "nazwisko": "Kowalska",
-  "rok": 1878,
-  "miejsce": "Lwów",
-  "lat": 49.8397,
-  "lon": 24.0297,
-  "opis": "Przykładowa osoba ze Lwowa."
+  "imie": "Marianna",
+  "nazwisko": "Rugała",
+  "rok": 1938,
+  "miejsce": "Ruda",
+  "lat": 50.4761,
+  "lon": 21.2406,
+  "opis": "babcia"
 }
 ]
