@@ -90,7 +90,7 @@
       "id": "birth-antoni-markiewicz-1909",
       "type": "birth",
       "year": 1909,
-      "date": "1909",
+      "date": "23 II 1909",
       "place": "Krajenka",
       "lat": 53.2967,
       "lon": 16.9906,
@@ -99,10 +99,22 @@
       "source": "do uzupełnienia"
     },
     {
+      "id": "death-antoni-markiewicz-1909",
+      "type": "death",
+      "year": 1993,
+      "date": "25 V 1993",
+      "place": "Brodna",
+      "lat": 53.1683,
+      "lon": 16.9261,
+      "people": ["antoni-markiewicz-1909"],
+      "note": "Miejsce zgonu",
+      "source": "do uzupełnienia"
+    },
+    {
       "id": "birth-bronislawa-sikora-1913",
       "type": "birth",
       "year": 1913,
-      "date": "1913",
+      "date": "8 IX 1913",
       "place": "Ludomy",
       "lat": 52.7561,
       "lon": 16.8194,
