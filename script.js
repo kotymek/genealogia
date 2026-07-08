@@ -1,3 +1,4 @@
+console.log("SCRIPT DZIAŁA");
 const map = L.map('map').setView([52.0, 19.0], 6);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
