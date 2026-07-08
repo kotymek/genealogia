@@ -8,6 +8,7 @@ fetch('data/osoby.json')
     .then(response => response.json())
     .then(osoby => {
 
+         console.log(osoby);
         osoby.forEach(osoba => {
 
             L.marker([osoba.lat, osoba.lon])
