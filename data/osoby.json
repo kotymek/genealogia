@@ -1,0 +1,20 @@
+[
+  {
+    "imie": "Jan",
+    "nazwisko": "Markiewicz",
+    "rok": 1837,
+    "miejsce": "Poznań",
+    "lat": 52.4064,
+    "lon": 16.9252,
+    "opis": "Przykładowy przodek."
+  },
+  {
+    "imie": "Anna",
+    "nazwisko": "Nowak",
+    "rok": 1854,
+    "miejsce": "Gniezno",
+    "lat": 52.5348,
+    "lon": 17.5826,
+    "opis": "Przykładowa osoba."
+  }
+]
