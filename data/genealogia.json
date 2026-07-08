@@ -135,6 +135,18 @@
       "source": "do uzupełnienia"
     },
     {
+  "id": "marriage-antoni-markiewicz-bronislawa-sikora-1936",
+  "type": "marriage",
+  "year": 1936,
+  "date": "18 II 1936",
+  "place": "Śmiłowo",
+  "lat": 53.1367,
+  "lon": 16.9175,
+  "people": ["antoni-markiewicz-1909", "bronislawa-sikora-1913"],
+  "note": "Miejsce ślubu",
+  "source": "akt małżeństwa nr ..."
+}
+    {
       "id": "birth-marian-maciag-1937",
       "type": "birth",
       "year": 1937,
