@@ -135,16 +135,16 @@
       "source": "do uzupełnienia"
     },
     {
-  "id": "marriage-antoni-markiewicz-bronislawa-sikora-1936",
-  "type": "marriage",
-  "year": 1936,
-  "date": "18 II 1936",
-  "place": "Śmiłowo",
-  "lat": 53.1367,
-  "lon": 16.9175,
-  "people": ["antoni-markiewicz-1909", "bronislawa-sikora-1913"],
-  "note": "Miejsce ślubu",
-  "source": "akt małżeństwa nr ..."
+      "id": "marriage-antoni-markiewicz-bronislawa-sikora-1936",
+      "type": "marriage",
+      "year": 1936,
+      "date": "18 II 1936",
+      "place": "Śmiłowo",
+      "lat": 53.1367,
+      "lon": 16.9175,
+      "people": ["antoni-markiewicz-1909", "bronislawa-sikora-1913"],
+      "note": "Miejsce ślubu",
+      "source": "akt małżeństwa nr ..."
     },
     {
       "id": "birth-marian-maciag-1937",
@@ -159,6 +159,18 @@
       "source": "do uzupełnienia"
     },
     {
+      "id": "death-marian-maciag-1997",
+      "type": "death",
+      "year": 1997,
+      "date": "24 V 1997",
+      "place": "Laskowo",
+      "lat": 53.5239,
+      "lon": 17.1933,
+      "people": ["marian-maciag-1937"],
+      "note": "Miejsce zgonu",
+      "source": "do uzupełnienia"
+    },
+    {
       "id": "birth-marianna-rugala-1938",
       "type": "birth",
       "year": 1938,
@@ -170,6 +182,18 @@
       "note": "Miejsce urodzenia",
       "source": "do uzupełnienia"
     },
+    {
+      "id": "marriage-marian-maciag-marianna-rugala-1936",
+      "type": "marriage",
+      "year": 1961,
+      "date": "IV 1961",
+      "place": "Debrzno",
+      "lat": 53.5383,
+      "lon": 17.2353,
+      "people": ["marian-maciag-1937", "marianna-rugala-1938"],
+      "note": "Miejsce ślubu",
+      "source": "akt małżeństwa nr ..."
+    }, 
     {
       "id": "birth-jan-markiewicz-1870",
       "type": "birth",
