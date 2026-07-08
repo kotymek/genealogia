@@ -16,5 +16,23 @@
     "lat": 52.2297,
     "lon": 21.0122,
     "opis": "Przykładowa osoba."
-  }
+  },
+  {
+  "imie": "Piotr",
+  "nazwisko": "Kowalski",
+  "rok": 1865,
+  "miejsce": "Wilno",
+  "lat": 54.6872,
+  "lon": 25.2797,
+  "opis": "Przykładowa osoba z Wilna."
+},
+{
+  "imie": "Maria",
+  "nazwisko": "Kowalska",
+  "rok": 1878,
+  "miejsce": "Lwów",
+  "lat": 49.8397,
+  "lon": 24.0297,
+  "opis": "Przykładowa osoba ze Lwowa."
+}
 ]
