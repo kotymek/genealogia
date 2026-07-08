@@ -122,6 +122,18 @@
       "note": "Miejsce urodzenia",
       "source": "do uzupełnienia"
     },
+        {
+      "id": "death-bronislawa-sikora-1913",
+      "type": "death",
+      "year": 1999,
+      "date": "23 XI 1999",
+      "place": "Kaczory",
+      "lat": 53.1019,
+      "lon": 16.8842,
+      "people": ["bronislawa-sikora-1913"],
+      "note": "Miejsce zgonu",
+      "source": "do uzupełnienia"
+    },
     {
       "id": "birth-marian-maciag-1937",
       "type": "birth",
