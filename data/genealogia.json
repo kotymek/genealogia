@@ -1,0 +1,234 @@
+{
+  "people": [
+    {
+      "id": "antoni-markiewicz-1909",
+      "givenName": "Antoni",
+      "surname": "Markiewicz",
+      "relation": "dziadek",
+      "line": "Markiewicz"
+    },
+    {
+      "id": "bronislawa-sikora-1913",
+      "givenName": "Bronisława",
+      "surname": "Sikora",
+      "relation": "babcia",
+      "line": "Sikora"
+    },
+    {
+      "id": "marian-maciag-1937",
+      "givenName": "Marian",
+      "surname": "Maciąg",
+      "relation": "dziadek",
+      "line": "Maciąg"
+    },
+    {
+      "id": "marianna-rugala-1938",
+      "givenName": "Marianna",
+      "surname": "Rugała",
+      "relation": "babcia",
+      "line": "Rugała"
+    },
+    {
+      "id": "jan-markiewicz-1870",
+      "givenName": "Jan",
+      "surname": "Markiewicz",
+      "relation": "pradziadek",
+      "line": "Markiewicz"
+    },
+    {
+      "id": "michalina-manthey-1870",
+      "givenName": "Michalina",
+      "surname": "Manthey",
+      "relation": "prababcia",
+      "line": "Markiewicz"
+    },
+    {
+      "id": "piotr-sikora-1865",
+      "givenName": "Piotr",
+      "surname": "Sikora",
+      "relation": "pradziadek",
+      "line": "Sikora"
+    },
+    {
+      "id": "michalina-rychlik-1872",
+      "givenName": "Michalina",
+      "surname": "Rychlik",
+      "relation": "prababcia",
+      "line": "Sikora"
+    },
+    {
+      "id": "leon-maciag-1905",
+      "givenName": "Leon",
+      "surname": "Maciąg",
+      "relation": "pradziadek",
+      "line": "Maciąg"
+    },
+    {
+      "id": "cecylia-kopec-1906",
+      "givenName": "Cecylia",
+      "surname": "Kopeć",
+      "relation": "prababcia",
+      "line": "Maciąg"
+    },
+    {
+      "id": "jan-rugala-1896",
+      "givenName": "Jan",
+      "surname": "Rugała",
+      "relation": "pradziadek",
+      "line": "Rugała"
+    },
+    {
+      "id": "marianna-wylazlowska-1897",
+      "givenName": "Marianna",
+      "surname": "Wylazłowska",
+      "relation": "prababcia",
+      "line": "Rugała"
+    }
+  ],
+  "events": [
+    {
+      "id": "birth-antoni-markiewicz-1909",
+      "type": "birth",
+      "year": 1909,
+      "date": "1909",
+      "place": "Krajenka",
+      "lat": 53.2967,
+      "lon": 16.9906,
+      "people": ["antoni-markiewicz-1909"],
+      "note": "Miejsce urodzenia",
+      "source": "do uzupełnienia"
+    },
+    {
+      "id": "birth-bronislawa-sikora-1913",
+      "type": "birth",
+      "year": 1913,
+      "date": "1913",
+      "place": "Ludomy",
+      "lat": 52.7561,
+      "lon": 16.8194,
+      "people": ["bronislawa-sikora-1913"],
+      "note": "Miejsce urodzenia",
+      "source": "do uzupełnienia"
+    },
+    {
+      "id": "birth-marian-maciag-1937",
+      "type": "birth",
+      "year": 1937,
+      "date": "1937",
+      "place": "Wiązownica",
+      "lat": 50.5858,
+      "lon": 21.3931,
+      "people": ["marian-maciag-1937"],
+      "note": "Miejsce urodzenia",
+      "source": "do uzupełnienia"
+    },
+    {
+      "id": "birth-marianna-rugala-1938",
+      "type": "birth",
+      "year": 1938,
+      "date": "1938",
+      "place": "Ruda",
+      "lat": 50.4761,
+      "lon": 21.2406,
+      "people": ["marianna-rugala-1938"],
+      "note": "Miejsce urodzenia",
+      "source": "do uzupełnienia"
+    },
+    {
+      "id": "birth-jan-markiewicz-1870",
+      "type": "birth",
+      "year": 1870,
+      "date": "1870",
+      "place": "Głomsk",
+      "lat": 53.4356,
+      "lon": 17.1647,
+      "people": ["jan-markiewicz-1870"],
+      "note": "Miejsce urodzenia",
+      "source": "do uzupełnienia"
+    },
+    {
+      "id": "birth-michalina-manthey-1870",
+      "type": "birth",
+      "year": 1870,
+      "date": "1870",
+      "place": "Stare",
+      "lat": 53.2194,
+      "lon": 16.9981,
+      "people": ["michalina-manthey-1870"],
+      "note": "Miejsce urodzenia",
+      "source": "do uzupełnienia"
+    },
+    {
+      "id": "birth-piotr-sikora-1865",
+      "type": "birth",
+      "year": 1865,
+      "date": "1865",
+      "place": "Miały",
+      "lat": 52.8067,
+      "lon": 16.1719,
+      "people": ["piotr-sikora-1865"],
+      "note": "Miejsce urodzenia",
+      "source": "do uzupełnienia"
+    },
+    {
+      "id": "birth-michalina-rychlik-1872",
+      "type": "birth",
+      "year": 1872,
+      "date": "1872",
+      "place": "Marianowo",
+      "lat": 52.9011,
+      "lon": 16.1417,
+      "people": ["michalina-rychlik-1872"],
+      "note": "Miejsce urodzenia",
+      "source": "do uzupełnienia"
+    },
+    {
+      "id": "birth-leon-maciag-1905",
+      "type": "birth",
+      "year": 1905,
+      "date": "1905",
+      "place": "Wiązownica",
+      "lat": 50.5858,
+      "lon": 21.3931,
+      "people": ["leon-maciag-1905"],
+      "note": "Miejsce urodzenia",
+      "source": "do uzupełnienia"
+    },
+    {
+      "id": "birth-cecylia-kopec-1906",
+      "type": "birth",
+      "year": 1906,
+      "date": "1906",
+      "place": "Wiązownica",
+      "lat": 50.5858,
+      "lon": 21.3931,
+      "people": ["cecylia-kopec-1906"],
+      "note": "Miejsce urodzenia",
+      "source": "do uzupełnienia"
+    },
+    {
+      "id": "birth-jan-rugala-1896",
+      "type": "birth",
+      "year": 1896,
+      "date": "1896",
+      "place": "Ruda",
+      "lat": 50.4761,
+      "lon": 21.2406,
+      "people": ["jan-rugala-1896"],
+      "note": "Miejsce urodzenia",
+      "source": "do uzupełnienia"
+    },
+    {
+      "id": "birth-marianna-wylazlowska-1897",
+      "type": "birth",
+      "year": 1897,
+      "date": "1897",
+      "place": "Morawica",
+      "lat": 50.745,
+      "lon": 20.6203,
+      "people": ["marianna-wylazlowska-1897"],
+      "note": "Miejsce urodzenia",
+      "source": "do uzupełnienia"
+    }
+  ]
+}
