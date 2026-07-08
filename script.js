@@ -4,6 +4,21 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap'
 }).addTo(map);
 
-L.marker([52.4064, 16.9252])
-    .addTo(map)
-    .bindPopup("<b>Poznań</b><br>Przykładowy przodek");
+fetch('data/osoby.json')
+    .then(response => response.json())
+    .then(osoby => {
+
+        osoby.forEach(osoba => {
+
+            L.marker([osoba.lat, osoba.lon])
+                .addTo(map)
+                .bindPopup(`
+                    <b>${osoba.imie} ${osoba.nazwisko}</b><br>
+                    ur. ${osoba.rok}<br>
+                    📍 ${osoba.miejsce}<br><br>
+                    ${osoba.opis}
+                `);
+
+        });
+
+    });
