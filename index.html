@@ -1,24 +1,87 @@
+<!doctype html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Genealogia rodziny</title>
-
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mapa genealogiczna rodziny</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <main class="app-shell">
+    <aside class="panel" aria-label="Panel mapy genealogicznej">
+      <header class="brand">
+        <p class="eyebrow">Genealogia</p>
+        <h1>Mapa miejsc rodzinnych</h1>
+        <p class="lead">Urodzenia, śluby i zgony przodków zebrane w jednej, filtrowalnej mapie.</p>
+      </header>
 
-<h1>Mapa przodków</h1>
+      <section class="summary" aria-label="Podsumowanie">
+        <div>
+          <strong id="stat-events">0</strong>
+          <span>zdarzeń</span>
+        </div>
+        <div>
+          <strong id="stat-people">0</strong>
+          <span>osób</span>
+        </div>
+        <div>
+          <strong id="stat-places">0</strong>
+          <span>miejsc</span>
+        </div>
+      </section>
 
-<div id="map"></div>
+      <section class="filters" aria-label="Filtry">
+        <label>
+          <span>Szukaj</span>
+          <input id="search" type="search" placeholder="Nazwisko, imię, miejscowość">
+        </label>
 
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-<script src="script.js"></script>
+        <div class="filter-row" aria-label="Typ zdarzenia">
+          <label><input type="checkbox" name="type" value="birth" checked> Urodzenia</label>
+          <label><input type="checkbox" name="type" value="marriage" checked> Śluby</label>
+          <label><input type="checkbox" name="type" value="death" checked> Zgony</label>
+        </div>
 
+        <label>
+          <span>Linia rodzinna</span>
+          <select id="line-filter">
+            <option value="">Wszystkie linie</option>
+          </select>
+        </label>
+
+        <div class="years">
+          <label>
+            <span>Od roku</span>
+            <input id="year-from" type="number" inputmode="numeric">
+          </label>
+          <label>
+            <span>Do roku</span>
+            <input id="year-to" type="number" inputmode="numeric">
+          </label>
+        </div>
+
+        <button id="reset" type="button">Wyczyść filtry</button>
+      </section>
+
+      <section class="legend" aria-label="Legenda">
+        <span><i class="dot birth"></i> urodzenie</span>
+        <span><i class="dot marriage"></i> ślub</span>
+        <span><i class="dot death"></i> zgon</span>
+      </section>
+
+      <section class="event-list" aria-label="Lista zdarzeń">
+        <h2>Zdarzenia</h2>
+        <div id="events"></div>
+      </section>
+    </aside>
+
+    <section class="map-area" aria-label="Mapa">
+      <div id="map"></div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-
-v0.1
