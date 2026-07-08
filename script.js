@@ -1,5 +1,6 @@
 console.log("SCRIPT DZIAŁA");
-const map = L.map('map').setView([52.0, 19.0], 6);
+
+const map = L.map('map');
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap'
@@ -9,10 +10,13 @@ fetch('data/osoby.json')
     .then(response => response.json())
     .then(osoby => {
 
-         console.log(osoby);
+        console.log(osoby);
+
+        const punkty = [];
+
         osoby.forEach(osoba => {
 
-            L.marker([osoba.lat, osoba.lon])
+            const marker = L.marker([osoba.lat, osoba.lon])
                 .addTo(map)
                 .bindPopup(`
                     <b>${osoba.imie} ${osoba.nazwisko}</b><br>
@@ -21,6 +25,20 @@ fetch('data/osoby.json')
                     ${osoba.opis}
                 `);
 
+            punkty.push([osoba.lat, osoba.lon]);
+
         });
 
+        if (punkty.length > 0) {
+            map.fitBounds(punkty, {
+                padding: [40, 40]
+            });
+        } else {
+            map.setView([52.0, 19.0], 6);
+        }
+
+    })
+    .catch(error => {
+        console.error("Błąd wczytywania danych:", error);
+        map.setView([52.0, 19.0], 6);
     });
