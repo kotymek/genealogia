@@ -122,7 +122,7 @@
       "note": "Miejsce urodzenia",
       "source": "do uzupełnienia"
     },
-        {
+    {
       "id": "death-bronislawa-sikora-1913",
       "type": "death",
       "year": 1999,
@@ -145,7 +145,7 @@
   "people": ["antoni-markiewicz-1909", "bronislawa-sikora-1913"],
   "note": "Miejsce ślubu",
   "source": "akt małżeństwa nr ..."
-}
+    },
     {
       "id": "birth-marian-maciag-1937",
       "type": "birth",
