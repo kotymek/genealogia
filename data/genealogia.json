@@ -43,6 +43,34 @@
       "line": "Markiewicz"
     },
     {
+      "id": "jan-markiewicz-1823",
+      "givenName": "Jan",
+      "surname": "Markiewicz",
+      "relation": "prapradziadek",
+      "line": "Markiewicz"
+    },
+    {
+      "id": "marianna-groszczyk",
+      "givenName": "Marianna",
+      "surname": "Groszczyk",
+      "relation": "praprababcia",
+      "line": "Markiewicz"
+    },
+    {
+      "id": "antoni-mantej-1827",
+      "givenName": "Antoni",
+      "surname": "Mantej",
+      "relation": "prapradziadek",
+      "line": "Markiewicz"
+    },
+    {
+      "id": "rosalia-pufal-1828",
+      "givenName": "Rosalia",
+      "surname": "Pufal",
+      "relation": "praprababcia",
+      "line": "Markiewicz"
+    },
+    {
       "id": "piotr-sikora-1865",
       "givenName": "Piotr",
       "surname": "Sikora",
@@ -247,7 +275,7 @@
       "type": "marriage",
       "year": 1893,
       "date": "8 I 1893",
-      "place": "Piłka",
+      "place": "Głubczyn",
       "lat": 53.243056,
       "lon": 16.959167,
       "people": ["jan-markiewicz-1870", "michalina-manthey-1870"],
@@ -431,6 +459,102 @@
       "lon": 11.283333,
       "people": ["jan-rugala-1896", "marianna-wylazlowska-1897"],
       "note": "Prawdopodobne miejsce ślubu",
+      "source": "akt małżeństwa nr ..."
+    },
+    {
+      "id": "birth-jan-markiewicz-1823",
+      "type": "birth",
+      "year": 1823,
+      "date": "8 I 1823",
+      "place": "Głomsk",
+      "lat": 53.435556,
+      "lon": 17.164722,
+      "people": ["jan-markiewicz-1823"],
+      "note": "Miejsce urodzenia",
+      "source": "do uzupełnienia"
+    },
+    {
+      "id": "death-jan-markiewicz-1901",
+      "type": "death",
+      "year": 1901,
+      "date": "20 I 1901",
+      "place": "Śmiardowo Krajeńskie",
+      "lat": 53.247222,
+      "lon": 17.017222,
+      "people": ["jan-markiewicz-1823"],
+      "note": "Miejsce zgonu",
+      "source": "do uzupełnienia"
+    },
+    {
+      "id": "death-marianna-groszczyk-1893",
+      "type": "death",
+      "year": 1893,
+      "date": "2 VIII 1893",
+      "place": "Śmiardowo Krajeńskie",
+      "lat": 53.247222,
+      "lon": 17.017222,
+      "people": ["marianna-groszczyk"],
+      "note": "Miejsce zgonu",
+      "source": "do uzupełnienia"
+    },
+    {
+      "id": "marriage-jan-markiewicz-marianna-groszczyk-1869",
+      "type": "marriage",
+      "year": 1869,
+      "date": "31 V 1869",
+      "place": "Krajenka",
+      "lat": 53.296667,
+      "lon": 16.990556,
+      "people": ["jan-markiewicz-1823", "marianna-groszczyk"],
+      "note": "Miejsce ślubu",
+      "source": "akt małżeństwa nr ..."
+    }, 
+    {
+      "id": "birth-antoni-mantej-1827",
+      "type": "birth",
+      "year": 1827,
+      "date": "8 VII 1827",
+      "place": "Głubczyn",
+      "lat": 53.243056,
+      "lon": 16.959167,
+      "people": ["antoni-mantej-1827"],
+      "note": "Miejsce urodzenia",
+      "source": "do uzupełnienia"
+    },
+    {
+      "id": "death-antoni-mantej-1889",
+      "type": "death",
+      "year": 1889,
+      "date": "28 X 1889",
+      "place": "Śmiardowo Krajeńskie",
+      "lat": 53.247222,
+      "lon": 17.017222,
+      "people": ["antoni-mantej-1827"],
+      "note": "Miejsce zgonu",
+      "source": "do uzupełnienia"
+    },
+    {
+      "id": "death-rosalia-pufal-1889",
+      "type": "death",
+      "year": 1889,
+      "date": "7 III 1889",
+      "place": "Głubczyn",
+      "lat": 53.243056,
+      "lon": 16.959167,
+      "people": ["rosalia-pufal-1828"],
+      "note": "Miejsce zgonu",
+      "source": "do uzupełnienia"
+    },
+    {
+      "id": "marriage-antoni-mantej-rosalia-pufal-1859",
+      "type": "marriage",
+      "year": 1859,
+      "date": "28 II 1859",
+      "place": "Głubczyn",
+      "lat": 53.243056,
+      "lon": 16.959167,
+      "people": ["antoni-mantej-1827", "rosalia-pufal-1828"],
+      "note": "Miejsce ślubu",
       "source": "akt małżeństwa nr ..."
     }
   ]
