@@ -85,6 +85,34 @@
       "line": "Sikora"
     },
     {
+      "id": "wawrzyn-sikora-1820",
+      "givenName": "Wawrzyn",
+      "surname": "Sikora",
+      "relation": "prapradziadek",
+      "line": "Sikora"
+    },
+    {
+      "id": "rozalia-gras-1828",
+      "givenName": "Rozalia",
+      "surname": "Graś",
+      "relation": "praprababcia",
+      "line": "Sikora"
+    },
+    {
+      "id": "jakub-rychlik-1824",
+      "givenName": "Jakub",
+      "surname": "Rychlik",
+      "relation": "prapradziadek",
+      "line": "Sikora"
+    },
+    {
+      "id": "marianna-michalek-1829",
+      "givenName": "Marianna",
+      "surname": "Michałek",
+      "relation": "praprababcia",
+      "line": "Sikora"
+    },
+    {
       "id": "leon-maciag-1905",
       "givenName": "Leon",
       "surname": "Maciąg",
@@ -554,6 +582,102 @@
       "lat": 53.243056,
       "lon": 16.959167,
       "people": ["antoni-mantej-1827", "rosalia-pufal-1828"],
+      "note": "Miejsce ślubu",
+      "source": "akt małżeństwa nr ..."
+    },
+    {
+      "id": "birth-wawrzyn-sikora-1820",
+      "type": "birth",
+      "year": 1820,
+      "date": "1820",
+      "place": "Pęckowo",
+      "lat": 52.836667,
+      "lon": 16.087222,
+      "people": ["wawrzyn-sikora-1820"],
+      "note": "Miejsce urodzenia",
+      "source": "do uzupełnienia"
+    },
+    {
+      "id": "death-wawrzyn-sikora-1900",
+      "type": "death",
+      "year": 1900,
+      "date": "28 II 1900",
+      "place": "Miały",
+      "lat": 52.806667,
+      "lon": 16.171944,
+      "people": ["wawrzyn-sikora-1820"],
+      "note": "Miejsce zgonu",
+      "source": "do uzupełnienia"
+    },
+    {
+      "id": "birth-rozalia-gras-1828",
+      "type": "birth",
+      "year": 1828,
+      "date": "2 V 1828",
+      "place": "Miały",
+      "lat": 52.806667,
+      "lon": 16.171944,
+      "people": ["rozalia-gras-1828"],
+      "note": "Miejsce urodzenia",
+      "source": "do uzupełnienia"
+    },
+    {
+      "id": "death-rozalia-gras-1901",
+      "type": "death",
+      "year": 1901,
+      "date": "8 XI 1901",
+      "place": "Kamionka",
+      "lat": 52.8225,
+      "lon": 16.574444,
+      "people": ["rozalia-gras-1828"],
+      "note": "Miejsce zgonu",
+      "source": "do uzupełnienia"
+    },
+    {
+      "id": "marriage-wawrzyn-sikora-rozalia-gras-1846",
+      "type": "marriage",
+      "year": 1846,
+      "date": "15 II 1846",
+      "place": "Piłka",
+      "lat": 52.790278,
+      "lon": 16.055833,
+      "people": ["wawrzyn-sikora-1820", "rozalia-gras-1828"],
+      "note": "Miejsce ślubu",
+      "source": "akt małżeństwa nr ..."
+    },
+    {
+      "id": "birth-jakub-rychlik-1824",
+      "type": "birth",
+      "year": 1824,
+      "date": "1824",
+      "place": "Marianowo",
+      "lat": 52.901111,
+      "lon": 16.141667,
+      "people": ["jakub-rychlik-1824"],
+      "note": "Miejsce urodzenia",
+      "source": "do uzupełnienia"
+    },
+    {
+      "id": "birth-marianna-michalek-1829",
+      "type": "birth",
+      "year": 1829,
+      "date": "18 I 1829",
+      "place": "Pęckowo",
+      "lat": 52.836667,
+      "lon": 16.087222,
+      "people": ["marianna-michalek-1829"],
+      "note": "Miejsce urodzenia",
+      "source": "do uzupełnienia"
+    },
+    {
+      "id": "marriage-jakub-rychlik-marianna-michalek-1852",
+      "type": "marriage",
+      "year": 1852,
+      "date": "19 IV 1846",
+      "place": "Piłka",
+      "lat": 52.790278,
+      "lon": 16.055833,
+      "people": ["jakub-rychlik-1824", "marianna-michalek-1829"],
       "note": "Miejsce ślubu",
       "source": "akt małżeństwa nr ..."
     }
