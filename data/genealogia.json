@@ -57,6 +57,41 @@
       "line": "Markiewicz"
     },
     {
+      "id": "wojciech-markiewicz-1795",
+      "givenName": "Wojciech",
+      "surname": "Markiewicz",
+      "relation": "praprapradziadek",
+      "line": "Markiewicz"
+    },
+    {
+      "id": "marianna-manikowska-1800",
+      "givenName": "Marianna",
+      "surname": "Manikowska",
+      "relation": "prapraprababcia",
+      "line": "Markiewicz"
+    },
+    {
+      "id": "ewa-jeska-1745",
+      "givenName": "Ewa",
+      "surname": "Jęska Jeszka",
+      "relation": "praprapraprababcia",
+      "line": "Markiewicz"
+    },
+    {
+      "id": "franciszek-manikowski-1765",
+      "givenName": "Franciszek",
+      "surname": "Manikowski",
+      "relation": "prapraprapradziadek",
+      "line": "Markiewicz"
+    },
+    {
+      "id": "jadwiga-klubcowna-1770",
+      "givenName": "Jadwiga",
+      "surname": "Klubcowna",
+      "relation": "praprapraprababcia",
+      "line": "Markiewicz"
+    },
+    {
       "id": "antoni-mantej-1827",
       "givenName": "Antoni",
       "surname": "Mantej",
@@ -590,6 +625,56 @@
       "lat": 52.790278,
       "lon": 16.055833,
       "people": ["jakub-rychlik-1824", "marianna-michalek-1829"]
+    },
+    {
+      "id": "marriage-wojciech-markiewicz-marianna-manikowska-1818",
+      "type": "marriage",
+      "year": 1818,
+      "date": "26 I 1818",
+      "place": "Zakrzewo",
+      "lat": 53.410556,
+      "lon": 17.1525,
+      "people": ["wojciech-markiewicz-1795", "marianna-manikowska-1800"]
+    },
+    {
+      "id": "birth-marianna-manikowska-1800",
+      "type": "birth",
+      "year": 1800,
+      "date": "7 III 1800",
+      "place": "Głomsk",
+      "lat": 53.435556,
+      "lon": 17.164722,
+      "people": ["marianna-manikowska-1800"]
+    },
+    {
+      "id": "death-ewa-jeska-1745",
+      "type": "death",
+      "year": 1833,
+      "date": "17 XII 1833",
+      "place": "Głomsk",
+      "lat": 53.435556,
+      "lon": 17.164722,
+      "people": ["ewa-jeska-1745"]
+    },
+    {
+      "id": "death-franciszek-manikowski-1844",
+      "type": "death",
+      "year": 1844,
+      "date": "26 II 1844",
+      "place": "Głomsk",
+      "lat": 53.435556,
+      "lon": 17.164722,
+      "people": ["franciszek-manikowski-1765"]
+    },
+    {
+      "id": "death-jadwiga-klubcowna-1830",
+      "type": "death",
+      "year": 1830,
+      "date": "8 II 1830",
+      "place": "Głomsk",
+      "lat": 53.435556,
+      "lon": 17.164722,
+      "people": ["jadwiga-klubcowna-1770"]
     }
   ]
 }
