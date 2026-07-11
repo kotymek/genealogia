@@ -933,6 +933,16 @@
       "lat": 53.296667,
       "lon": 16.990556,
       "people": ["marianna-streichan-1814"]
+    },
+    {
+      "id": "death-marianna-mruk-1860",
+      "type": "death",
+      "year": 1860,
+      "date": "3 VI 1860",
+      "place": "Krajenka",
+      "lat": 53.296667,
+      "lon": 16.990556,
+      "people": ["marianna-mruk-1788"]
     }
   ]
 }
