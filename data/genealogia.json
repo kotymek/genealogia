@@ -183,9 +183,9 @@
       "line": "Markiewicz"
     },
     {
-      "id": "anna-puwalowa-1734",
+      "id": "anna-grzegorzewska-1734",
       "givenName": "Anna",
-      "surname": "Puwal",
+      "surname": "Grzegorzewska",
       "relation": "prapraprapraprababcia",
       "line": "Markiewicz"
     },
@@ -229,6 +229,69 @@
       "givenName": "Rozalia",
       "surname": "Graś",
       "relation": "praprababcia",
+      "line": "Sikora"
+    },
+    {
+      "id": "jozef-sikora-1774",
+      "givenName": "Józef",
+      "surname": "Sikora",
+      "relation": "praprapradziadek",
+      "line": "Sikora"
+    },
+    {
+      "id": "anna-radke-1787",
+      "givenName": "Anna Krystyna",
+      "surname": "Radke",
+      "relation": "prapraprababcia",
+      "line": "Sikora"
+    },
+    {
+      "id": "regina-helak-bd",
+      "givenName": "Regina",
+      "surname": "Helak",
+      "relation": "praprapraprababcia",
+      "line": "Sikora"
+    },
+    {
+      "id": "chryzostom-gras-1785",
+      "givenName": "Chryzostom",
+      "surname": "Graś",
+      "relation": "praprapradziadek",
+      "line": "Sikora"
+    },
+    {
+      "id": "malgorzata-drab-1788",
+      "givenName": "Małgorzata",
+      "surname": "Drab",
+      "relation": "prapraprababcia",
+      "line": "Sikora"
+    }, 
+    {
+      "id": "wojciech-gras-1740",
+      "givenName": "Wojciech",
+      "surname": "Graś",
+      "relation": "prapraprapradziadek",
+      "line": "Sikora"
+    },
+    {
+      "id": "malgorzata-bloch-1750",
+      "givenName": "Małgorzata",
+      "surname": "Błoch",
+      "relation": "praprapraprababcia",
+      "line": "Sikora"
+    },
+    {
+      "id": "walenty-drab-1759",
+      "givenName": "Walenty",
+      "surname": "Drab",
+      "relation": "prapraprapradziadek",
+      "line": "Sikora"
+    },
+    {
+      "id": "marianna-steinborn-1763",
+      "givenName": "Marianna",
+      "surname": "Steinborn",
+      "relation": "praprapraprababcia",
       "line": "Sikora"
     },
     {
@@ -875,14 +938,14 @@
       "people": ["wawrzyniec-puwal-1722"]
     },
     {
-      "id": "death-anna-puwalowa-1789",
+      "id": "death-anna-grzegorzewska-1789",
       "type": "death",
       "year": 1789,
       "date": "8 VI 1789",
       "place": "Mościska",
       "lat": 53.171944,
       "lon": 17.001667,
-      "people": ["anna-puwalowa-1734"]
+      "people": ["anna-grzegorzewska-1734"]
     },
     {
       "id": "death-kacper-schwochert-1838",
@@ -943,6 +1006,176 @@
       "lat": 53.296667,
       "lon": 16.990556,
       "people": ["marianna-mruk-1788"]
+    },
+    {
+      "id": "birth-jozef-sikora-1774",
+      "type": "birth",
+      "year": 1774,
+      "date": "17 III 1774",
+      "place": "Pęckowo",
+      "lat": 52.836667,
+      "lon": 16.087222,
+      "people": ["jozef-sikora-1774"]
+    },
+    {
+      "id": "birth-anna-radke-1787",
+      "type": "birth",
+      "year": 1787,
+      "date": "1787",
+      "place": "Pęckowo",
+      "lat": 52.836667,
+      "lon": 16.087222,
+      "people": ["anna-radke-1787"]
+    },
+    {
+      "id": "marriage-jozef-sikora-anna-radke-1811",
+      "type": "marriage",
+      "year": 1811,
+      "date": "24 XI 1811",
+      "place": "Piłka",
+      "lat": 52.790278,
+      "lon": 16.055833,
+      "people": ["jozef-sikora-1774", "anna-radke-1787"]
+    },
+    {
+      "id": "death-regina-helak-1809",
+      "type": "death",
+      "year": 1809,
+      "date": "1809",
+      "place": "Pęckowo",
+      "lat": 52.836667,
+      "lon": 16.087222,
+      "people": ["regina-helak-bd"]
+    },
+    {
+      "id": "birth-chryzostom-gras-1785",
+      "type": "birth",
+      "year": 1785,
+      "date": "4 IX 1785",
+      "place": "Miały",
+      "lat": 52.806667,
+      "lon": 16.171944,
+      "people": ["chryzostom-gras-1785"]
+    },
+    {
+      "id": "death-chryzostom-gras-1854",
+      "type": "death",
+      "year": 1854,
+      "date": "20 IV 1854",
+      "place": "Miały",
+      "lat": 52.806667,
+      "lon": 16.171944,
+      "people": ["chryzostom-gras-1785"]
+    },
+    {
+      "id": "birth-malgorzata-drab-1788",
+      "type": "birth",
+      "year": 1788,
+      "date": "około 1788",
+      "place": "Miały",
+      "lat": 52.806667,
+      "lon": 16.171944,
+      "people": ["malgorzata-drab-1788"]
+    },
+    {
+      "id": "death-malgorzata-drab-1860",
+      "type": "death",
+      "year": 1860,
+      "date": "około 1860",
+      "place": "Miały",
+      "lat": 52.806667,
+      "lon": 16.171944,
+      "people": ["malgorzata-drab-1788"]
+    },
+    {
+      "id": "marriage-chryzostom-gras-malgorzata-drab-1810",
+      "type": "marriage",
+      "year": 1810,
+      "date": "12 VIII 1810",
+      "place": "Piłka",
+      "lat": 52.790278,
+      "lon": 16.055833,
+      "people": ["chryzostom-gras-1785", "malgorzata-drab-1788"]
+    },  
+    {
+      "id": "birth-wojciech-gras-1740",
+      "type": "birth",
+      "year": 1740,
+      "date": "około 1740",
+      "place": "Miały",
+      "lat": 52.806667,
+      "lon": 16.171944,
+      "people": ["wojciech-gras-1740"]
+    },
+    {
+      "id": "death-wojciech-gras-1820",
+      "type": "death",
+      "year": 1820,
+      "date": "25 VI 1820",
+      "place": "Miały",
+      "lat": 52.806667,
+      "lon": 16.171944,
+      "people": ["wojciech-gras-1740"]
+    },
+    {
+      "id": "birth-malgorzata-bloch-1750",
+      "type": "birth",
+      "year": 1750,
+      "date": "około 1750",
+      "place": "Pęckowo",
+      "lat": 52.836667,
+      "lon": 16.087222,
+      "people": ["malgorzata-bloch-1750"]
+    },
+    {
+      "id": "death-malgorzata-bloch-1809",
+      "type": "death",
+      "year": 1809,
+      "date": "15 III 1809",
+      "place": "Miały",
+      "lat": 52.806667,
+      "lon": 16.171944,
+      "people": ["malgorzata-bloch-1750"]
+    },
+    {
+      "id": "birth-walenty-drab-1759",
+      "type": "birth",
+      "year": 1759,
+      "date": "około 1759",
+      "place": "Miały",
+      "lat": 52.806667,
+      "lon": 16.171944,
+      "people": ["walenty-drab-1759"]
+    },
+    {
+      "id": "death-walenty-drab-1829",
+      "type": "death",
+      "year": 1829,
+      "date": "12 IV 1829",
+      "place": "Miały",
+      "lat": 52.806667,
+      "lon": 16.171944,
+      "people": ["walenty-drab-1759"]
+    },
+    {
+      "id": "birth-marianna-steinborn-1763",
+      "type": "birth",
+      "year": 1763,
+      "date": "17 X 1763",
+      "place": "Małe Olędry",
+      "lat": 52.901111,
+      "lon": 16.141667,
+      "people": ["marianna-steinborn-1763"]
+    },
+    {
+      "id": "death-marianna-steinborn-1819",
+      "type": "death",
+      "year": 1819,
+      "date": "12 III 1819",
+      "place": "Miały",
+      "lat": 52.806667,
+      "lon": 16.171944,
+      "people": ["marianna-steinborn-1763"]
     }
   ]
 }
