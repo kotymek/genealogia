@@ -150,9 +150,7 @@
       "place": "Krajenka",
       "lat": 53.296667,
       "lon": 16.990556,
-      "people": ["antoni-markiewicz-1909"],
-      "note": "Miejsce urodzenia",
-      "source": "do uzupełnienia"
+      "people": ["antoni-markiewicz-1909"]
     },
     {
       "id": "death-antoni-markiewicz-1993",
@@ -162,9 +160,7 @@
       "place": "Brodna",
       "lat": 53.1604,
       "lon": 16.945647,
-      "people": ["antoni-markiewicz-1909"],
-      "note": "Miejsce zgonu",
-      "source": "do uzupełnienia"
+      "people": ["antoni-markiewicz-1909"]
     },
     {
       "id": "birth-bronislawa-sikora-1913",
@@ -174,9 +170,7 @@
       "place": "Ludomy",
       "lat": 52.756111,
       "lon": 16.819444,
-      "people": ["bronislawa-sikora-1913"],
-      "note": "Miejsce urodzenia",
-      "source": "do uzupełnienia"
+      "people": ["bronislawa-sikora-1913"]
     },
     {
       "id": "death-bronislawa-sikora-1999",
@@ -186,9 +180,7 @@
       "place": "Kaczory",
       "lat": 53.101944,
       "lon": 16.884167,
-      "people": ["bronislawa-sikora-1913"],
-      "note": "Miejsce zgonu",
-      "source": "do uzupełnienia"
+      "people": ["bronislawa-sikora-1913"]
     },
     {
       "id": "marriage-antoni-markiewicz-bronislawa-sikora-1936",
@@ -198,9 +190,7 @@
       "place": "Śmiłowo",
       "lat": 53.136667,
       "lon": 16.9175,
-      "people": ["antoni-markiewicz-1909", "bronislawa-sikora-1913"],
-      "note": "Miejsce ślubu",
-      "source": "akt małżeństwa nr ..."
+      "people": ["antoni-markiewicz-1909", "bronislawa-sikora-1913"]
     },
     {
       "id": "birth-marian-maciag-1937",
@@ -210,9 +200,7 @@
       "place": "Wiązownica",
       "lat": 50.585833,
       "lon": 21.393056,
-      "people": ["marian-maciag-1937"],
-      "note": "Miejsce urodzenia",
-      "source": "do uzupełnienia"
+      "people": ["marian-maciag-1937"]
     },
     {
       "id": "death-marian-maciag-1997",
@@ -222,9 +210,7 @@
       "place": "Laskowo",
       "lat": 53.523889,
       "lon": 17.193333,
-      "people": ["marian-maciag-1937"],
-      "note": "Miejsce zgonu",
-      "source": "do uzupełnienia"
+      "people": ["marian-maciag-1937"]
     },
     {
       "id": "birth-marianna-rugala-1938",
@@ -234,9 +220,7 @@
       "place": "Ruda",
       "lat": 50.476111,
       "lon": 21.240556,
-      "people": ["marianna-rugala-1938"],
-      "note": "Miejsce urodzenia",
-      "source": "do uzupełnienia"
+      "people": ["marianna-rugala-1938"]
     },
     {
       "id": "marriage-marian-maciag-marianna-rugala-1961",
@@ -246,9 +230,7 @@
       "place": "Debrzno",
       "lat": 53.538333,
       "lon": 17.235278,
-      "people": ["marian-maciag-1937", "marianna-rugala-1938"],
-      "note": "Miejsce ślubu",
-      "source": "akt małżeństwa nr ..."
+      "people": ["marian-maciag-1937", "marianna-rugala-1938"]
     }, 
     {
       "id": "birth-jan-markiewicz-1870",
@@ -258,9 +240,7 @@
       "place": "Głomsk",
       "lat": 53.435556,
       "lon": 17.164722,
-      "people": ["jan-markiewicz-1870"],
-      "note": "Miejsce urodzenia",
-      "source": "do uzupełnienia"
+      "people": ["jan-markiewicz-1870"]
     },
     {
       "id": "death-jan-markiewicz-1956",
@@ -270,9 +250,7 @@
       "place": "Mościska",
       "lat": 53.171944,
       "lon": 17.001667,
-      "people": ["jan-markiewicz-1870"],
-      "note": "Miejsce zgonu",
-      "source": "do uzupełnienia"
+      "people": ["jan-markiewicz-1870"]
     },
     {
       "id": "birth-michalina-manthey-1870",
@@ -282,9 +260,7 @@
       "place": "Stare",
       "lat": 53.219444,
       "lon": 16.998056,
-      "people": ["michalina-manthey-1870"],
-      "note": "Miejsce urodzenia",
-      "source": "do uzupełnienia"
+      "people": ["michalina-manthey-1870"]
     },
     {
       "id": "death-michalina-manthey-1941",
@@ -294,9 +270,7 @@
       "place": "Mościska",
       "lat": 53.171944,
       "lon": 17.001667,
-      "people": ["michalina-manthey-1870"],
-      "note": "Miejsce zgonu",
-      "source": "do uzupełnienia"
+      "people": ["michalina-manthey-1870"]
     },
     {
       "id": "marriage-jan-markiewicz-michalina-manthey-1893",
@@ -306,9 +280,7 @@
       "place": "Głubczyn",
       "lat": 53.243056,
       "lon": 16.959167,
-      "people": ["jan-markiewicz-1870", "michalina-manthey-1870"],
-      "note": "Miejsce ślubu",
-      "source": "akt małżeństwa nr ..."
+      "people": ["jan-markiewicz-1870", "michalina-manthey-1870"]
     }, 
     {
       "id": "birth-piotr-sikora-1865",
@@ -318,9 +290,7 @@
       "place": "Miały",
       "lat": 52.806667,
       "lon": 16.171944,
-      "people": ["piotr-sikora-1865"],
-      "note": "Miejsce urodzenia",
-      "source": "do uzupełnienia"
+      "people": ["piotr-sikora-1865"]
     },
     {
       "id": "death-piotr-sikora-1947",
@@ -330,9 +300,7 @@
       "place": "Brodna",
       "lat": 53.1604,
       "lon": 16.945647,
-      "people": ["piotr-sikora-1865"],
-      "note": "Miejsce zgonu",
-      "source": "do uzupełnienia"
+      "people": ["piotr-sikora-1865"]
     },
     {
       "id": "birth-michalina-rychlik-1872",
@@ -342,9 +310,7 @@
       "place": "Marianowo",
       "lat": 52.7925,
       "lon": 16.109167,
-      "people": ["michalina-rychlik-1872"],
-      "note": "Miejsce urodzenia",
-      "source": "do uzupełnienia"
+      "people": ["michalina-rychlik-1872"]
     },
     {
       "id": "death-michalina-rychlik-1955",
@@ -353,9 +319,7 @@
       "place": "Brodna",
       "lat": 53.1604,
       "lon": 16.945647,
-      "people": ["michalina-rychlik-1872"],
-      "note": "Miejsce zgonu",
-      "source": "do uzupełnienia"
+      "people": ["michalina-rychlik-1872"]
     },
     {
       "id": "marriage-piotr-sikora-michalina-rychlik-1890",
@@ -365,9 +329,7 @@
       "place": "Piłka",
       "lat": 52.790278,
       "lon": 16.055833,
-      "people": ["piotr-sikora-1865", "michalina-rychlik-1872"],
-      "note": "Miejsce ślubu",
-      "source": "akt małżeństwa nr ..."
+      "people": ["piotr-sikora-1865", "michalina-rychlik-1872"]
     }, 
     {
       "id": "birth-leon-maciag-1905",
@@ -377,9 +339,7 @@
       "place": "Wiązownica",
       "lat": 50.585833,
       "lon": 21.393056,
-      "people": ["leon-maciag-1905"],
-      "note": "Miejsce urodzenia",
-      "source": "do uzupełnienia"
+      "people": ["leon-maciag-1905"]
     },
     {
       "id": "death-leon-maciag-1975",
@@ -389,9 +349,7 @@
       "place": "Człuchów",
       "lat": 53.667222,
       "lon": 17.358889,
-      "people": ["leon-maciag-1905"],
-      "note": "Miejsce zgonu",
-      "source": "do uzupełnienia"
+      "people": ["leon-maciag-1905"]
     },
     {
       "id": "birth-cecylia-kopec-1906",
@@ -401,9 +359,7 @@
       "place": "Wiązownica",
       "lat": 50.585833,
       "lon": 21.393056,
-      "people": ["cecylia-kopec-1906"],
-      "note": "Miejsce urodzenia",
-      "source": "do uzupełnienia"
+      "people": ["cecylia-kopec-1906"]
     },
     {
       "id": "death-cecylia-kopec-1984",
@@ -413,9 +369,7 @@
       "place": "Człuchów",
       "lat": 53.595278,
       "lon": 17.336944,
-      "people": ["cecylia-kopec-1906"],
-      "note": "Miejsce zgonu",
-      "source": "do uzupełnienia"
+      "people": ["cecylia-kopec-1906"]
     },
     {
       "id": "marriage-leon-maciag-cecylia-kopec-1927",
@@ -425,9 +379,7 @@
       "place": "Wiązownica",
       "lat": 50.585833,
       "lon": 21.393056,
-      "people": ["leon-maciag-1905", "cecylia-kopec-1906"],
-      "note": "Miejsce ślubu",
-      "source": "akt małżeństwa nr ..."
+      "people": ["leon-maciag-1905", "cecylia-kopec-1906"]
     }, 
     {
       "id": "birth-jan-rugala-1896",
@@ -437,9 +389,7 @@
       "place": "Ruda",
       "lat": 50.476111,
       "lon": 21.240556,
-      "people": ["jan-rugala-1896"],
-      "note": "Miejsce urodzenia",
-      "source": "do uzupełnienia"
+      "people": ["jan-rugala-1896"]
     },
     {
       "id": "death-jan-rugala-1974",
@@ -449,9 +399,7 @@
       "place": "Laskowo",
       "lat": 53.523889,
       "lon": 17.193333,
-      "people": ["jan-rugala-1896"],
-      "note": "Miejsce zgonu",
-      "source": "do uzupełnienia"
+      "people": ["jan-rugala-1896"]
     },
     {
       "id": "birth-marianna-wylazlowska-1897",
@@ -461,9 +409,7 @@
       "place": "Morawica",
       "lat": 50.745,
       "lon": 20.620278,
-      "people": ["marianna-wylazlowska-1897"],
-      "note": "Miejsce urodzenia",
-      "source": "do uzupełnienia"
+      "people": ["marianna-wylazlowska-1897"]
     },
     {
       "id": "death-marianna-wylazkowska-1979",
@@ -473,9 +419,7 @@
       "place": "Laskowo",
       "lat": 53.523889,
       "lon": 17.193333,
-      "people": ["marianna-wylazlowska-1897"],
-      "note": "Miejsce zgonu",
-      "source": "do uzupełnienia"
+      "people": ["marianna-wylazlowska-1897"]
     },
     {
       "id": "marriage-jan-rugala-marianna-wylazlowska-1927",
@@ -485,9 +429,7 @@
       "place": "Schermcke",
       "lat": 52.066667,
       "lon": 11.283333,
-      "people": ["jan-rugala-1896", "marianna-wylazlowska-1897"],
-      "note": "Prawdopodobne miejsce ślubu",
-      "source": "akt małżeństwa nr ..."
+      "people": ["jan-rugala-1896", "marianna-wylazlowska-1897"]
     },
     {
       "id": "birth-jan-markiewicz-1823",
@@ -497,9 +439,7 @@
       "place": "Głomsk",
       "lat": 53.435556,
       "lon": 17.164722,
-      "people": ["jan-markiewicz-1823"],
-      "note": "Miejsce urodzenia",
-      "source": "do uzupełnienia"
+      "people": ["jan-markiewicz-1823"]
     },
     {
       "id": "death-jan-markiewicz-1901",
@@ -509,9 +449,7 @@
       "place": "Śmiardowo Krajeńskie",
       "lat": 53.247222,
       "lon": 17.017222,
-      "people": ["jan-markiewicz-1823"],
-      "note": "Miejsce zgonu",
-      "source": "do uzupełnienia"
+      "people": ["jan-markiewicz-1823"]
     },
     {
       "id": "death-marianna-groszczyk-1893",
@@ -521,9 +459,7 @@
       "place": "Śmiardowo Krajeńskie",
       "lat": 53.247222,
       "lon": 17.017222,
-      "people": ["marianna-groszczyk"],
-      "note": "Miejsce zgonu",
-      "source": "do uzupełnienia"
+      "people": ["marianna-groszczyk"]
     },
     {
       "id": "marriage-jan-markiewicz-marianna-groszczyk-1869",
@@ -533,9 +469,7 @@
       "place": "Krajenka",
       "lat": 53.296667,
       "lon": 16.990556,
-      "people": ["jan-markiewicz-1823", "marianna-groszczyk"],
-      "note": "Miejsce ślubu",
-      "source": "akt małżeństwa nr ..."
+      "people": ["jan-markiewicz-1823", "marianna-groszczyk"]
     }, 
     {
       "id": "birth-antoni-mantej-1827",
@@ -545,9 +479,7 @@
       "place": "Głubczyn",
       "lat": 53.243056,
       "lon": 16.959167,
-      "people": ["antoni-mantej-1827"],
-      "note": "Miejsce urodzenia",
-      "source": "do uzupełnienia"
+      "people": ["antoni-mantej-1827"]
     },
     {
       "id": "death-antoni-mantej-1889",
@@ -557,9 +489,7 @@
       "place": "Śmiardowo Krajeńskie",
       "lat": 53.247222,
       "lon": 17.017222,
-      "people": ["antoni-mantej-1827"],
-      "note": "Miejsce zgonu",
-      "source": "do uzupełnienia"
+      "people": ["antoni-mantej-1827"]
     },
     {
       "id": "death-rosalia-pufal-1889",
@@ -569,9 +499,7 @@
       "place": "Głubczyn",
       "lat": 53.243056,
       "lon": 16.959167,
-      "people": ["rosalia-pufal-1828"],
-      "note": "Miejsce zgonu",
-      "source": "do uzupełnienia"
+      "people": ["rosalia-pufal-1828"]
     },
     {
       "id": "marriage-antoni-mantej-rosalia-pufal-1859",
@@ -581,9 +509,7 @@
       "place": "Głubczyn",
       "lat": 53.243056,
       "lon": 16.959167,
-      "people": ["antoni-mantej-1827", "rosalia-pufal-1828"],
-      "note": "Miejsce ślubu",
-      "source": "akt małżeństwa nr ..."
+      "people": ["antoni-mantej-1827", "rosalia-pufal-1828"]
     },
     {
       "id": "birth-wawrzyn-sikora-1820",
@@ -593,9 +519,7 @@
       "place": "Pęckowo",
       "lat": 52.836667,
       "lon": 16.087222,
-      "people": ["wawrzyn-sikora-1820"],
-      "note": "Miejsce urodzenia",
-      "source": "do uzupełnienia"
+      "people": ["wawrzyn-sikora-1820"]
     },
     {
       "id": "death-wawrzyn-sikora-1900",
@@ -605,9 +529,7 @@
       "place": "Miały",
       "lat": 52.806667,
       "lon": 16.171944,
-      "people": ["wawrzyn-sikora-1820"],
-      "note": "Miejsce zgonu",
-      "source": "do uzupełnienia"
+      "people": ["wawrzyn-sikora-1820"]
     },
     {
       "id": "birth-rozalia-gras-1828",
@@ -617,9 +539,7 @@
       "place": "Miały",
       "lat": 52.806667,
       "lon": 16.171944,
-      "people": ["rozalia-gras-1828"],
-      "note": "Miejsce urodzenia",
-      "source": "do uzupełnienia"
+      "people": ["rozalia-gras-1828"]
     },
     {
       "id": "death-rozalia-gras-1901",
@@ -629,9 +549,7 @@
       "place": "Kamionka",
       "lat": 52.8225,
       "lon": 16.574444,
-      "people": ["rozalia-gras-1828"],
-      "note": "Miejsce zgonu",
-      "source": "do uzupełnienia"
+      "people": ["rozalia-gras-1828"]
     },
     {
       "id": "marriage-wawrzyn-sikora-rozalia-gras-1846",
@@ -641,9 +559,7 @@
       "place": "Piłka",
       "lat": 52.790278,
       "lon": 16.055833,
-      "people": ["wawrzyn-sikora-1820", "rozalia-gras-1828"],
-      "note": "Miejsce ślubu",
-      "source": "akt małżeństwa nr ..."
+      "people": ["wawrzyn-sikora-1820", "rozalia-gras-1828"]
     },
     {
       "id": "birth-jakub-rychlik-1824",
@@ -653,9 +569,7 @@
       "place": "Marianowo",
       "lat": 52.7925,
       "lon": 16.109167,
-      "people": ["jakub-rychlik-1824"],
-      "note": "Miejsce urodzenia",
-      "source": "do uzupełnienia"
+      "people": ["jakub-rychlik-1824"]
     },
     {
       "id": "birth-marianna-michalek-1829",
@@ -665,9 +579,7 @@
       "place": "Pęckowo",
       "lat": 52.836667,
       "lon": 16.087222,
-      "people": ["marianna-michalek-1829"],
-      "note": "Miejsce urodzenia",
-      "source": "do uzupełnienia"
+      "people": ["marianna-michalek-1829"]
     },
     {
       "id": "marriage-jakub-rychlik-marianna-michalek-1852",
@@ -677,9 +589,7 @@
       "place": "Piłka",
       "lat": 52.790278,
       "lon": 16.055833,
-      "people": ["jakub-rychlik-1824", "marianna-michalek-1829"],
-      "note": "Miejsce ślubu",
-      "source": "akt małżeństwa nr ..."
+      "people": ["jakub-rychlik-1824", "marianna-michalek-1829"]
     }
   ]
 }
