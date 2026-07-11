@@ -50,10 +50,24 @@
       "line": "Markiewicz"
     },
     {
-      "id": "marianna-groszczyk",
+      "id": "marianna-yk",
       "givenName": "Marianna",
-      "surname": "Groszczyk",
+      "surname": "yk",
       "relation": "praprababcia",
+      "line": "Markiewicz"
+    },
+    {
+      "id": "pawel-groszczyk-1799",
+      "givenName": "Paweł",
+      "surname": "Groszczyk",
+      "relation": "praprapradziadek",
+      "line": "Markiewicz"
+    },
+    {
+      "id": "marianna-streichan-1814",
+      "givenName": "Marianna",
+      "surname": "Streichan",
+      "relation": "prapraprababcia",
       "line": "Markiewicz"
     },
     {
@@ -571,24 +585,24 @@
       "people": ["jan-markiewicz-1823"]
     },
     {
-      "id": "death-marianna-groszczyk-1893",
+      "id": "death-marianna-yk-1893",
       "type": "death",
       "year": 1893,
       "date": "2 VIII 1893",
       "place": "Śmiardowo Krajeńskie",
       "lat": 53.247222,
       "lon": 17.017222,
-      "people": ["marianna-groszczyk"]
+      "people": ["marianna-yk"]
     },
     {
-      "id": "marriage-jan-markiewicz-marianna-groszczyk-1869",
+      "id": "marriage-jan-markiewicz-marianna-yk-1869",
       "type": "marriage",
       "year": 1869,
       "date": "31 V 1869",
       "place": "Krajenka",
       "lat": 53.296667,
       "lon": 16.990556,
-      "people": ["jan-markiewicz-1823", "marianna-groszczyk"]
+      "people": ["jan-markiewicz-1823", "marianna-yk"]
     }, 
     {
       "id": "birth-antoni-mantej-1827",
@@ -889,6 +903,36 @@
       "lat": 53.171944,
       "lon": 17.001667,
       "people": ["magdalena-zuromska-1760"]
+    },
+    {
+      "id": "death-pawel-groszczyk-1858",
+      "type": "death",
+      "year": 1858,
+      "date": "1 VIII 1858",
+      "place": "Krajenka",
+      "lat": 53.296667,
+      "lon": 16.990556,
+      "people": ["pawel-groszczyk-1799"]
+    },
+    {
+      "id": "birth-marianna-streichan-1814",
+      "type": "birth",
+      "year": 1814,
+      "date": "4 IX 1814",
+      "place": "Zakrzewo",
+      "lat": 53.410556,
+      "lon": 17.1525,
+      "people": ["marianna-streichan-1814"]
+    },
+        {
+      "id": "death-marianna-streichan-1905",
+      "type": "death",
+      "year": 1905,
+      "date": "21 VII 1905",
+      "place": "Krajenka",
+      "lat": 53.296667,
+      "lon": 16.990556,
+      "people": ["marianna-streichan-1814"]
     }
   ]
 }
