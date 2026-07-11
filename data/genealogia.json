@@ -92,6 +92,20 @@
       "line": "Markiewicz"
     },
     {
+      "id": "karol-streichan-1781",
+      "givenName": "Karol",
+      "surname": "Streichan",
+      "relation": "prapraprapradziadek",
+      "line": "Markiewicz"
+    },
+    {
+      "id": "marianna-mruk-1788",
+      "givenName": "Marianna",
+      "surname": "Mruk",
+      "relation": "praprapraprababcia",
+      "line": "Markiewicz"
+    },
+    {
       "id": "antoni-mantej-1827",
       "givenName": "Antoni",
       "surname": "Mantej",
@@ -103,6 +117,76 @@
       "givenName": "Rosalia",
       "surname": "Pufal",
       "relation": "praprababcia",
+      "line": "Markiewicz"
+    },
+    {
+      "id": "jakub-mantej-1794",
+      "givenName": "Jakub",
+      "surname": "Mantej",
+      "relation": "praprapradziadek",
+      "line": "Markiewicz"
+    }, 
+    {
+      "id": "rozalia-metzke-1797",
+      "givenName": "Rozalia",
+      "surname": "Metzke",
+      "relation": "prapraprababcia",
+      "line": "Markiewicz"
+    }, 
+    {
+      "id": "maciej-puwal-1801",
+      "givenName": "Maciej",
+      "surname": "Puwal",
+      "relation": "praprapradziadek",
+      "line": "Markiewicz"
+    },  
+    {
+      "id": "dorota-schwochert-1800",
+      "givenName": "Dorota",
+      "surname": "Schwochert",
+      "relation": "prapraprababcia",
+      "line": "Markiewicz"
+    },
+    {
+      "id": "pawel-puwal-1755",
+      "givenName": "Paweł",
+      "surname": "Puwal",
+      "relation": "prapraprapradziadek",
+      "line": "Markiewicz"
+    },
+    {
+      "id": "marianna-baczewska-1761",
+      "givenName": "Marianna",
+      "surname": "Baczewska",
+      "relation": "praprapraprababcia",
+      "line": "Markiewicz"
+    },  
+    {
+      "id": "wawrzyniec-puwal-1722",
+      "givenName": "Wawrzyniec",
+      "surname": "Puwal",
+      "relation": "praprapraprapradziadek",
+      "line": "Markiewicz"
+    },
+    {
+      "id": "anna-puwalowa-1734",
+      "givenName": "Anna",
+      "surname": "Puwal",
+      "relation": "prapraprapraprababcia",
+      "line": "Markiewicz"
+    },
+    {
+      "id": "kacper-schwochert-bd",
+      "givenName": "Kacper",
+      "surname": "Schwochert",
+      "relation": "prapraprapradziadek",
+      "line": "Markiewicz"
+    },
+    {
+      "id": "magdalena-zuromska-1760",
+      "givenName": "Kacper",
+      "surname": "Schwochert",
+      "relation": "praprapraprababcia",
       "line": "Markiewicz"
     },
     {
@@ -675,6 +759,136 @@
       "lat": 53.435556,
       "lon": 17.164722,
       "people": ["jadwiga-klubcowna-1770"]
+    },
+    {
+      "id": "marriage-karol-streichan-marianna-mruk-1808",
+      "type": "marriage",
+      "year": 1808,
+      "date": "22 VIII 1808",
+      "place": "Zakrzewo",
+      "lat": 53.410556,
+      "lon": 17.1525,
+      "people": ["karol-streichan-1781", "marianna-mruk-1788"]
+    },
+    {
+      "id": "marriage-jakub-mantej-rozalia-metzke-1824",
+      "type": "marriage",
+      "year": 1824,
+      "date": "22 II 1824",
+      "place": "Śmiłowo",
+      "lat": 53.136667,
+      "lon": 16.9175,
+      "people": ["jakub-mantej-1794", "rozalia-metzke-1797"]
+    },
+    {
+      "id": "marriage-maciej-puwal-dorota-schwochert-1827",
+      "type": "marriage",
+      "year": 1827,
+      "date": "25 XI 1827",
+      "place": "Wysoka",
+      "lat": 53.181389,
+      "lon": 17.079722,
+      "people": ["maciej-puwal-1801", "dorota-schwochert-1800"]
+    },
+    {
+      "id": "birth-dorota-schwochert-1800",
+      "type": "birth",
+      "year": 1800,
+      "date": "19 XII 1800",
+      "place": "Mościska",
+      "lat": 53.171944,
+      "lon": 17.001667,
+      "people": ["dorota-schwochert-1800"]
+    },
+    {
+      "id": "death-dorota-schwochert-1831",
+      "type": "death",
+      "year": 1831,
+      "date": "17 X 1831",
+      "place": "Mościska",
+      "lat": 53.171944,
+      "lon": 17.001667,
+      "people": ["dorota-schwochert-1800"]
+    },
+    {
+      "id": "birth-pawel-puwal-1755",
+      "type": "birth",
+      "year": 1755,
+      "date": "26 I 1755",
+      "place": "Mościska",
+      "lat": 53.171944,
+      "lon": 17.001667,
+      "people": ["pawel-puwal-1755"]
+    },
+    {
+      "id": "death-pawel-puwal-1809",
+      "type": "death",
+      "year": 1809,
+      "date": "13 I 1809",
+      "place": "Mościska",
+      "lat": 53.171944,
+      "lon": 17.001667,
+      "people": ["pawel-puwal-1755"]
+    },
+    {
+      "id": "death-marianna-baczewska-1813",
+      "type": "death",
+      "year": 1813,
+      "date": "20 VI 1813",
+      "place": "Mościska",
+      "lat": 53.171944,
+      "lon": 17.001667,
+      "people": ["marianna-baczewska-1761"]
+    },
+    {
+      "id": "marriage-pawel-puwal-marianna-baczewska-1783",
+      "type": "marriage",
+      "year": 1783,
+      "date": "10 XII 1783",
+      "place": "Wysoka",
+      "lat": 53.181389,
+      "lon": 17.079722,
+      "people": ["pawel-puwal-1755", "marianna-baczewska-1761"]
+    },
+    {
+      "id": "death-wawrzyniec-puwal-1777",
+      "type": "death",
+      "year": 1777,
+      "date": "9 XI 1777",
+      "place": "Mościska",
+      "lat": 53.171944,
+      "lon": 17.001667,
+      "people": ["wawrzyniec-puwal-1722"]
+    },
+    {
+      "id": "death-anna-puwalowa-1789",
+      "type": "death",
+      "year": 1789,
+      "date": "8 VI 1789",
+      "place": "Mościska",
+      "lat": 53.171944,
+      "lon": 17.001667,
+      "people": ["anna-puwalowa-1734"]
+    },
+    {
+      "id": "death-kacper-schwochert-1838",
+      "type": "death",
+      "year": 1838,
+      "date": "17 III 1838",
+      "place": "Mościska",
+      "lat": 53.171944,
+      "lon": 17.001667,
+      "people": ["kacper-schwochert-bd"]
+    },
+    {
+      "id": "death-magdalena-zuromska-1827",
+      "type": "death",
+      "year": 1827,
+      "date": "1 X 1827",
+      "place": "Mościska",
+      "lat": 53.171944,
+      "lon": 17.001667,
+      "people": ["magdalena-zuromska-1760"]
     }
   ]
 }
