@@ -386,6 +386,48 @@
       "line": "Sikora"
     },
     {
+      "id": "michal-czekala-1650",
+      "givenName": "Michał",
+      "surname": "Czekała",
+      "relation": "praprapraprapraprapradziadek",
+      "line": "Sikora"
+    },
+    {
+      "id": "agnieszka-kaczmarzowna-1650",
+      "givenName": "Agnieszka",
+      "surname": "Kaczmarzówna",
+      "relation": "praprapraprapraprababcia",
+      "line": "Sikora"
+    },
+    {
+      "id": "andrzej-czekala-1624",
+      "givenName": "Andrzej",
+      "surname": "Czekała",
+      "relation": "prapraprapraprapraprapradziadek",
+      "line": "Sikora"
+    },
+    {
+      "id": "jadwiga-pawelkowna-1625",
+      "givenName": "Jadwiga",
+      "surname": "Pawełkówna",
+      "relation": "praprapraprapraprapraprababcia",
+      "line": "Sikora"
+    },
+    {
+      "id": "jan-czekala-bd",
+      "givenName": "Jan",
+      "surname": "Czekała",
+      "relation": "praprapraprapraprapraprapradziadek",
+      "line": "Sikora"
+    },
+    {
+      "id": "ewa-zak-1600",
+      "givenName": "Ewa",
+      "surname": "Żak",
+      "relation": "prapraprapraprapraprapraprababcia",
+      "line": "Sikora"
+    },
+    {
       "id": "jakub-rychlik-1824",
       "givenName": "Jakub",
       "surname": "Rychlik",
@@ -397,6 +439,27 @@
       "givenName": "Marianna",
       "surname": "Michałek",
       "relation": "praprababcia",
+      "line": "Sikora"
+    },
+    {
+      "id": "helena-jarys-1792",
+      "givenName": "Helena",
+      "surname": "Jaryś",
+      "relation": "prapraprababcia",
+      "line": "Sikora"
+    },
+    {
+      "id": "jan-michalek-bd",
+      "givenName": "Jan",
+      "surname": "Michałek",
+      "relation": "praprapradziadek",
+      "line": "Sikora"
+    },
+    {
+      "id": "katarzyna-wocko-bd",
+      "givenName": "Katarzyna",
+      "surname": "Woćko",
+      "relation": "prapraprababcia",
       "line": "Sikora"
     },
     {
@@ -594,7 +657,7 @@
       "type": "birth",
       "year": 1872,
       "date": "1872",
-      "place": "Marianowo",
+      "place": "Marianowo (obecnie Marylin)",
       "lat": 52.7925,
       "lon": 16.109167,
       "people": ["michalina-rychlik-1872"]
@@ -853,7 +916,7 @@
       "type": "birth",
       "year": 1824,
       "date": "1824",
-      "place": "Marianowo",
+      "place": "Marianowo (obecnie Marylin)",
       "lat": 52.7925,
       "lon": 16.109167,
       "people": ["jakub-rychlik-1824"]
@@ -1253,7 +1316,7 @@
       "type": "birth",
       "year": 1763,
       "date": "17 X 1763",
-      "place": "Małe Olędry",
+      "place": "Małe Olędry (obecnie Marianowo)",
       "lat": 52.901111,
       "lon": 16.141667,
       "people": ["marianna-steinborn-1763"]
@@ -1283,7 +1346,7 @@
       "type": "death",
       "year": 1765,
       "date": "14 VI 1765",
-      "place": "Małe Olędry",
+      "place": "Małe Olędry (obecnie Marianowo)",
       "lat": 52.901111,
       "lon": 16.141667,
       "people": ["wojciech-steinborn-1719"]
@@ -1447,6 +1510,96 @@
       "lat": 52.888889,
       "lon": 16.168056,
       "people": ["grzegorz-stypa-bd", "regina-wydrzyczka-bd"]
+    },
+    {
+      "id": "birth-michal-czekala-1650",
+      "type": "birth",
+      "year": 1650,
+      "date": "20 IX 1650",
+      "place": "Smrodyniak (obecnie Marylin)",
+      "lat": 52.7925,
+      "lon": 16.109167,
+      "people": ["michal-czekala-1650"]
+    },
+    {
+      "id": "birth-agnieszka-kaczmarzowna-1650",
+      "type": "birth",
+      "year": 1650,
+      "date": "9 II 1650",
+      "place": "Pęckowo",
+      "lat": 52.836667,
+      "lon": 16.087222,
+      "people": ["agnieszka-kaczmarzowna-1650"]
+    },
+    {
+      "id": "marriage-michal-czekala-agnieszka-kaczmarzowna-1676",
+      "type": "marriage",
+      "year": 1676,
+      "date": "9 II 1676",
+      "place": "Wieleń",
+      "lat": 52.888889,
+      "lon": 16.168056,
+      "people": ["michal-czekala-1650", "agnieszka-kaczmarzowna-1650"]
+    },
+    {
+      "id": "birth-andrzej-czekala-1624",
+      "type": "birth",
+      "year": 1624,
+      "date": "20 IX 1624",
+      "place": "Wieleń",
+      "lat": 52.888889,
+      "lon": 16.168056,
+      "people": ["andrzej-czekala-1624"]
+    },
+    {
+      "id": "marriage-andrzej-czekala-jadwiga-pawelkowna-1646",
+      "type": "marriage",
+      "year": 1646,
+      "date": "4 IX 1676",
+      "place": "Wieleń",
+      "lat": 52.888889,
+      "lon": 16.168056,
+      "people": ["andrzej-czekala-1624", "jadwiga-pawelkowna-1625"]
+    },
+    {
+      "id": "marriage-jan-czekala-ewa-zak-1622",
+      "type": "marriage",
+      "year": 1622,
+      "date": "6 II 1622",
+      "place": "Wieleń",
+      "lat": 52.888889,
+      "lon": 16.168056,
+      "people": ["jan-czekala-bd", "ewa-zak-1600"]
+    },
+    {
+      "id": "birth-ewa-zak-1600",
+      "type": "birth",
+      "year": 1600,
+      "date": "18 III 1600",
+      "place": "Drawsko",
+      "lat": 52.853889,
+      "lon": 16.029722,
+      "people": ["ewa-zak-1600"]
+    },
+    {
+      "id": "death-helena-jarys-1866",
+      "type": "death",
+      "year": 1866,
+      "date": "18 XI 1866",
+      "place": "Marianowo (obecnie Marylin)",
+      "lat": 52.7925,
+      "lon": 16.109167,
+      "people": ["helena-jarys-1792"]
+    },
+    {
+      "id": "marriage-jan-michalek-katarzyna-wocko-1812",
+      "type": "marriage",
+      "year": 1812,
+      "date": "1812",
+      "place": "Wieleń",
+      "lat": 52.888889,
+      "lon": 16.168056,
+      "people": ["jan-michalek-bd", "katarzyna-wocko-bd"]
     }
   ]
 }
