@@ -295,6 +295,97 @@
       "line": "Sikora"
     },
     {
+      "id": "wojciech-steinborn-1719",
+      "givenName": "Wojciech",
+      "surname": "Steinborn",
+      "relation": "praprapraprapradziadek",
+      "line": "Sikora"
+    },
+    {
+      "id": "anna-sztuba-1722",
+      "givenName": "Anna",
+      "surname": "Sztuba",
+      "relation": "prapraprapraprababcia",
+      "line": "Sikora"
+    },
+    {
+      "id": "wojciech-steinborn-1662",
+      "givenName": "Wojciech",
+      "surname": "Steinborn",
+      "relation": "prapraprapraprapradziadek",
+      "line": "Sikora"
+    },  
+    {
+      "id": "anna-hintz-bd",
+      "givenName": "Anna",
+      "surname": "Hintz",
+      "relation": "praprapraprapraprababcia",
+      "line": "Sikora"
+    },  
+    {
+      "id": "pawel-steinborn-bd",
+      "givenName": "Paweł",
+      "surname": "Steinborn",
+      "relation": "praprapraprapraprapradziadek",
+      "line": "Sikora"
+    },  
+    {
+      "id": "ewa-steinbornowa-bd",
+      "givenName": "Ewa",
+      "surname": "Steinborn",
+      "relation": "prapraprapraprapraprababcia",
+      "line": "Sikora"
+    },
+    {
+      "id": "jan-sztuba-1695",
+      "givenName": "Jan",
+      "surname": "Sztuba",
+      "relation": "prapraprapraprapradziadek",
+      "line": "Sikora"
+    },
+    {
+      "id": "marianna-czekala-1694",
+      "givenName": "Marianna",
+      "surname": "Czekała",
+      "relation": "praprapraprapraprababcia",
+      "line": "Sikora"
+    },
+    {
+      "id": "pawel-sztuba-1661",
+      "givenName": "Paweł",
+      "surname": "Sztuba",
+      "relation": "praprapraprapraprapradziadek",
+      "line": "Sikora"
+    },
+    {
+      "id": "wojciech-stypa-1629",
+      "givenName": "Wojciech",
+      "surname": "Stypa vel Sztuba",
+      "relation": "prapraprapraprapraprapradziadek",
+      "line": "Sikora"
+    },
+    {
+      "id": "dorota-mach-1634",
+      "givenName": "Dorota",
+      "surname": "Mach",
+      "relation": "praprapraprapraprapraprababcia",
+      "line": "Sikora"
+    },
+    {
+      "id": "grzegorz-stypa-bd",
+      "givenName": "Grzegorz",
+      "surname": "Stypa",
+      "relation": "praprapraprapraprapraprapradziadek",
+      "line": "Sikora"
+    },
+    {
+      "id": "regina-wydrzyczka-bd",
+      "givenName": "Regina",
+      "surname": "Wydrzyczka",
+      "relation": "prapraprapraprapraprapraprababcia",
+      "line": "Sikora"
+    },
+    {
       "id": "jakub-rychlik-1824",
       "givenName": "Jakub",
       "surname": "Rychlik",
@@ -1176,6 +1267,186 @@
       "lat": 52.806667,
       "lon": 16.171944,
       "people": ["marianna-steinborn-1763"]
+    },
+    {
+      "id": "birth-wojciech-steinborn-1719",
+      "type": "birth",
+      "year": 1719,
+      "date": "2 VIII 1719",
+      "place": "Rzecin",
+      "lat": 52.768333,
+      "lon": 16.2975,
+      "people": ["wojciech-steinborn-1719"]
+    },
+    {
+      "id": "death-wojciech-steinborn-1765",
+      "type": "death",
+      "year": 1765,
+      "date": "14 VI 1765",
+      "place": "Małe Olędry",
+      "lat": 52.901111,
+      "lon": 16.141667,
+      "people": ["wojciech-steinborn-1719"]
+    },
+    {
+      "id": "birth-anna-sztuba-1722",
+      "type": "birth",
+      "year": 1722,
+      "date": "28 IV 1722",
+      "place": "Łokacz Wielki",
+      "lat": 52.875278,
+      "lon": 15.991667,
+      "people": ["anna-sztuba-1722"]
+    },
+    {
+      "id": "birth-wojciech-steinborn-1662",
+      "type": "birth",
+      "year": 1662,
+      "date": "19 IV 1662",
+      "place": "Rzecin",
+      "lat": 52.768333,
+      "lon": 16.2975,
+      "people": ["wojciech-steinborn-1662"]
+    },
+    {
+      "id": "death-anna-hintz-1747",
+      "type": "death",
+      "year": 1747,
+      "date": "19 VIII 1747",
+      "place": "Rzecin",
+      "lat": 52.768333,
+      "lon": 16.2975,
+      "people": ["anna-hintz-bd"]
+    },
+    {
+      "id": "marriage-wojciech-steinborn-anna-hintz-1695",
+      "type": "marriage",
+      "year": 1695,
+      "date": "10 VII 1695",
+      "place": "Wieleń",
+      "lat": 52.888889,
+      "lon": 16.168056,
+      "people": ["wojciech-steinborn-1662", "anna-hintz-bd"]
+    },  
+    {
+      "id": "death-pawel-steinborn-1693",
+      "type": "death",
+      "year": 1693,
+      "date": "9 VIII 1693",
+      "place": "Rzecin",
+      "lat": 52.768333,
+      "lon": 16.2975,
+      "people": ["pawel-steinborn-bd"]
+    },
+    {
+      "id": "death-ewa-steinbornowa-1693",
+      "type": "death",
+      "year": 1693,
+      "date": "5 IV 1693",
+      "place": "Rzecin",
+      "lat": 52.768333,
+      "lon": 16.2975,
+      "people": ["ewa-steinbornowa-bd"]
+    },
+    {
+      "id": "birth-jan-sztuba-1695",
+      "type": "birth",
+      "year": 1695,
+      "date": "15 VI 1695",
+      "place": "Wrzeszczyna",
+      "lat": 52.876944,
+      "lon": 16.239167,
+      "people": ["jan-sztuba-1695"]
+    },
+    {
+      "id": "birth-marianna-czekala-1694",
+      "type": "birth",
+      "year": 1694,
+      "date": "16 VI 1694",
+      "place": "Rosko",
+      "lat": 52.874444,
+      "lon": 16.316111,
+      "people": ["marianna-czekala-1694"]
+    },
+    {
+      "id": "death-marianna-czekala-1694",
+      "type": "death",
+      "year": 1763,
+      "date": "22 X 1763",
+      "place": "Rosko",
+      "lat": 52.874444,
+      "lon": 16.316111,
+      "people": ["marianna-czekala-1694"]
+    },
+    {
+      "id": "marriage-jan-sztuba-marianna-czekala-1721",
+      "type": "marriage",
+      "year": 1721,
+      "date": "2 II 1721",
+      "place": "Wieleń",
+      "lat": 52.888889,
+      "lon": 16.168056,
+      "people": ["jan-sztuba-1695", "marianna-czekala-1694"]
+    },  
+    {
+      "id": "birth-pawel-sztuba-1661",
+      "type": "birth",
+      "year": 1661,
+      "date": "19 I 1661",
+      "place": "Wrzeszczyna",
+      "lat": 52.876944,
+      "lon": 16.239167,
+      "people": ["pawel-sztuba-1661"]
+    },
+    {
+      "id": "death-pawel-sztuba-1722",
+      "type": "death",
+      "year": 1722,
+      "date": "17 I 1722",
+      "place": "Łokacz Wielki",
+      "lat": 52.875278,
+      "lon": 15.991667,
+      "people": ["pawel-sztuba-1661"]
+    },
+    {
+      "id": "birth-wojciech-stypa-1629",
+      "type": "birth",
+      "year": 1629,
+      "date": "11 III 1629",
+      "place": "Wieleń",
+      "lat": 52.876944,
+      "lon": 16.239167,
+      "people": ["wojciech-stypa-1629"]
+    },
+    {
+      "id": "birth-dorota-mach-1634",
+      "type": "birth",
+      "year": 1634,
+      "date": "25 I 1634",
+      "place": "Wrzeszczyna",
+      "lat": 52.876944,
+      "lon": 16.239167,
+      "people": ["dorota-mach-1634"]
+    },
+    {
+      "id": "marriage-wojciech-stypa-dorota-mach-1658",
+      "type": "marriage",
+      "year": 1658,
+      "date": "28 III 1658",
+      "place": "Wieleń",
+      "lat": 52.888889,
+      "lon": 16.168056,
+      "people": ["wojciech-stypa-1629", "dorota-mach-1634"]
+    },  
+    {
+      "id": "marriage-grzegorz-stypa-regina-wydrzyczka-1625",
+      "type": "marriage",
+      "year": 1625,
+      "date": "7 X 1625",
+      "place": "Wieleń",
+      "lat": 52.888889,
+      "lon": 16.168056,
+      "people": ["grzegorz-stypa-bd", "regina-wydrzyczka-bd"]
     }
   ]
 }
