@@ -15,6 +15,13 @@
       "line": "Sikora"
     },
     {
+      "id": "eugeniusz-markiewicz-1957",
+      "givenName": "Eugeniusz",
+      "surname": "Markiewicz",
+      "relation": "ojciec",
+      "line": "Markiewicz"
+    },
+    {
       "id": "marian-maciag-1937",
       "givenName": "Marian",
       "surname": "Maciąg",
@@ -1600,6 +1607,26 @@
       "lat": 52.888889,
       "lon": 16.168056,
       "people": ["jan-michalek-bd", "katarzyna-wocko-bd"]
+    },
+    {
+      "id": "birth-eugeniusz-markiewicz-1957",
+      "type": "birth",
+      "year": 1957,
+      "date": "10 VII 1957",
+      "place": "Brodna",
+      "lat": 53.1604,
+      "lon": 16.945647,
+      "people": ["eugeniusz-markiewicz-1957"]
+    },
+    {
+      "id": "death-eugeniusz-markiewicz-2020",
+      "type": "death",
+      "year": 2020,
+      "date": "28 IV 2020",
+      "place": "Piła",
+      "lat": 53.151389,
+      "lon": 16.738333,
+      "people": ["eugeniusz-markiewicz-1957"]
     }
   ]
 }
