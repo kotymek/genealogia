@@ -554,6 +554,34 @@
       "line": "Maciąg"
     },
     {
+      "id": "jan-pisarski-1812",
+      "givenName": "Jan",
+      "surname": "Pisarski",
+      "relation": "praprapradziadek",
+      "line": "Maciąg"
+    },
+    {
+      "id": "katarzyna-krepa-1832",
+      "givenName": "Katarzyna",
+      "surname": "Krępa",
+      "relation": "prapraprababcia",
+      "line": "Maciąg"
+    },
+    {
+      "id": "maciej-pisarski-1785",
+      "givenName": "Maciej",
+      "surname": "Pisarski",
+      "relation": "prapraprapradziadek",
+      "line": "Maciąg"
+    },
+    {
+      "id": "anna-kamieńska-1780",
+      "givenName": "Anna",
+      "surname": "Kamieńska",
+      "relation": "praprapraprababcia",
+      "line": "Maciąg"
+    },
+    {
       "id": "cecylia-kopec-1906",
       "givenName": "Cecylia",
       "surname": "Kopeć",
@@ -1904,6 +1932,76 @@
       "lat": 50.585833,
       "lon": 21.393056,
       "people": ["antoni-dygula-1758"]
+    },
+    {
+      "id": "birth-jan-pisarski-1812",
+      "type": "birth",
+      "year": 1812,
+      "date": "około 1812",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["jan-pisarski-1812"]
+    },
+    {
+      "id": "death-jan-pisarski-1873",
+      "type": "death",
+      "year": 1873,
+      "date": "13 XI 1873",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["jan-pisarski-1812"]
+    },
+    {
+      "id": "birth-katarzyna-krepa-1832",
+      "type": "birth",
+      "year": 1832,
+      "date": "20 XI 1832",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["katarzyna-krepa-1832"]
+    },
+    {
+      "id": "death-katarzyna-krepa-1903",
+      "type": "death",
+      "year": 1903,
+      "date": "26 XII 1903",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["katarzyna-krepa-1832"]
+    },
+    {
+      "id": "marriage-jan-pisarski-katarzyna-krepa-1861",
+      "type": "marriage",
+      "year": 1861,
+      "date": "15 VII 1861",
+      "place": "Wiązownica-Kolonia",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["jan-pisarski-1812", "katarzyna-krepa-1832"]
+    },
+    {
+      "id": "death-maciej-pisarski-1830",
+      "type": "death",
+      "year": 1830,
+      "date": "25 I 1830",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["maciej-pisarski-1785"]
+    },
+    {
+      "id": "death-anna-kamienska-1840",
+      "type": "death",
+      "year": 1840,
+      "date": "7 III 1840",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["anna-kamienska-1780"]
     }
   ]
 }
