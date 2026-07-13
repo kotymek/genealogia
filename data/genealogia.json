@@ -582,6 +582,48 @@
       "line": "Maciąg"
     },
     {
+      "id": "jan-krepa-1791",
+      "givenName": "Jan",
+      "surname": "Krępa",
+      "relation": "prapraprapradziadek",
+      "line": "Maciąg"
+    },
+    {
+      "id": "teresa-kedziorska-1812",
+      "givenName": "Teresa",
+      "surname": "Kędziorska",
+      "relation": "praprapraprababcia",
+      "line": "Maciąg"
+    },
+    {
+      "id": "szymon-kedziorski-1782",
+      "givenName": "Szymon",
+      "surname": "Kędziorski",
+      "relation": "praprapraprapradziadek",
+      "line": "Maciąg"
+    },
+    {
+      "id": "malgorzata-kos-1784",
+      "givenName": "Małgorzata",
+      "surname": "Kos",
+      "relation": "prapraprapraprababcia",
+      "line": "Maciąg"
+    },
+    {
+      "id": "teresa-kedziorska-bd",
+      "givenName": "Teresa",
+      "surname": "Kędziorska",
+      "relation": "praprapraprapraprababcia",
+      "line": "Maciąg"
+    },
+    {
+      "id": "bartlomiej-kos-1755",
+      "givenName": "Bartłomiej",
+      "surname": "Kos",
+      "relation": "prapraprapraprapradziadek",
+      "line": "Maciąg"
+    },
+    {
       "id": "cecylia-kopec-1906",
       "givenName": "Cecylia",
       "surname": "Kopeć",
@@ -2002,6 +2044,106 @@
       "lat": 50.585833,
       "lon": 21.393056,
       "people": ["anna-kamienska-1780"]
+    },
+    {
+      "id": "death-jan-krepa-1845",
+      "type": "death",
+      "year": 1845,
+      "date": "16 IV 1845",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["jan-krepa-1791"]
+    },
+    {
+      "id": "birth-teresa-kedziorska-1812",
+      "type": "birth",
+      "year": 1812,
+      "date": "14 IX 1812",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["teresa-kedziorska-1812"]
+    },
+    {
+      "id": "death-teresa-kedziorska-1876",
+      "type": "death",
+      "year": 1876,
+      "date": "29 XI 1876",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["teresa-kedziorska-1812"]
+    },
+    {
+      "id": "birth-szymon-kedziorski-1782",
+      "type": "birth",
+      "year": 1782,
+      "date": "około 1782",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["szymon-kedziorski-1782"]
+    },
+    {
+      "id": "death-szymon-kedziorski-1834",
+      "type": "death",
+      "year": 1834,
+      "date": "2 I 1834",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["szymon-kedziorski-1782"]
+    },
+    {
+      "id": "birth-malgorzata-kos-1784",
+      "type": "birth",
+      "year": 1784,
+      "date": "około 1784",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["malgorzata-kos-1784"]
+    },
+    {
+      "id": "death-malgorzata-kos-1814",
+      "type": "death",
+      "year": 1814,
+      "date": "9 X 1814",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["malgorzata-kos-1784"]
+    },
+    {
+      "id": "marriage-szymon-kedziorski-malgorzata-kos-1807",
+      "type": "marriage",
+      "year": 1807,
+      "date": "17 XI 1807",
+      "place": "Wiązownica-Kolonia",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["szymon-kedziorski-1782", "malgorzata-kos-1784"]
+    },
+    {
+      "id": "death-teresa-kedziorska-1815",
+      "type": "death",
+      "year": 1815,
+      "date": "11 II 1815",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["teresa-kedziorska-bd"]
+    },
+    {
+      "id": "death-bartlomiej-kos-1816",
+      "type": "death",
+      "year": 1816,
+      "date": "13 IV 1816",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["bartlomiej-kos-1755"]
     }
   ]
 }
