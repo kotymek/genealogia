@@ -895,6 +895,90 @@
       "surname": "Wylazłowska",
       "relation": "prababcia",
       "line": "Rugała"
+    },
+    {
+      "id": "pawel-rugala-1849",
+      "givenName": "Paweł",
+      "surname": "Rugała",
+      "relation": "prapradziadek",
+      "line": "Rugała"
+    },
+    {
+      "id": "magdalena-sadlocha-1858",
+      "givenName": "Magdalena",
+      "surname": "Sadłocha",
+      "relation": "praprababcia",
+      "line": "Rugała"
+    },
+    {
+      "id": "wawrzyniec-rugala-1825",
+      "givenName": "Wawrzyniec",
+      "surname": "Rugała",
+      "relation": "praprapradziadek",
+      "line": "Rugała"
+    },
+    {
+      "id": "zuzanna-zielinska-1824",
+      "givenName": "Zuzanna",
+      "surname": "Zielińska",
+      "relation": "prapraprababcia",
+      "line": "Rugała"
+    },
+    {
+      "id": "aleksander-rugala-1780",
+      "givenName": "Aleksander",
+      "surname": "Rugała",
+      "relation": "prapraprapradziadek",
+      "line": "Rugała"
+    },
+    {
+      "id": "lucja-pawelek-1790",
+      "givenName": "Łucja",
+      "surname": "Pawełek",
+      "relation": "praprapraprababcia",
+      "line": "Rugała"
+    },
+    {
+      "id": "baltazar-pawelek-1743",
+      "givenName": "Baltazar",
+      "surname": "Pawełek",
+      "relation": "praprapraprapradziadek",
+      "line": "Rugała"
+    },
+    {
+      "id": "malgorzata-hyla-1755",
+      "givenName": "Małgorzata",
+      "surname": "Hyla",
+      "relation": "prapraprapraprababcia",
+      "line": "Rugała"
+    },
+    {
+      "id": "jan-pawelek-1714",
+      "givenName": "Jan",
+      "surname": "Pawełek",
+      "relation": "prapraprapraprapradziadek",
+      "line": "Rugała"
+    },
+    {
+      "id": "zofia-bryk-1716",
+      "givenName": "Zofia",
+      "surname": "Bryk",
+      "relation": "praprapraprapraprababcia",
+      "line": "Rugała"
+    },
+    {
+      "id": "jakub-pawelek-bd",
+      "givenName": "Jakub",
+      "surname": "Pawełek",
+      "relation": "praprapraprapraprapradziadek",
+      "line": "Rugała"
+    },
+    {
+      "id": "andrzej-bryk-1689",
+      "givenName": "Andrzej",
+      "surname": "Bryk",
+      "relation": "praprapraprapraprapradziadek",
+      "line": "Rugała"
     }
   ],
   "events": [
@@ -2986,6 +3070,176 @@
       "lat": 50.585833,
       "lon": 21.393056,
       "people": ["sebastian-koziarz-1730"]
-    }
+    },
+   {
+      "id": "birth-pawel-rugala-1849",
+      "type": "birth",
+      "year": 1849,
+      "date": "14 I 1849",
+      "place": "Ruda",
+      "lat": 50.476111,
+      "lon": 21.240556,
+      "people": ["pawel-rugala-1849"]
+    }, 
+    {
+      "id": "death-pawel-rugala-1910",
+      "type": "death",
+      "year": 1910,
+      "date": "26 IX 1910",
+      "place": "Ruda",
+      "lat": 50.476111,
+      "lon": 21.240556,
+      "people": ["pawel-rugala-1849"]
+    }, 
+    {
+      "id": "birth-magdalena-sadlocha-1858",
+      "type": "birth",
+      "year": 1858,
+      "date": "8 V 1858",
+      "place": "Ruda",
+      "lat": 50.476111,
+      "lon": 21.240556,
+      "people": ["magdalena-sadlocha-1858"]
+    }, 
+    {
+      "id": "death-magdalena-sadlocha-1925",
+      "type": "death",
+      "year": 1925,
+      "date": "7 V 1925",
+      "place": "Ruda",
+      "lat": 50.476111,
+      "lon": 21.240556,
+      "people": ["magdalena-sadlocha-1858"]
+    },
+    {
+      "id": "marriage-pawel-rugala-magdalena-sadlocha-1878",
+      "type": "marriage",
+      "year": 1878,
+      "date": "20 VIII 1878",
+      "place": "Połaniec",
+      "lat": 50.432778,
+      "lon": 21.280278,
+      "people": ["pawel-rugala-1849", "magdalena-sadlocha-1858"]
+    }, 
+    {
+      "id": "birth-wawrzyniec-rugala-1825",
+      "type": "birth",
+      "year": 1825,
+      "date": "6 VIII 1825",
+      "place": "Ruda",
+      "lat": 50.476111,
+      "lon": 21.240556,
+      "people": ["wawrzyniec-rugala-1825"]
+    }, 
+    {
+      "id": "death-wawrzyniec-rugala-1892",
+      "type": "death",
+      "year": 1892,
+      "date": "3 XI 1892",
+      "place": "Ruda",
+      "lat": 50.476111,
+      "lon": 21.240556,
+      "people": ["wawrzyniec-rugala-1825"]
+    },
+    {
+      "id": "death-zuzanna-zielinska-1859",
+      "type": "death",
+      "year": 1859,
+      "date": "9 II 1859",
+      "place": "Ruda",
+      "lat": 50.476111,
+      "lon": 21.240556,
+      "people": ["zuzanna-zielinska-1824"]
+    }, 
+    {
+      "id": "death-aleksander-rugala-1840",
+      "type": "death",
+      "year": 1840,
+      "date": "30 I 1840",
+      "place": "Ruda",
+      "lat": 50.476111,
+      "lon": 21.240556,
+      "people": ["aleksander-rugala-1780"]
+    }, 
+    {
+      "id": "birth-lucja-pawelek-1790",
+      "type": "birth",
+      "year": 1790,
+      "date": "około 1790",
+      "place": "Ruda",
+      "lat": 50.476111,
+      "lon": 21.240556,
+      "people": ["lucja-pawelek-1790"]
+    }, 
+    {
+      "id": "death-lucja-pawelek-1852",
+      "type": "death",
+      "year": 1852,
+      "date": "29 VI 1852",
+      "place": "Ruda",
+      "lat": 50.476111,
+      "lon": 21.240556,
+      "people": ["lucja-pawelek-1790"]
+    }, 
+    {
+      "id": "death-baltazar-pawelek-1815",
+      "type": "death",
+      "year": 1815,
+      "date": "22 III 1815",
+      "place": "Ruda",
+      "lat": 50.476111,
+      "lon": 21.240556,
+      "people": ["baltazar-pawelek-1743"]
+    }, 
+    {
+      "id": "death-malgorzata-hyla-1815",
+      "type": "death",
+      "year": 1815,
+      "date": "19 IV 1815",
+      "place": "Ruda",
+      "lat": 50.476111,
+      "lon": 21.240556,
+      "people": ["malgorzata-hyla-1755"]
+    }, 
+    {
+      "id": "birth-jan-pawelek-1714",
+      "type": "birth",
+      "year": 1714,
+      "date": "27 XII 1714",
+      "place": "Ruda",
+      "lat": 50.476111,
+      "lon": 21.240556,
+      "people": ["jan-pawelek-1714"]
+    }, 
+    {
+      "id": "birth-zofia-bryk-1716",
+      "type": "birth",
+      "year": 1716,
+      "date": "15 IV 1716",
+      "place": "Kłoda",
+      "lat": 50.497778,
+      "lon": 21.228333,
+      "people": ["zofia-bryk-1716"]
+    }, 
+    {
+      "id": "death-jakub-pawelek-1731",
+      "type": "death",
+      "year": 1731,
+      "date": "21 III 1731",
+      "place": "Ruda",
+      "lat": 50.476111,
+      "lon": 21.240556,
+      "people": ["jakub-pawelek-bd"]
+    }, 
+    {
+      "id": "birth-andrzej-bryk-1689",
+      "type": "birth",
+      "year": 1689,
+      "date": "12 XI 1689",
+      "place": "Kłoda",
+      "lat": 50.497778,
+      "lon": 21.228333,
+      "people": ["andrzej-bryk-1689"]
+    } 
   ]
 }
