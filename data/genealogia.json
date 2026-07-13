@@ -1686,6 +1686,16 @@
       "people": ["jan-michalek-bd", "katarzyna-wocko-bd"]
     },
     {
+      "id": "death-jan-michalek-1871",
+      "type": "death",
+      "year": 1871,
+      "date": "19 III 1871",
+      "place": "Pęckowo",
+      "lat": 52.836667,
+      "lon": 16.087222,
+      "people": ["jan-michalek-bd"]
+    },
+    {
       "id": "birth-eugeniusz-markiewicz-1957",
       "type": "birth",
       "year": 1957,
