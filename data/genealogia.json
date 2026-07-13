@@ -806,6 +806,83 @@
       "line": "Maciąg"
     },
     {
+      "id": "wawrzyniec-jonca-1826",
+      "givenName": "Wawrzyniec",
+      "surname": "Jońca",
+      "relation": "prapraprapradziadek",
+      "line": "Maciąg"
+    },
+    {
+      "id": "agnieszka-cieslik-1828",
+      "givenName": "Agnieszka",
+      "surname": "Cieślik",
+      "relation": "praprapraprababcia",
+      "line": "Maciąg"
+    },
+    {
+      "id": "tomasz-jonca-1772",
+      "givenName": "Tomasz",
+      "surname": "Jońca",
+      "relation": "praprapraprapradziadek",
+      "line": "Maciąg"
+    },
+    {
+      "id": "agnieszka-czosnek-1785",
+      "givenName": "Agnieszka",
+      "surname": "Czosnek",
+      "relation": "prapraprapraprababcia",
+      "line": "Maciąg"
+    },
+    {
+      "id": "stanislaw-cieslik-1798",
+      "givenName": "Stanisław",
+      "surname": "Cieślik",
+      "relation": "praprapraprapradziadek",
+      "line": "Maciąg"
+    },
+    {
+      "id": "zofia-drozd-1800",
+      "givenName": "Zofia",
+      "surname": "Drozd",
+      "relation": "prapraprapraprababcia",
+      "line": "Maciąg"
+    },
+    {
+      "id": "antoni-cieslik-1738",
+      "givenName": "Antoni",
+      "surname": "Cieślik",
+      "relation": "prapraprapraprapradziadek",
+      "line": "Maciąg"
+    },
+    {
+      "id": "zofia-bednarczyk-1766",
+      "givenName": "Zofia",
+      "surname": "Bednarczyk",
+      "relation": "praprapraprapraprababcia",
+      "line": "Maciąg"
+    },
+    {
+      "id": "walenty-drozd-1758",
+      "givenName": "Walenty",
+      "surname": "Drozd",
+      "relation": "prapraprapraprapradziadek",
+      "line": "Maciąg"
+    },
+    {
+      "id": "marianna-koziarz-1770",
+      "givenName": "Marianna",
+      "surname": "Koziarz",
+      "relation": "praprapraprapraprababcia",
+      "line": "Maciąg"
+    },
+    {
+      "id": "sebastian-koziarz-1730",
+      "givenName": "Sebastian",
+      "surname": "Koziarz",
+      "relation": "praprapraprapraprapradziadek",
+      "line": "Maciąg"
+    },
+    {
       "id": "jan-rugala-1896",
       "givenName": "Jan",
       "surname": "Rugała",
@@ -2749,6 +2826,166 @@
       "lat": 50.578889,
       "lon": 21.421389,
       "people": ["agata-stawiarz-1806"]
+    },
+    {
+      "id": "birth-wawrzyniec-jonca-1826",
+      "type": "birth",
+      "year": 1826,
+      "date": "13 VIII 1826",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["wawrzyniec-jonca-1826"]
+    },
+    {
+      "id": "death-wawrzyniec-jonca-1900",
+      "type": "death",
+      "year": 1900,
+      "date": "28 X 1900",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["wawrzyniec-jonca-1826"]
+    },
+    {
+      "id": "birth-agnieszka-cieslik-1828",
+      "type": "birth",
+      "year": 1828,
+      "date": "14 I 1828",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["agnieszka-cieslik-1828"]
+    },
+    {
+      "id": "death-agnieszka-cieslik-1901",
+      "type": "death",
+      "year": 1901,
+      "date": "13 II 1901",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["agnieszka-cieslik-1828"]
+    },
+    {
+      "id": "death-tomasz-jonca-1842",
+      "type": "death",
+      "year": 1842,
+      "date": "17 IX 1842",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["tomasz-jonca-1772"]
+    },
+    {
+      "id": "birth-agnieszka-czosnek-1785",
+      "type": "birth",
+      "year": 1785,
+      "date": "około 1785",
+      "place": "Suchowola",
+      "lat": 50.536111,
+      "lon": 21.404444,
+      "people": ["agnieszka-czosnek-1785"]
+    },
+    {
+      "id": "death-agnieszka-czosnek-1841",
+      "type": "death",
+      "year": 1841,
+      "date": "18 XI 1841",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["agnieszka-czosnek-1785"]
+    },
+    {
+      "id": "birth-stanislaw-cieslik-1798",
+      "type": "birth",
+      "year": 1798,
+      "date": "8 V 1798",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["stanislaw-cieslik-1798"]
+    },
+    {
+      "id": "death-stanislaw-cieslik-1855",
+      "type": "birth",
+      "year": 1855,
+      "date": "7 V 1855",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["stanislaw-cieslik-1798"]
+    },
+    {
+      "id": "birth-zofia-drozd-1800",
+      "type": "birth",
+      "year": 1800,
+      "date": "około 1800",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["zofia-drozd-1800"]
+    }, 
+    {
+      "id": "death-zofia-drozd-1887",
+      "type": "death",
+      "year": 1887,
+      "date": "5 X 1887",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["zofia-drozd-1800"]
+    }, 
+    {
+      "id": "death-antoni-cieslik-1819",
+      "type": "death",
+      "year": 1819,
+      "date": "3 X 1819",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["antoni-cieslik-1738"]
+    },
+    {
+      "id": "death-zofia-bednarczyk-1841",
+      "type": "death",
+      "year": 1841,
+      "date": "6 III 1841",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["zofia-bednarczyk-1766"]
+    },
+    {
+      "id": "death-walenty-drozd-1824",
+      "type": "death",
+      "year": 1824,
+      "date": "20 V 1824",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["walenty-drozd-1758"]
+    }, 
+    {
+      "id": "death-marianna-koziarz-1811",
+      "type": "death",
+      "year": 1811,
+      "date": "2 III 1811",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["marianna-koziarz-1770"]
+    }, 
+    {
+      "id": "death-sebastian-koziarz-1802",
+      "type": "death",
+      "year": 1802,
+      "date": "28 X 1802",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["sebastian-koziarz-1730"]
     }
   ]
 }
