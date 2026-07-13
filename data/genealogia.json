@@ -477,6 +477,83 @@
       "line": "Maciąg"
     },
     {
+      "id": "franciszek-maciag-1870",
+      "givenName": "Franciszek Ksawery",
+      "surname": "Maciąg",
+      "relation": "prapradziadek",
+      "line": "Maciąg"
+    },
+    {
+      "id": "katarzyna-pisarska-1863",
+      "givenName": "Katarzyna",
+      "surname": "Pisarska",
+      "relation": "praprababcia",
+      "line": "Maciąg"
+    },
+    {
+      "id": "walenty-maciag-1837",
+      "givenName": "Walenty",
+      "surname": "Maciąg",
+      "relation": "praprapradziadek",
+      "line": "Maciąg"
+    },
+    {
+      "id": "julianna-stasiak-1844",
+      "givenName": "Julianna",
+      "surname": "Stasiak",
+      "relation": "prapraprababcia",
+      "line": "Maciąg"
+    },
+    {
+      "id": "wojciech-maciag-1756",
+      "givenName": "Wojciech",
+      "surname": "Maciąg",
+      "relation": "praprapraprapradziadek",
+      "line": "Maciąg"
+    },
+    {
+      "id": "kunegunda-chochoł-1763",
+      "givenName": "Kunegunda",
+      "surname": "Chochoł",
+      "relation": "prapraprapraprababcia",
+      "line": "Maciąg"
+    },
+    {
+      "id": "sebastian-chochoł-bd",
+      "givenName": "Sebastian",
+      "surname": "Chochoł",
+      "relation": "prapraprapraprapradziadek",
+      "line": "Maciąg"
+    },
+    {
+      "id": "jan-stasiak-1809",
+      "givenName": "Jan",
+      "surname": "Stasiak",
+      "relation": "prapraprapradziadek",
+      "line": "Maciąg"
+    },
+    {
+      "id": "katarzyna-dygula-1809",
+      "givenName": "Katarzyna",
+      "surname": "Dyguła",
+      "relation": "praprapraprababcia",
+      "line": "Maciąg"
+    },
+    {
+      "id": "antoni-dygula-1758",
+      "givenName": "Antoni",
+      "surname": "Dyguła",
+      "relation": "praprapraprapradziadek",
+      "line": "Maciąg"
+    },
+    {
+      "id": "magdalena-gawlak-1782",
+      "givenName": "Magdalena",
+      "surname": "Gawlak",
+      "relation": "prapraprapraprababcia",
+      "line": "Maciąg"
+    },
+    {
       "id": "cecylia-kopec-1906",
       "givenName": "Cecylia",
       "surname": "Kopeć",
@@ -1627,6 +1704,196 @@
       "lat": 53.151389,
       "lon": 16.738333,
       "people": ["eugeniusz-markiewicz-1957"]
-    }
+    },
+    {
+      "id": "birth-franciszek-maciag-1870",
+      "type": "birth",
+      "year": 1870,
+      "date": "23 XI 1870",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["franciszek-maciag-1870"]
+    },
+    {
+      "id": "birth-katarzyna-pisarska-1863",
+      "type": "birth",
+      "year": 1863,
+      "date": "21 XI 1863",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["katarzyna-pisarska-1863"]
+    },
+    {
+      "id": "death-katarzyna-pisarska-1926",
+      "type": "death",
+      "year": 1926,
+      "date": "25 XII 1926",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["katarzyna-pisarska-1863"]
+    },
+    {
+      "id": "marriage-franciszek-maciag-katarzyna-pisarska-1896",
+      "type": "marriage",
+      "year": 1896,
+      "date": "9 II 1896",
+      "place": "Wiązownica-Kolonia",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["franciszek-maciag-1870", "katarzyna-pisarska-1863"]
+    },
+    {
+      "id": "birth-walenty-maciag-1837",
+      "type": "birth",
+      "year": 1837,
+      "date": "6 II 1837",
+      "place": "Bazów",
+      "lat": 50.595,
+      "lon": 21.448056,
+      "people": ["walenty-maciag-1837"]
+    },
+    {
+      "id": "death-walenty-maciag-1883",
+      "type": "birth",
+      "year": 1883,
+      "date": "3 I 1883",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["walenty-maciag-1837"]
+    },
+    {
+      "id": "birth-julianna-stasiak-1844",
+      "type": "birth",
+      "year": 1844,
+      "date": "13 I 1844",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["julianna-stasiak-1844"]
+    },
+    {
+      "id": "death-julianna-stasiak-1881",
+      "type": "death",
+      "year": 1881,
+      "date": "10 XI 1881",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["julianna-stasiak-1844"]
+    },
+    {
+      "id": "marriage-walenty-maciag-julianna-stasiak-1868",
+      "type": "marriage",
+      "year": 1868,
+      "date": "18 XI 1868",
+      "place": "Wiązownica-Kolonia",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["walenty-maciag-1837", "julianna-stasiak-1844"]
+    },
+    {
+      "id": "birth-wojciech-maciag-1756",
+      "type": "birth",
+      "year": 1756,
+      "date": "około 1756",
+      "place": "Bazów",
+      "lat": 50.595,
+      "lon": 21.448056,
+      "people": ["wojciech-maciag-1756"]
+    },
+    {
+      "id": "birth-kunegunda-chochol-1763",
+      "type": "birth",
+      "year": 1763,
+      "date": "około 1763",
+      "place": "Królewice",
+      "lat": 50.593056,
+      "lon": 21.425833,
+      "people": ["kunegunda-chochol-1763"]
+    },
+    {
+      "id": "marriage-walenty-maciag-kunegunda-chochol-1763",
+      "type": "marriage",
+      "year": 1780,
+      "date": "23 I 1780",
+      "place": "Sulisławice",
+      "lat": 50.586389,
+      "lon": 21.468889,
+      "people": ["wojciech-maciag-1756", "kunegunda-chochol-1763"]
+    },
+    {
+      "id": "death-sebastian-chochol-1793",
+      "type": "death",
+      "year": 1793,
+      "date": "10 IV 1793",
+      "place": "Królewice",
+      "lat": 50.593056,
+      "lon": 21.425833,
+      "people": ["sebastian-chochol-bd"]
+    },
+    {
+      "id": "birth-jan-stasiak-1809",
+      "type": "birth",
+      "year": 1809,
+      "date": "około 1809",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["jan-stasiak-1809"]
+    },
+    {
+      "id": "death-jan-stasiak-1858",
+      "type": "death",
+      "year": 1858,
+      "date": "23 I 1858",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["jan-stasiak-1809"]
+    },
+    {
+      "id": "birth-katarzyna-dygula-1809",
+      "type": "birth",
+      "year": 1809,
+      "date": "około 1809",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["katarzyna-dygula-1809"]
+    },
+    {
+      "id": "death-katarzyna-dygula-1858",
+      "type": "death",
+      "year": 1858,
+      "date": "21 I 1858",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["katarzyna-dygula-1809"]
+    },
+    {
+      "id": "birth-antoni-dygula-1758",
+      "type": "birth",
+      "year": 1758,
+      "date": "około 1758",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["antoni-dygula-1758"]
+    },
+    {
+      "id": "death-antoni-dygula-1828",
+      "type": "death",
+      "year": 1828,
+      "date": "18 VI 1828",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["antoni-dygula-1758"]
+    },
   ]
 }
