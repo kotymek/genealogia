@@ -631,6 +631,181 @@
       "line": "Maciąg"
     },
     {
+      "id": "julian-kopciowski-1872",
+      "givenName": "Julian Szczepan",
+      "surname": "Kopciowski",
+      "relation": "prapradziadek",
+      "line": "Maciąg"
+    },
+    {
+      "id": "marianna-kwiecien-1869",
+      "givenName": "Marianna",
+      "surname": "Kwiecień",
+      "relation": "praprababcia",
+      "line": "Maciąg"
+    },
+    {
+      "id": "andrzej-kopciowski-1851",
+      "givenName": "Andrzej",
+      "surname": "Kopciowski",
+      "relation": "praprapradziadek",
+      "line": "Maciąg"
+    },
+    {
+      "id": "julianna-salwicka-1837",
+      "givenName": "Julianna",
+      "surname": "Sałwicka",
+      "relation": "prapraprababcia",
+      "line": "Maciąg"
+    },
+    {
+      "id": "piotr-kopciowski-1824",
+      "givenName": "Piotr Paweł",
+      "surname": "Kopciowski",
+      "relation": "prapraprapradziadek",
+      "line": "Maciąg"
+    },
+    {
+      "id": "rozalia-lipiec-1829",
+      "givenName": "Rozalia",
+      "surname": "Lipiec",
+      "relation": "praprapraprababcia",
+      "line": "Maciąg"
+    },
+    {
+      "id": "wojciech-kopciowski-1792",
+      "givenName": "Wojciech",
+      "surname": "Kopciowski",
+      "relation": "praprapraprapradziadek",
+      "line": "Maciąg"
+    },
+    {
+      "id": "julianna-kotlarska-1801",
+      "givenName": "Julianna",
+      "surname": "Kotlarska",
+      "relation": "prapraprapraprababcia",
+      "line": "Maciąg"
+    },
+    {
+      "id": "mikolaj-kopciowski-1770",
+      "givenName": "Mikołaj",
+      "surname": "Kopciowski",
+      "relation": "prapraprapraprapradziadek",
+      "line": "Maciąg"
+    },
+    {
+      "id": "franciszka-wegrzynowska-1770",
+      "givenName": "Franciszka",
+      "surname": "Węgrzynowska",
+      "relation": "praprapraprapraprababcia",
+      "line": "Maciąg"
+    },
+    {
+      "id": "jan-wegrzynowski-1754",
+      "givenName": "Jan",
+      "surname": "Węgrzynowski",
+      "relation": "praprapraprapraprapradziadek",
+      "line": "Maciąg"
+    },
+    {
+      "id": "agnieszka-wegrzynowska-1754",
+      "givenName": "Franciszka",
+      "surname": "Węgrzynowska",
+      "relation": "prapraprapraprapraprababcia",
+      "line": "Maciąg"
+    },
+    {
+      "id": "piotr-kotlarski-1757",
+      "givenName": "Julianna",
+      "surname": "Kotlarski",
+      "relation": "prapraprapraprapradziadek",
+      "line": "Maciąg"
+    },
+    {
+      "id": "marianna-kedziorska-1760",
+      "givenName": "Marianna",
+      "surname": "Kędziorska",
+      "relation": "praprapraprapraprababcia",
+      "line": "Maciąg"
+    },
+    {
+      "id": "walenty-lipiec-1800",
+      "givenName": "Walenty",
+      "surname": "Lipiec",
+      "relation": "praprapraprapradziadek",
+      "line": "Maciąg"
+    },
+    {
+      "id": "marianna-szczepanowska-1800",
+      "givenName": "Marianna",
+      "surname": "Szczepanowska",
+      "relation": "prapraprapraprababcia",
+      "line": "Maciąg"
+    },
+    {
+      "id": "sebastian-szczepanowski-bd",
+      "givenName": "Sebastian",
+      "surname": "Szczepanowski",
+      "relation": "prapraprapraprapradziadek",
+      "line": "Maciąg"
+    },
+    {
+      "id": "salomea-szczepanowska-1774",
+      "givenName": "Salomea",
+      "surname": "Szczepanowska",
+      "relation": "praprapraprapraprababcia",
+      "line": "Maciąg"
+    },
+    {
+      "id": "jan-salwicki-1800",
+      "givenName": "Jan",
+      "surname": "Sałwicki",
+      "relation": "prapraprapradziadek",
+      "line": "Maciąg"
+    },
+    {
+      "id": "jozefa-bilska-1816",
+      "givenName": "Józefa",
+      "surname": "Bilska",
+      "relation": "praprapraprababcia",
+      "line": "Maciąg"
+    },
+    {
+      "id": "marianna-salwicka-1765",
+      "givenName": "Marianna",
+      "surname": "Sałwicka",
+      "relation": "prapraprapraprababcia",
+      "line": "Maciąg"
+    },
+    {
+      "id": "wincenty-kwiecien-1840",
+      "givenName": "Wincenty",
+      "surname": "Kwiecień",
+      "relation": "praprapradziadek",
+      "line": "Maciąg"
+    },
+    {
+      "id": "katarzyna-jonca-1849",
+      "givenName": "Katarzyna",
+      "surname": "Jońca",
+      "relation": "prapraprababcia",
+      "line": "Maciąg"
+    },
+    {
+      "id": "jacenty-kwiecien-1805",
+      "givenName": "Jacenty",
+      "surname": "Kwiecień",
+      "relation": "prapraprapradziadek",
+      "line": "Maciąg"
+    },
+    {
+      "id": "agata-stawiarz-1806",
+      "givenName": "Agata",
+      "surname": "Stawiarz",
+      "relation": "praprapraprababcia",
+      "line": "Maciąg"
+    },
+    {
       "id": "jan-rugala-1896",
       "givenName": "Jan",
       "surname": "Rugała",
@@ -2144,6 +2319,436 @@
       "lat": 50.585833,
       "lon": 21.393056,
       "people": ["bartlomiej-kos-1755"]
+    },
+    {
+      "id": "birth-julian-kopciowski-1872",
+      "type": "birth",
+      "year": 1872,
+      "date": "31 XII 1872",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["julian-kopciowski-1872"]
+    },
+    {
+      "id": "death-julian-kopciowski-1918",
+      "type": "death",
+      "year": 1918,
+      "date": "16 IV 1918",
+      "place": "Staszów",
+      "lat": 50.565,
+      "lon": 21.166944,
+      "people": ["julian-kopciowski-1872"]
+    },
+    {
+      "id": "birth-marianna-kwiecien-1869",
+      "type": "birth",
+      "year": 1869,
+      "date": "29 XII 1869",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["marianna-kwiecien-1869"]
+    },
+    {
+      "id": "death-marianna-kwiecien-1934",
+      "type": "death",
+      "year": 1934,
+      "date": "20 XII 1934",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["marianna-kwiecien-1869"]
+    },
+    {
+      "id": "marriage-julian-kopciowski-marianna-kwiecien-1895",
+      "type": "marriage",
+      "year": 1895,
+      "date": "20 II 1895",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["julian-kopciowski-1872", "marianna-kwiecien-1869"]
+    },
+    {
+      "id": "birth-andrzej-kopciowski-1851",
+      "type": "birth",
+      "year": 1851,
+      "date": "29 XI 1851",
+      "place": "Zdzieci",
+      "lat": 50.421111,
+      "lon": 21.223611,
+      "people": ["andrzej-kopciowski-1851"]
+    },
+    {
+      "id": "death-andrzej-kopciowski-1931",
+      "type": "death",
+      "year": 1931,
+      "date": "17 XII 1931",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["andrzej-kopciowski-1851"]
+    },
+    {
+      "id": "birth-julianna-salwicka-1837",
+      "type": "birth",
+      "year": 1837,
+      "date": "7 VI 1837",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["julianna-salwicka-1837"]
+    },
+    {
+      "id": "death-julianna-salwicka-1907",
+      "type": "death",
+      "year": 1907,
+      "date": "24 II 1907",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["julianna-salwicka-1837"]
+    },
+    {
+      "id": "marriage-andrzej-kopciowski-julianna-salwicka-1872",
+      "type": "marriage",
+      "year": 1872,
+      "date": "10 VII 1872",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["andrzej-kopciowski-1851", "julianna-salwicka-1837"]
+    },
+    {
+      "id": "birth-piotr-kopciowski-1824",
+      "type": "birth",
+      "year": 1824,
+      "date": "25 VI 1824",
+      "place": "Osiek",
+      "lat": 50.520556,
+      "lon": 21.442778,
+      "people": ["piotr-kopciowski-1824"]
+    },
+    {
+      "id": "death-piotr-kopciowski-1891",
+      "type": "death",
+      "year": 1891,
+      "date": "11 IV 1891",
+      "place": "Osiek",
+      "lat": 50.520556,
+      "lon": 21.442778,
+      "people": ["piotr-kopciowski-1824"]
+    },
+    {
+      "id": "birth-rozalia-lipiec-1829",
+      "type": "birth",
+      "year": 1829,
+      "date": "17 VIII 1829",
+      "place": "Strzegom",
+      "lat": 50.513889,
+      "lon": 21.323889,
+      "people": ["rozalia-lipiec-1829"]
+    },
+    {
+      "id": "death-rozalia-lipiec-1882",
+      "type": "death",
+      "year": 1882,
+      "date": "20 XII 1882",
+      "place": "Osiek",
+      "lat": 50.520556,
+      "lon": 21.442778,
+      "people": ["rozalia-lipiec-1829"]
+    },
+    {
+      "id": "marriage-piotr-kopciowski-rozalia-lipiec-1847",
+      "type": "marriage",
+      "year": 1847,
+      "date": "17 XI 1847",
+      "place": "Strzegom",
+      "lat": 50.513889,
+      "lon": 21.323889,
+      "people": ["piotr-kopciowski-1824", "rozalia-lipiec-1829"]
+    }, 
+    {
+      "id": "death-wojciech-kopciowski-1862",
+      "type": "death",
+      "year": 1862,
+      "date": "11 IV 1862",
+      "place": "Osiek",
+      "lat": 50.520556,
+      "lon": 21.442778,
+      "people": ["wojciech-kopciowski-1792"]
+    },
+    {
+      "id": "death-julianna-kotlarska-1849",
+      "type": "death",
+      "year": 1849,
+      "date": "2 I 1849",
+      "place": "Osiek",
+      "lat": 50.520556,
+      "lon": 21.442778,
+      "people": ["julianna-kotlarska-1801"]
+    },
+    {
+      "id": "death-mikolaj-kopciowski-1830",
+      "type": "death",
+      "year": 1830,
+      "date": "16 II 1830",
+      "place": "Osiek",
+      "lat": 50.520556,
+      "lon": 21.442778,
+      "people": ["mikolaj-kopciowski-1770"]
+    },
+    {
+      "id": "death-franciszka-wegrzynowska-1850",
+      "type": "death",
+      "year": 1850,
+      "date": "17 X 1850",
+      "place": "Osiek",
+      "lat": 50.520556,
+      "lon": 21.442778,
+      "people": ["franciszka-wegrzynowska-1770"]
+    },
+    {
+      "id": "death-jan-wegrzynowski-1812",
+      "type": "death",
+      "year": 1812,
+      "date": "9 IV 1812",
+      "place": "Osiek",
+      "lat": 50.520556,
+      "lon": 21.442778,
+      "people": ["jan-wegrzynowski-1754"]
+    },
+    {
+      "id": "death-agnieszka-wegrzynowska-1824",
+      "type": "death",
+      "year": 1824,
+      "date": "12 XI 1824",
+      "place": "Osiek",
+      "lat": 50.520556,
+      "lon": 21.442778,
+      "people": ["agnieszka-wegrzynowska-1754"]
+    },
+    {
+      "id": "death-piotr-kotlarski-1815",
+      "type": "death",
+      "year": 1815,
+      "date": "15 V 1815",
+      "place": "Osiek",
+      "lat": 50.520556,
+      "lon": 21.442778,
+      "people": ["piotr-kotlarski-1757"]
+    },
+    {
+      "id": "death-marianna-kedziorska-1830",
+      "type": "death",
+      "year": 1830,
+      "date": "21 I 1830",
+      "place": "Osiek",
+      "lat": 50.520556,
+      "lon": 21.442778,
+      "people": ["marianna-kedziorska-1760"]
+    },
+    {
+      "id": "birth-walenty-lipiec-1800",
+      "type": "birth",
+      "year": 1800,
+      "date": "16 II 1800",
+      "place": "Strzegom",
+      "lat": 50.513889,
+      "lon": 21.323889,
+      "people": ["walenty-lipiec-1800"]
+    },
+    {
+      "id": "death-walenty-lipiec-1871",
+      "type": "death",
+      "year": 1871,
+      "date": "17 II 1871",
+      "place": "Strzegom",
+      "lat": 50.513889,
+      "lon": 21.323889,
+      "people": ["walenty-lipiec-1800"]
+    },
+    {
+      "id": "birth-marianna-szczepanowska-1800",
+      "type": "birth",
+      "year": 1800,
+      "date": "15 V 1800",
+      "place": "Strzegom",
+      "lat": 50.513889,
+      "lon": 21.323889,
+      "people": ["marianna-szczepanowska-1800"]
+    },  
+    {
+      "id": "death-marianna-szczepanowska-1867",
+      "type": "death",
+      "year": 1867,
+      "date": "1 IV 1867",
+      "place": "Strzegom",
+      "lat": 50.513889,
+      "lon": 21.323889,
+      "people": ["marianna-szczepanowska-1800"]
+    },  
+    {
+      "id": "marriage-walenty-lipiec-marianna-szczepanowska-1822",
+      "type": "marriage",
+      "year": 1822,
+      "date": "28 X 1822",
+      "place": "Strzegom",
+      "lat": 50.513889,
+      "lon": 21.323889,
+      "people": ["piotr-kopciowski-1824", "marianna-szczepanowska-1800"]
+    }, 
+    {
+      "id": "death-sebastian-szczepanowski-1827",
+      "type": "death",
+      "year": 1827,
+      "date": "16 II 1827",
+      "place": "Strzegom",
+      "lat": 50.513889,
+      "lon": 21.323889,
+      "people": ["sebastian-szczepanowski-bd"]
+    },  
+    {
+      "id": "death-salomea-szczepanowska-1814",
+      "type": "death",
+      "year": 1814,
+      "date": "10 V 1814",
+      "place": "Strzegom",
+      "lat": 50.513889,
+      "lon": 21.323889,
+      "people": ["salomea-szczepanowska-1774"]
+    },  
+    {
+      "id": "birth-jan-salwicki-1800",
+      "type": "birth",
+      "year": 1800,
+      "date": "około 1800",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["jan-salwicki-1800"]
+    },
+    {
+      "id": "death-jan-salwicki-1854",
+      "type": "death",
+      "year": 1854,
+      "date": "6 V 1854",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["jan-salwicki-1800"]
+    },
+    {
+      "id": "birth-jozefa-bilska-1814",
+      "type": "birth",
+      "year": 1814,
+      "date": "około 1814",
+      "place": "Nowa Wieś",
+      "lat": 50.651944,
+      "lon": 21.410556,
+      "people": ["jozefa-bilska-1814"]
+    },
+    {
+      "id": "death-jozefa-bilska-1887",
+      "type": "death",
+      "year": 1887,
+      "date": "9 I 1887",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["jozefa-bilska-1814"]
+    },
+    {
+      "id": "marriage-jan-salwicki-jozefa-bilska-1832",
+      "type": "marriage",
+      "year": 1832,
+      "date": "4 VI 1832",
+      "place": "Goźlice",
+      "lat": 50.696389,
+      "lon": 21.476389,
+      "people": ["jan-salwicki-1800", "jozefa-bilska-1814"]
+    }, 
+    {
+      "id": "death-marianna-salwicka-1830",
+      "type": "death",
+      "year": 1830,
+      "date": "8 XII 1830",
+      "place": "Szymanowice Dolne",
+      "lat": 50.633611,
+      "lon": 21.435556,
+      "people": ["marianna-salwicka-1765"]
+    },
+    {
+      "id": "birth-wincenty-kwiecien-1840",
+      "type": "birth",
+      "year": 1840,
+      "date": "16 XII 1840",
+      "place": "Bukowa",
+      "lat": 50.578889,
+      "lon": 21.421389,
+      "people": ["wincenty-kwiecien-1840"]
+    },
+    {
+      "id": "death-wincenty-kwiecien-1873",
+      "type": "death",
+      "year": 1873,
+      "date": "27 XII 1873",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["wincenty-kwiecien-1840"]
+    },
+    {
+      "id": "birth-katarzyna-jonca-1849",
+      "type": "birth",
+      "year": 1849,
+      "date": "18 XI 1849",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["katarzyna-jonca-1849"]
+    },
+    {
+      "id": "death-katarzyna-jonca-1912",
+      "type": "death",
+      "year": 1912,
+      "date": "14 V 1912",
+      "place": "Wiązownica",
+      "lat": 50.585833,
+      "lon": 21.393056,
+      "people": ["katarzyna-jonca-1849"]
+    },
+    {
+      "id": "death-jacenty-kwiecien-1877",
+      "type": "death",
+      "year": 1877,
+      "date": "29 X 1877",
+      "place": "Bukowa",
+      "lat": 50.578889,
+      "lon": 21.421389,
+      "people": ["jacenty-kwiecien-1805"]
+    },
+    {
+      "id": "birth-agata-stawiarz-1806",
+      "type": "birth",
+      "year": 1806,
+      "date": "2 II 1806",
+      "place": "Bukowa",
+      "lat": 50.578889,
+      "lon": 21.421389,
+      "people": ["agata-stawiarz-1806"]
+    },
+    {
+      "id": "death-agata-stawiarz-1875",
+      "type": "death",
+      "year": 1875,
+      "date": "23 I 1875",
+      "place": "Bukowa",
+      "lat": 50.578889,
+      "lon": 21.421389,
+      "people": ["agata-stawiarz-1806"]
     }
   ]
 }
