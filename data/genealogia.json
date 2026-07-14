@@ -1217,6 +1217,62 @@
       "surname": "Klenczak",
       "relation": "prapraprababcia",
       "line": "Rugała"
+    },
+    {
+      "id": "wincenty-rejment-1794",
+      "givenName": "Wincenty",
+      "surname": "Rejment",
+      "relation": "prapraprapradziadek",
+      "line": "Rugała"
+    },
+    {
+      "id": "franciszka-szuba-1803",
+      "givenName": "Franciszka",
+      "surname": "Szuba",
+      "relation": "praprapraprababcia",
+      "line": "Rugała"
+    },
+    {
+      "id": "joachim-rejment-1766",
+      "givenName": "Joachim",
+      "surname": "Rejment",
+      "relation": "praprapraprapradziadek",
+      "line": "Rugała"
+    },
+    {
+      "id": "franciszka-rejmentowa-1747",
+      "givenName": "Franciszka",
+      "surname": "Rejmentowa",
+      "relation": "praprapraprapraprababcia",
+      "line": "Rugała"
+    },
+    {
+      "id": "jan-szuba-1772",
+      "givenName": "Jan",
+      "surname": "Szuba",
+      "relation": "praprapraprapradziadek",
+      "line": "Rugała"
+    },
+    {
+      "id": "katarzyna-orlańska-1777",
+      "givenName": "Katarzyna",
+      "surname": "Orlańska",
+      "relation": "prapraprapraprababcia",
+      "line": "Rugała"
+    },
+    {
+      "id": "jan-klenczak-1797",
+      "givenName": "Jan",
+      "surname": "Klenczak",
+      "relation": "prapraprapradziadek",
+      "line": "Rugała"
+    },
+     {
+      "id": "petronella-radomska-1797",
+      "givenName": "Petronella",
+      "surname": "Radomska",
+      "relation": "praprapraprababcia",
+      "line": "Rugała"
     }
   ],
   "events": [
@@ -4008,6 +4064,76 @@
       "lat": 50.7725,
       "lon": 20.573611,
       "people": ["franciszek-rejment-1827", "magdalena-klenczak-1831"]
+    },
+    {
+      "id": "death-wincenty-rejment-1847",
+      "type": "death",
+      "year": 1847,
+      "date": "1 II 1847",
+      "place": "Wola Morawicka",
+      "lat": 50.733889,
+      "lon": 20.639722,
+      "people": ["wincenty-rejment-1794"]
+    },
+    {
+      "id": "death-franciszka-szuba-1841",
+      "type": "death",
+      "year": 1841,
+      "date": "4 I 1841",
+      "place": "Wola Morawicka",
+      "lat": 50.733889,
+      "lon": 20.639722,
+      "people": ["franciszka-szuba-1803"]
+    },
+    {
+      "id": "marriage-wincenty-rejment-franciszka-szuba-1819",
+      "type": "marriage",
+      "year": 1819,
+      "date": "3 II 1819",
+      "place": "Brzeziny",
+      "lat": 50.7725,
+      "lon": 20.573611,
+      "people": ["wincenty-rejment-1794", "franciszka-szuba-1803"]
+    },
+    {
+      "id": "birth-joachim-rejment-1766",
+      "type": "birth",
+      "year": 1766,
+      "date": "8 IX 1766",
+      "place": "Wola Morawicka",
+      "lat": 50.733889,
+      "lon": 20.639722,
+      "people": ["joachim-rejment-1766"]
+    },
+    {
+      "id": "death-franciszka-rejmentowa-1787",
+      "type": "death",
+      "year": 1787,
+      "date": "5 III 1787",
+      "place": "Wola Morawicka",
+      "lat": 50.733889,
+      "lon": 20.639722,
+      "people": ["franciszka-rejmentowa-1747"]
+    },
+    {
+      "id": "marriage-jan-szuba-katarzyna-orlanska-1796",
+      "type": "marriage",
+      "year": 1796,
+      "date": "9 X 1796",
+      "place": "Brzeziny",
+      "lat": 50.7725,
+      "lon": 20.573611,
+      "people": ["jan-szuba-1772", "katarzyna-orlanska-1777"]
+    },
+    {
+      "id": "marriage-jan-klenczak-patronella-radomska-1818",
+      "type": "marriage",
+      "year": 1818,
+      "date": "19 I 1818",
+      "place": "Brzeziny",
+      "lat": 50.7725,
+      "lon": 20.573611,
+      "people": ["jan-klenczak-1797", "patronella-radomska-1797"]
     }
   ]
 }
