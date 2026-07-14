@@ -979,6 +979,132 @@
       "surname": "Bryk",
       "relation": "praprapraprapraprapradziadek",
       "line": "Rugała"
+    },
+    {
+      "id": "jozef-sadlocha-1834",
+      "givenName": "Józef",
+      "surname": "Sadłocha",
+      "relation": "praprapradziadek",
+      "line": "Rugała"
+    },
+    {
+      "id": "katarzyna-walczyk-1836",
+      "givenName": "Katarzyna",
+      "surname": "Walczyk",
+      "relation": "prapraprababcia",
+      "line": "Rugała"
+    },
+    {
+      "id": "wawrzyniec-sadlocha-1812",
+      "givenName": "Wawrzyniec",
+      "surname": "Sadłocha",
+      "relation": "prapraprapradziadek",
+      "line": "Rugała"
+    },
+    {
+      "id": "lucja-kielbasa-1811",
+      "givenName": "Łucja",
+      "surname": "Kiełbasa",
+      "relation": "praprapraprababcia",
+      "line": "Rugała"
+    },
+    {
+      "id": "waclaw-sadlocha-1782",
+      "givenName": "Wacław",
+      "surname": "Sadłocha",
+      "relation": "praprapraprapradziadek",
+      "line": "Rugała"
+    },
+    {
+      "id": "marianna-kopyto-1776",
+      "givenName": "Marianna",
+      "surname": "Kopyto",
+      "relation": "prapraprapraprababcia",
+      "line": "Rugała"
+    },
+    {
+      "id": "ludwik-kielbasa-1767",
+      "givenName": "Ludwik",
+      "surname": "Kiełbasa",
+      "relation": "praprapraprapradziadek",
+      "line": "Rugała"
+    },
+    {
+      "id": "magdalena-chyla-1790",
+      "givenName": "Magdalena",
+      "surname": "Chyla",
+      "relation": "prapraprapraprababcia",
+      "line": "Rugała"
+    },
+    {
+      "id": "blazej-chyla-1754",
+      "givenName": "Błażej",
+      "surname": "Chyla",
+      "relation": "prapraprapraprapradziadek",
+      "line": "Rugała"
+    },
+    {
+      "id": "piotr-walczyk-1802",
+      "givenName": "Piotr",
+      "surname": "Walczyk",
+      "relation": "prapraprapradziadek",
+      "line": "Rugała"
+    },
+    {
+      "id": "tekla-fortuna-1801",
+      "givenName": "Tekla",
+      "surname": "Fortuna",
+      "relation": "praprapraprababcia",
+      "line": "Rugała"
+    },
+    {
+      "id": "marianna-rugala-1781",
+      "givenName": "Marianna",
+      "surname": "Rugała",
+      "relation": "praprapraprababcia",
+      "line": "Rugała"
+    },
+    {
+      "id": "jozef-fortuna-1770",
+      "givenName": "Józef",
+      "surname": "Fortuna",
+      "relation": "praprapraprapradziadek",
+      "line": "Rugała"
+    },
+    {
+      "id": "zofia-suchon-1777",
+      "givenName": "Zofia",
+      "surname": "Suchoń",
+      "relation": "prapraprapraprababcia",
+      "line": "Rugała"
+    },
+    {
+      "id": "jan-fortuna-bd",
+      "givenName": "Jan",
+      "surname": "Fortuna",
+      "relation": "prapraprapraprapradziadek",
+      "line": "Rugała"
+    },
+    {
+      "id": "franciszka-blad-1734",
+      "givenName": "Franciszka",
+      "surname": "Błąd",
+      "relation": "praprapraprapraprababcia",
+      "line": "Rugała"
+    },
+    {
+      "id": "michal-suchon-1733",
+      "givenName": "Michał",
+      "surname": "Suchoń",
+      "relation": "prapraprapraprapradziadek",
+      "line": "Rugała"
+    },
+    {
+      "id": "marianna-hyla-1747",
+      "givenName": "Marianna",
+      "surname": "Hyla",
+      "relation": "praprapraprapraprababcia",
+      "line": "Rugała"
     }
   ],
   "events": [
@@ -3240,6 +3366,306 @@
       "lat": 50.497778,
       "lon": 21.228333,
       "people": ["andrzej-bryk-1689"]
-    } 
+    },
+    {
+      "id": "birth-jozef-sadlocha-1834",
+      "type": "birth",
+      "year": 1834,
+      "date": "12 III 1834",
+      "place": "Ruda",
+      "lat": 50.476111,
+      "lon": 21.240556,
+      "people": ["jozef-sadlocha-1834"]
+    }, 
+    {
+      "id": "death-jozef-sadlocha-1880",
+      "type": "death",
+      "year": 1880,
+      "date": "20 VI 1880",
+      "place": "Ruda",
+      "lat": 50.476111,
+      "lon": 21.240556,
+      "people": ["jozef-sadlocha-1834"]
+    }, 
+    {
+      "id": "birth-katarzyna-walczyk-1836",
+      "type": "birth",
+      "year": 1836,
+      "date": "3 XI 1836",
+      "place": "Szczeka",
+      "lat": 50.493611,
+      "lon": 21.263333,
+      "people": ["katarzyna-walczyk-1836"]
+    },
+    {
+      "id": "marriage-jozef-sadlocha-katarzyna-walczyk-1854",
+      "type": "marriage",
+      "year": 1854,
+      "date": "13 XI 1854",
+      "place": "Szczeka",
+      "lat": 50.493611,
+      "lon": 21.263333,
+      "people": ["jozef-sadlocha-1834", "katarzyna-walczyk-1836"]
+    }, 
+    {
+      "id": "birth-wawrzyniec-sadlocha-1812",
+      "type": "birth",
+      "year": 1812,
+      "date": "około 1812",
+      "place": "Niedziałki",
+      "lat": 50.480556,
+      "lon": 21.2625,
+      "people": ["wawrzyniec-sadlocha-1812"]
+    }, 
+    {
+      "id": "death-wawrzyniec-sadlocha-1848",
+      "type": "death",
+      "year": 1848,
+      "date": "5 I 1848",
+      "place": "Ruda",
+      "lat": 50.476111,
+      "lon": 21.240556,
+      "people": ["wawrzyniec-sadlocha-1812"]
+    }, 
+    {
+      "id": "birth-lucja-kielbasa-1811",
+      "type": "birth",
+      "year": 1811,
+      "date": "około 1811",
+      "place": "Ruda",
+      "lat": 50.476111,
+      "lon": 21.240556,
+      "people": ["lucja-kielbasa-1811"]
+    }, 
+    {
+      "id": "death-lucja-kielbasa-1879",
+      "type": "death",
+      "year": 1879,
+      "date": "17 II 1879",
+      "place": "Ruda",
+      "lat": 50.476111,
+      "lon": 21.240556,
+      "people": ["lucja-kielbasa-1811"]
+    }, 
+    {
+      "id": "birth-waclaw-sadlocha-1782",
+      "type": "birth",
+      "year": 1782,
+      "date": "5 III 1782",
+      "place": "Niedziałki",
+      "lat": 50.480556,
+      "lon": 21.2625,
+      "people": ["waclaw-sadlocha-1782"]
+    }, 
+    {
+      "id": "death-waclaw-sadlocha-1844",
+      "type": "death",
+      "year": 1844,
+      "date": "6 II 1844",
+      "place": "Ruda",
+      "lat": 50.476111,
+      "lon": 21.240556,
+      "people": ["waclaw-sadlocha-1782"]
+    }, 
+    {
+      "id": "death-marianna-kopyto-1776",
+      "type": "death",
+      "year": 1826,
+      "date": "18 XII 1826",
+      "place": "Niedziałki",
+      "lat": 50.480556,
+      "lon": 21.2625,
+      "people": ["marianna-kopyto-1776"]
+    }, 
+    {
+      "id": "birth-ludwik-kielbasa-1767",
+      "type": "birth",
+      "year": 1767,
+      "date": "25 VIII 1767",
+      "place": "Ruda",
+      "lat": 50.476111,
+      "lon": 21.240556,
+      "people": ["ludwik-kielbasa-1767"]
+    }, 
+    {
+      "id": "death-ludwik-kielbasa-1830",
+      "type": "death",
+      "year": 1830,
+      "date": "13 I 1830",
+      "place": "Ruda",
+      "lat": 50.476111,
+      "lon": 21.240556,
+      "people": ["ludwik-kielbasa-1767"]
+    }, 
+    {
+      "id": "birth-magdalena-chyla-1790",
+      "type": "birth",
+      "year": 1790,
+      "date": "około 1790",
+      "place": "Ruda",
+      "lat": 50.476111,
+      "lon": 21.240556,
+      "people": ["magdalena-chyla-1790"]
+    }, 
+    {
+      "id": "death-magdalena-chyla-1815",
+      "type": "death",
+      "year": 1815,
+      "date": "5 I 1815",
+      "place": "Ruda",
+      "lat": 50.476111,
+      "lon": 21.240556,
+      "people": ["magdalena-chyla-1790"]
+    }, 
+     {
+      "id": "death-blazej-chyla-1814",
+      "type": "death",
+      "year": 1814,
+      "date": "2 I 1814",
+      "place": "Ruda",
+      "lat": 50.476111,
+      "lon": 21.240556,
+      "people": ["blazej-chyla-1754"]
+    }, 
+    {
+      "id": "birth-piotr-walczyk-1802",
+      "type": "birth",
+      "year": 1802,
+      "date": "około 1802",
+      "place": "Szczeka",
+      "lat": 50.493611,
+      "lon": 21.263333,
+      "people": ["piotr-walczyk-1802"]
+    },
+    {
+      "id": "death-piotr-walczyk-1855",
+      "type": "death",
+      "year": 1855,
+      "date": "8 IV 1855",
+      "place": "Szczeka",
+      "lat": 50.493611,
+      "lon": 21.263333,
+      "people": ["piotr-walczyk-1802"]
+    },
+    {
+      "id": "birth-tekla-fortuna-1801",
+      "type": "birth",
+      "year": 1801,
+      "date": "około 1801",
+      "place": "Szczeka",
+      "lat": 50.493611,
+      "lon": 21.263333,
+      "people": ["tekla-fortuna-1801"]
+    },
+    {
+      "id": "death-tekla-fortuna-1873",
+      "type": "death",
+      "year": 1873,
+      "date": "15 XI 1873",
+      "place": "Szczeka",
+      "lat": 50.493611,
+      "lon": 21.263333,
+      "people": ["tekla-fortuna-1801"]
+    },
+    {
+      "id": "marriage-piotr-walczyk-tekla-fortuna-1824",
+      "type": "marriage",
+      "year": 1824,
+      "date": "20 IX 1824",
+      "place": "Szczeka",
+      "lat": 50.493611,
+      "lon": 21.263333,
+      "people": ["piotr-walczyk-1802", "tekla-fortuna-1801"]
+    }, 
+    {
+      "id": "death-marianna-rugala-1831",
+      "type": "death",
+      "year": 1831,
+      "date": "17 V 1831",
+      "place": "Szczeka",
+      "lat": 50.493611,
+      "lon": 21.263333,
+      "people": ["marianna-rugala-1781"]
+    },
+    {
+      "id": "birth-jozef-fortuna-1770",
+      "type": "birth",
+      "year": 1770,
+      "date": "26 II 1770",
+      "place": "Szczeka",
+      "lat": 50.493611,
+      "lon": 21.263333,
+      "people": ["jozef-fortuna-1770"]
+    },
+    {
+      "id": "death-jozef-fortuna-1823",
+      "type": "death",
+      "year": 1823,
+      "date": "17 XII 1823",
+      "place": "Szczeka",
+      "lat": 50.493611,
+      "lon": 21.263333,
+      "people": ["jozef-fortuna-1770"]
+    },
+    {
+      "id": "birth-zofia-suchon-1777",
+      "type": "birth",
+      "year": 1777,
+      "date": "17 V 1777",
+      "place": "Niedziałki",
+      "lat": 50.480556,
+      "lon": 21.2625,
+      "people": ["zofia-suchon-1777"]
+    },
+    {
+      "id": "death-zofia-suchon-1831",
+      "type": "death",
+      "year": 1831,
+      "date": "17 I 1831",
+      "place": "Szczeka",
+      "lat": 50.493611,
+      "lon": 21.263333,
+      "people": ["zofia-suchon-1777"]
+    },
+    {
+      "id": "marriage-jan-fortuna-franciszka-blad-1763",
+      "type": "marriage",
+      "year": 1763,
+      "date": "16 X 1763",
+      "place": "Połaniec",
+      "lat": 50.432778,
+      "lon": 21.280278,
+      "people": ["jan-fortuna-bd", "franciszka-blad-1734"]
+    }, 
+    {
+      "id": "death-franciszka-blad-1814",
+      "type": "death",
+      "year": 1814,
+      "date": "10 X 1814",
+      "place": "Szczeka",
+      "lat": 50.493611,
+      "lon": 21.263333,
+      "people": ["franciszka-blad-1734"]
+    },
+    {
+      "id": "death-michal-suchon-1818",
+      "type": "death",
+      "year": 1818,
+      "date": "28 VII 1818",
+      "place": "Niedziałki",
+      "lat": 50.480556,
+      "lon": 21.2625,
+      "people": ["michal-suchon-1733"]
+    },
+    {
+      "id": "death-marianna-hyla-1806",
+      "type": "death",
+      "year": 1806,
+      "date": "1 IX 1806",
+      "place": "Niedziałki",
+      "lat": 50.480556,
+      "lon": 21.2625,
+      "people": ["marianna-hyla-1747"]
+    }
   ]
 }
