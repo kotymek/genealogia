@@ -1170,6 +1170,13 @@
       "line": "Rugała"
     },
     {
+      "id": "helena-klenczak-1768",
+      "givenName": "Helena",
+      "surname": "Klenczak",
+      "relation": "praprapraprababcia",
+      "line": "Rugała"
+    },
+    {
       "id": "jakub-radlo-1760",
       "givenName": "Jakub",
       "surname": "Radło",
@@ -3896,6 +3903,36 @@
       "people": ["michal-wylazlowski-1819"]
     },
     {
+      "id": "death-michal-wylazlowski-1886",
+      "type": "death",
+      "year": 1886,
+      "date": "13 I 1886",
+      "place": "Wola Morawicka",
+      "lat": 50.733889,
+      "lon": 20.639722,
+      "people": ["michal-wylazlowski-1819"]
+    },
+    {
+      "id": "birth-marianna-orlinska-1824",
+      "type": "birth",
+      "year": 1824,
+      "date": "1 I 1824",
+      "place": "Morawica",
+      "lat": 50.745,
+      "lon": 20.620278,
+      "people": ["marianna-orlinska-1824"]
+    },
+    {
+      "id": "death-marianna-orlinska-1903",
+      "type": "death",
+      "year": 1903,
+      "date": "20 XII 1903",
+      "place": "Wola Morawicka",
+      "lat": 50.733889,
+      "lon": 20.639722,
+      "people": ["marianna-orlinska-1824"]
+    },
+    {
       "id": "marriage-michal-wylazlowski-marianna-orlinska-1843",
       "type": "marriage",
       "year": 1843,
@@ -3956,6 +3993,16 @@
       "people": ["piotr-orlinski-1801", "konstancja-radlo-1803"]
     },
     {
+      "id": "birth-helena-klenczak-1768",
+      "type": "birth",
+      "year": 1768,
+      "date": "3 III 1768",
+      "place": "Morawica",
+      "lat": 50.745,
+      "lon": 20.620278,
+      "people": ["helena-klenczak-1768"]
+    },
+    {
       "id": "birth-jakub-radlo-1760",
       "type": "birth",
       "year": 1760,
@@ -3974,6 +4021,16 @@
       "lat": 50.788056,
       "lon": 20.505,
       "people": ["jakub-radlo-1760"]
+    },
+    {
+      "id": "death-jakub-radlo-1818",
+      "type": "death",
+      "year": 1818,
+      "date": "13 I 1818",
+      "place": "Wola Morawicka",
+      "lat": 50.733889,
+      "lon": 20.639722,
+      "people": ["katarzyna-rejment-1769"]
     },
    {
       "id": "marriage-jakub-radlo-katarzyna-rejment-1789",
