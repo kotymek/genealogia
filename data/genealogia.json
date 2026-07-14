@@ -1105,6 +1105,118 @@
       "surname": "Hyla",
       "relation": "praprapraprapraprababcia",
       "line": "Rugała"
+    },
+    {
+      "id": "wojciech-wylazlowski-1856",
+      "givenName": "Wojciech",
+      "surname": "Wylazłowski",
+      "relation": "prapradziadek",
+      "line": "Rugała"
+    },
+    {
+      "id": "malgorzata-rejment-1866",
+      "givenName": "Małgorzata",
+      "surname": "Rejment",
+      "relation": "praprababcia",
+      "line": "Rugała"
+    },
+    {
+      "id": "michal-wylazlowski-1819",
+      "givenName": "Michał",
+      "surname": "Wylazłowski",
+      "relation": "praprapradziadek",
+      "line": "Rugała"
+    },
+    {
+      "id": "marianna-orlinska-1824",
+      "givenName": "Marianna",
+      "surname": "Orlińska",
+      "relation": "prapraprababcia",
+      "line": "Rugała"
+    },
+    {
+      "id": "joanna-biesaga-1794",
+      "givenName": "Joanna",
+      "surname": "Biesaga",
+      "relation": "praprapraprababcia",
+      "line": "Rugała"
+    },
+    {
+      "id": "marcin-biesaga-1750",
+      "givenName": "Marcin",
+      "surname": "Biesaga",
+      "relation": "praprapraprapradziadek",
+      "line": "Rugała"
+    },
+    {
+      "id": "elzbieta-bieniek-bd",
+      "givenName": "Elżbieta",
+      "surname": "Bieniek",
+      "relation": "prapraprapraprababcia",
+      "line": "Rugała"
+    },
+    {
+      "id": "piotr-orlinski-1801",
+      "givenName": "Piotr",
+      "surname": "Orliński",
+      "relation": "praprapradziadek",
+      "line": "Rugała"
+    },
+    {
+      "id": "konstancja-radlo-1803",
+      "givenName": "Konstancja",
+      "surname": "Radło",
+      "relation": "prapraprababcia",
+      "line": "Rugała"
+    },
+    {
+      "id": "jakub-radlo-1760",
+      "givenName": "Jakub",
+      "surname": "Radło",
+      "relation": "prapraprapradziadek",
+      "line": "Rugała"
+    },
+     {
+      "id": "katarzyna-rejment-1769",
+      "givenName": "Katarzyna",
+      "surname": "Rejment",
+      "relation": "praprapraprababcia",
+      "line": "Rugała"
+    },
+    {
+      "id": "andrzej-radlo-1705",
+      "givenName": "Andrzej",
+      "surname": "Radło",
+      "relation": "praprapraprapradziadek",
+      "line": "Rugała"
+    },
+    {
+      "id": "marianna-niedbalczyk-1730",
+      "givenName": "Marianna",
+      "surname": "Niedbalczyk",
+      "relation": "prapraprapraprababcia",
+      "line": "Rugała"
+    },
+    {
+      "id": "franciszka-rejmentowa-1747",
+      "givenName": "Franciszka",
+      "surname": "Rejmentowa",
+      "relation": "prapraprapraprababcia",
+      "line": "Rugała"
+    },
+    {
+      "id": "franciszek-rejment-1827",
+      "givenName": "Franciszek",
+      "surname": "Rejment",
+      "relation": "praprapradziadek",
+      "line": "Rugała"
+    },
+    {
+      "id": "magdalena-klenczak-1831",
+      "givenName": "Magdalena",
+      "surname": "Klenczak",
+      "relation": "prapraprababcia",
+      "line": "Rugała"
     }
   ],
   "events": [
@@ -1418,24 +1530,24 @@
       "people": ["jan-markiewicz-1823"]
     },
     {
-      "id": "death-marianna-yk-1893",
+      "id": "death-marianna-groszczyk-1893",
       "type": "death",
       "year": 1893,
       "date": "2 VIII 1893",
       "place": "Śmiardowo Krajeńskie",
       "lat": 53.247222,
       "lon": 17.017222,
-      "people": ["marianna-yk"]
+      "people": ["marianna-groszczyk-1833"]
     },
     {
-      "id": "marriage-jan-markiewicz-marianna-yk-1869",
+      "id": "marriage-jan-markiewicz-marianna-groszczyk-1869",
       "type": "marriage",
       "year": 1869,
       "date": "31 V 1869",
       "place": "Krajenka",
       "lat": 53.296667,
       "lon": 16.990556,
-      "people": ["jan-markiewicz-1823", "marianna-yk"]
+      "people": ["jan-markiewicz-1823", "marianna-groszczyk-1833"]
     }, 
     {
       "id": "birth-antoni-mantej-1827",
@@ -3666,6 +3778,236 @@
       "lat": 50.480556,
       "lon": 21.2625,
       "people": ["marianna-hyla-1747"]
+    },
+    {
+      "id": "birth-wojciech-wylazlowski-1856",
+      "type": "birth",
+      "year": 1856,
+      "date": "2 IV 1856",
+      "place": "Wola Morawicka",
+      "lat": 50.733889,
+      "lon": 20.639722,
+      "people": ["wojciech-wylazlowski-1856"]
+    },
+    {
+      "id": "death-wojciech-wylazlowski-1925",
+      "type": "death",
+      "year": 1925,
+      "date": "28 I 1925",
+      "place": "Morawica",
+      "lat": 50.745,
+      "lon": 20.620278,
+      "people": ["wojciech-wylazlowski-1856"]
+    },
+    {
+      "id": "birth-malgorzata-rejment-1866",
+      "type": "birth",
+      "year": 1866,
+      "date": "7 VI 1866",
+      "place": "Morawica",
+      "lat": 50.745,
+      "lon": 20.620278,
+      "people": ["malgorzata-rejment-1866"]
+    },
+    {
+      "id": "death-malgorzata-rejment-1926",
+      "type": "death",
+      "year": 1926,
+      "date": "21 VII 1926",
+      "place": "Morawica",
+      "lat": 50.745,
+      "lon": 20.620278,
+      "people": ["malgorzata-rejment-1866"]
+    },
+    {
+      "id": "marriage-wojciech-wylazlowski-malgorzata-rejment-1883",
+      "type": "marriage",
+      "year": 1883,
+      "date": "12 XI 1883",
+      "place": "Brzeziny",
+      "lat": 50.7725,
+      "lon": 20.573611,
+      "people": ["wojciech-wylazlowski-1856", "malgorzata-rejment-1866"]
+    },
+    {
+      "id": "birth-michal-wylazlowski-1819",
+      "type": "birth",
+      "year": 1819,
+      "date": "26 XII 1819",
+      "place": "Wola Morawicka",
+      "lat": 50.733889,
+      "lon": 20.639722,
+      "people": ["michal-wylazlowski-1819"]
+    },
+    {
+      "id": "marriage-michal-wylazlowski-marianna-orlinska-1843",
+      "type": "marriage",
+      "year": 1843,
+      "date": "13 XI 1843",
+      "place": "Brzeziny",
+      "lat": 50.7725,
+      "lon": 20.573611,
+      "people": ["michal-wylazlowski-1819", "marianna-orlinska-1824"]
+    },
+    {
+      "id": "birth-joanna-biesaga-1794",
+      "type": "birth",
+      "year": 1794,
+      "date": "16 VIII 1794",
+      "place": "Wola Morawicka",
+      "lat": 50.733889,
+      "lon": 20.639722,
+      "people": ["joanna-biesaga-1794"]
+    },
+    {
+      "id": "death-joanna-biesaga-1855",
+      "type": "death",
+      "year": 1855,
+      "date": "22 XII 1855",
+      "place": "Wola Morawicka",
+      "lat": 50.733889,
+      "lon": 20.639722,
+      "people": ["joanna-biesaga-1794"]
+    },
+    {
+      "id": "death-marcin-biesaga-1824",
+      "type": "death",
+      "year": 1824,
+      "date": "12 VII 1824",
+      "place": "Wola Morawicka",
+      "lat": 50.733889,
+      "lon": 20.639722,
+      "people": ["marcin-biesaga-1750"]
+    },
+    {
+      "id": "death-elzbieta-bieniek-1837",
+      "type": "death",
+      "year": 1837,
+      "date": "8 II 1837",
+      "place": "Wola Morawicka",
+      "lat": 50.733889,
+      "lon": 20.639722,
+      "people": ["elzbieta-bieniek-bd"]
+    },
+    {
+      "id": "marriage-piotr-orlinski-konstancja-radlo-1821",
+      "type": "marriage",
+      "year": 1821,
+      "date": "5 III 1821",
+      "place": "Brzeziny",
+      "lat": 50.7725,
+      "lon": 20.573611,
+      "people": ["piotr-orlinski-1801", "konstancja-radlo-1803"]
+    },
+    {
+      "id": "birth-jakub-radlo-1760",
+      "type": "birth",
+      "year": 1760,
+      "date": "22 IV 1760",
+      "place": "Wola Morawicka",
+      "lat": 50.733889,
+      "lon": 20.639722,
+      "people": ["jakub-radlo-1760"]
+    },
+    {
+      "id": "death-jakub-radlo-1814",
+      "type": "death",
+      "year": 1814,
+      "date": "12 I 1814",
+      "place": "Radkowice",
+      "lat": 50.788056,
+      "lon": 20.505,
+      "people": ["jakub-radlo-1760"]
+    },
+   {
+      "id": "marriage-jakub-radlo-katarzyna-rejment-1789",
+      "type": "marriage",
+      "year": 1789,
+      "date": "25 VIII 1789",
+      "place": "Brzeziny",
+      "lat": 50.7725,
+      "lon": 20.573611,
+      "people": ["jakub-radlo-1760", "katarzyna-rejment-1769"]
+    }, 
+    {
+      "id": "death-andrzej-radlo-1785",
+      "type": "death",
+      "year": 1785,
+      "date": "28 IV 1785",
+      "place": "Wola Morawicka",
+      "lat": 50.733889,
+      "lon": 20.639722,
+      "people": ["andrzej-radlo-1705"]
+    },
+    {
+      "id": "birth-marianna-niedbalczyk-1730",
+      "type": "birth",
+      "year": 1730,
+      "date": "10 VIII 1730",
+      "place": "Wola Morawicka",
+      "lat": 50.733889,
+      "lon": 20.639722,
+      "people": ["marianna-niedbalczyk-1730"]
+    },
+    {
+      "id": "death-marianna-niedbalczyk-1779",
+      "type": "death",
+      "year": 1779,
+      "date": "23 II 1779",
+      "place": "Wola Morawicka",
+      "lat": 50.733889,
+      "lon": 20.639722,
+      "people": ["marianna-niedbalczyk-1730"]
+    },
+    {
+      "id": "marriage-andrzej-radlo-marianna-niedbalczyk-1755",
+      "type": "marriage",
+      "year": 1755,
+      "date": "2 II 1755",
+      "place": "Brzeziny",
+      "lat": 50.7725,
+      "lon": 20.573611,
+      "people": ["andrzej-radlo-1705", "marianna-niedbalczyk-1730"]
+    }, 
+    {
+      "id": "death-franciszka-rejmentowa-1787",
+      "type": "death",
+      "year": 1787,
+      "date": "5 III 1787",
+      "place": "Wola Morawicka",
+      "lat": 50.733889,
+      "lon": 20.639722,
+      "people": ["franciszka-rejmentowa-1747"]
+    },
+    {
+      "id": "birth-franciszek-rejment-1827",
+      "type": "birth",
+      "year": 1827,
+      "date": "21 IX 1827",
+      "place": "Wola Morawicka",
+      "lat": 50.733889,
+      "lon": 20.639722,
+      "people": ["franciszek-rejment-1827"]
+    },
+    {
+      "id": "death-franciszek-rejment-1879",
+      "type": "death",
+      "year": 1879,
+      "date": "22 I 1879",
+      "place": "Wola Morawicka",
+      "lat": 50.733889,
+      "lon": 20.639722,
+      "people": ["franciszek-rejment-1827"]
+    },
+    {
+      "id": "marriage-franciszek-rejment-magdalena-klenczak-1848",
+      "type": "marriage",
+      "year": 1848,
+      "date": "14 II 1848",
+      "place": "Brzeziny",
+      "lat": 50.7725,
+      "lon": 20.573611,
+      "people": ["franciszek-rejment-1827", "magdalena-klenczak-1831"]
     }
   ]
 }
