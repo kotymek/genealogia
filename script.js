@@ -10,6 +10,30 @@ const EVENT_COLORS = {
   death: "#5c677d",
 };
 
+const HISTORICAL_LAYER_CONFIG = {
+  congressPoland: {
+    label: "Królestwo Polskie 1815-1914",
+    url: "data/granice/krolestwo-polskie-1830.geojson",
+    style: {
+      color: "#b45309",
+      weight: 2,
+      fillColor: "#f59e0b",
+      fillOpacity: 0.08,
+      dashArray: "6 5",
+    },
+  },
+  secondRepublic: {
+    label: "II Rzeczpospolita",
+    url: "data/granice/ii-rp.geojson",
+    style: {
+      color: "#1d4ed8",
+      weight: 2,
+      fillColor: "#3b82f6",
+      fillOpacity: 0.07,
+    },
+  },
+};
+
 const map = L.map("map", {
   scrollWheelZoom: true,
 });
@@ -19,6 +43,8 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 }).addTo(map);
 
 const markerLayer = L.layerGroup().addTo(map);
+const historicalLayers = {};
+
 const state = {
   people: [],
   events: [],
@@ -34,11 +60,13 @@ const state = {
 const elements = {
   search: document.querySelector("#search"),
   typeFilters: document.querySelectorAll("input[name='type']"),
+  historicalToggles: document.querySelectorAll("[data-historical-layer]"),
   lineFilter: document.querySelector("#line-filter"),
   yearFrom: document.querySelector("#year-from"),
   yearTo: document.querySelector("#year-to"),
   reset: document.querySelector("#reset"),
   events: document.querySelector("#events"),
+  historicalStatus: document.querySelector("#historical-status"),
   statEvents: document.querySelector("#stat-events"),
   statPeople: document.querySelector("#stat-people"),
   statPlaces: document.querySelector("#stat-places"),
@@ -115,6 +143,12 @@ function attachListeners() {
     });
   });
 
+  elements.historicalToggles.forEach((checkbox) => {
+    checkbox.addEventListener("change", () => {
+      toggleHistoricalLayer(checkbox.dataset.historicalLayer, checkbox.checked);
+    });
+  });
+
   elements.lineFilter.addEventListener("change", () => {
     state.filters.line = elements.lineFilter.value;
     render();
@@ -148,6 +182,87 @@ function resetFilters() {
   state.filters.yearFrom = elements.yearFrom.value ? Number(elements.yearFrom.value) : null;
   state.filters.yearTo = elements.yearTo.value ? Number(elements.yearTo.value) : null;
   render();
+}
+
+function toggleHistoricalLayer(key, enabled) {
+  const config = HISTORICAL_LAYER_CONFIG[key];
+
+  if (!config) return;
+
+  if (!enabled) {
+    if (historicalLayers[key]) {
+      map.removeLayer(historicalLayers[key]);
+    }
+    setHistoricalStatus("");
+    return;
+  }
+
+  if (historicalLayers[key]) {
+    historicalLayers[key].addTo(map);
+    setHistoricalStatus(`Włączono warstwę: ${config.label}.`);
+    return;
+  }
+
+  setHistoricalStatus(`Wczytuję warstwę: ${config.label}...`);
+
+  fetch(config.url)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`Brakuje pliku ${config.url} albo serwer zwrócił ${response.status}.`);
+      }
+      return response.text();
+    })
+    .then((text) => {
+      try {
+        return JSON.parse(text);
+      } catch {
+        throw new Error(`Plik ${config.url} istnieje, ale nie jest poprawnym GeoJSON-em.`);
+      }
+    })
+    .then((geojson) => {
+      if (!geojson.features?.length) {
+        throw new Error(`Plik ${config.url} nie zawiera żadnych obiektów GeoJSON.`);
+      }
+
+      historicalLayers[key] = L.geoJSON(geojson, {
+        style: config.style,
+        onEachFeature: (feature, layer) => {
+          layer.bindPopup(getHistoricalFeatureName(feature, config.label));
+        },
+      }).addTo(map);
+
+      historicalLayers[key].bringToBack();
+      markerLayer.eachLayer((layer) => layer.bringToFront());
+      setHistoricalStatus(`Włączono warstwę: ${config.label}.`);
+    })
+    .catch((error) => {
+      console.error(error);
+      uncheckHistoricalToggle(key);
+      setHistoricalStatus(error.message, true);
+    });
+}
+
+function getHistoricalFeatureName(feature, fallback) {
+  const properties = feature.properties || {};
+  return escapeHtml(
+    properties.name ||
+      properties.nazwa ||
+      properties.NAZWA ||
+      properties.gubernia ||
+      properties.wojewodztw ||
+      properties.wojewodztwo ||
+      fallback
+  );
+}
+
+function uncheckHistoricalToggle(key) {
+  const checkbox = document.querySelector(`[data-historical-layer="${key}"]`);
+  if (checkbox) checkbox.checked = false;
+}
+
+function setHistoricalStatus(message, isError = false) {
+  elements.historicalStatus.textContent = message;
+  elements.historicalStatus.classList.toggle("is-error", isError);
 }
 
 function render() {
@@ -291,82 +406,3 @@ function escapeHtml(value) {
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
 }
-
-const historicalLayers = {
-  congressPoland: null,
-  secondRepublic: null,
-};
-
-const historicalLayerConfig = {
-  congressPoland: {
-    url: "data/granice/krolestwo-polskie-1830.geojson",
-    style: {
-      color: "#b45309",
-      weight: 2,
-      fillColor: "#f59e0b",
-      fillOpacity: 0.08,
-      dashArray: "6 5",
-    },
-    popup: "Królestwo Polskie, ok. 1830",
-  },
-  secondRepublic: {
-    url: "data/granice/ii-rp.geojson",
-    style: {
-      color: "#1d4ed8",
-      weight: 2,
-      fillColor: "#3b82f6",
-      fillOpacity: 0.07,
-    },
-    popup: "II Rzeczpospolita",
-  },
-};
-
-function toggleHistoricalLayer(key, enabled) {
-  const config = historicalLayerConfig[key];
-
-  if (!enabled) {
-    if (historicalLayers[key]) {
-      map.removeLayer(historicalLayers[key]);
-    }
-    return;
-  }
-
-  if (historicalLayers[key]) {
-    historicalLayers[key].addTo(map);
-    return;
-  }
-
-  fetch(config.url)
-    .then((response) => response.json())
-    .then((geojson) => {
-      historicalLayers[key] = L.geoJSON(geojson, {
-        style: config.style,
-        onEachFeature: (feature, layer) => {
-          const name =
-            feature.properties?.name ||
-            feature.properties?.nazwa ||
-            feature.properties?.gubernia ||
-            feature.properties?.wojewodztw ||
-            config.popup;
-
-          layer.bindPopup(name);
-        },
-      }).addTo(map);
-    })
-    .catch((error) => {
-      console.error(`Nie udało się wczytać warstwy ${key}:`, error);
-    });
-}
-
-document
-  .querySelector("#toggle-congress-poland")
-  .addEventListener("change", (event) => {
-    toggleHistoricalLayer("congressPoland", event.target.checked);
-  });
-
-document
-  .querySelector("#toggle-second-republic")
-  .addEventListener("change", (event) => {
-    toggleHistoricalLayer("secondRepublic", event.target.checked);
-  });
-

@@ -198,6 +198,45 @@ button:focus-visible {
   gap: 6px;
 }
 
+.historical-layers {
+  display: grid;
+  gap: 10px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfcfd;
+}
+
+.historical-layers h2 {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.historical-layers label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 34px;
+  color: var(--ink);
+}
+
+.historical-layers input {
+  width: auto;
+  min-height: auto;
+}
+
+.layer-status {
+  min-height: 1.2em;
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.layer-status.is-error {
+  color: #a43d22;
+}
+
 .dot {
   width: 11px;
   height: 11px;
@@ -336,27 +375,4 @@ button:focus-visible {
   .years {
     grid-template-columns: 1fr;
   }
-}
-
-.historical-layers {
-  display: grid;
-  gap: 10px;
-  padding-top: 4px;
-}
-
-.historical-layers h2 {
-  margin-bottom: 0;
-  font-size: 1rem;
-}
-
-.historical-layers label {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--ink);
-}
-
-.historical-layers input {
-  width: auto;
-  min-height: auto;
 }
