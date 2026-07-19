@@ -291,3 +291,82 @@ function escapeHtml(value) {
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
 }
+
+const historicalLayers = {
+  congressPoland: null,
+  secondRepublic: null,
+};
+
+const historicalLayerConfig = {
+  congressPoland: {
+    url: "data/granice/krolestwo-polskie-1830.geojson",
+    style: {
+      color: "#b45309",
+      weight: 2,
+      fillColor: "#f59e0b",
+      fillOpacity: 0.08,
+      dashArray: "6 5",
+    },
+    popup: "Królestwo Polskie, ok. 1830",
+  },
+  secondRepublic: {
+    url: "data/granice/ii-rp.geojson",
+    style: {
+      color: "#1d4ed8",
+      weight: 2,
+      fillColor: "#3b82f6",
+      fillOpacity: 0.07,
+    },
+    popup: "II Rzeczpospolita",
+  },
+};
+
+function toggleHistoricalLayer(key, enabled) {
+  const config = historicalLayerConfig[key];
+
+  if (!enabled) {
+    if (historicalLayers[key]) {
+      map.removeLayer(historicalLayers[key]);
+    }
+    return;
+  }
+
+  if (historicalLayers[key]) {
+    historicalLayers[key].addTo(map);
+    return;
+  }
+
+  fetch(config.url)
+    .then((response) => response.json())
+    .then((geojson) => {
+      historicalLayers[key] = L.geoJSON(geojson, {
+        style: config.style,
+        onEachFeature: (feature, layer) => {
+          const name =
+            feature.properties?.name ||
+            feature.properties?.nazwa ||
+            feature.properties?.gubernia ||
+            feature.properties?.wojewodztw ||
+            config.popup;
+
+          layer.bindPopup(name);
+        },
+      }).addTo(map);
+    })
+    .catch((error) => {
+      console.error(`Nie udało się wczytać warstwy ${key}:`, error);
+    });
+}
+
+document
+  .querySelector("#toggle-congress-poland")
+  .addEventListener("change", (event) => {
+    toggleHistoricalLayer("congressPoland", event.target.checked);
+  });
+
+document
+  .querySelector("#toggle-second-republic")
+  .addEventListener("change", (event) => {
+    toggleHistoricalLayer("secondRepublic", event.target.checked);
+  });
+
