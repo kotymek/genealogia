@@ -960,6 +960,27 @@
       "line": "Rugała"
     },
     {
+      "id": "szymon-chyla-1687",
+      "givenName": "Szymon",
+      "surname": "Chyla",
+      "relation": "praprapraprapraprapradziadek",
+      "line": "Rugała"
+    },
+    {
+      "id": "mikolaj-chyla-bd",
+      "givenName": "Mikołaj",
+      "surname": "Chyla",
+      "relation": "prapraprapraprapraprapradziadek",
+      "line": "Rugała"
+    },
+    {
+      "id": "katarzyna-chylowa-bd",
+      "givenName": "Katarzyna",
+      "surname": "Chylowa",
+      "relation": "praprapraprapraprapraprababcia",
+      "line": "Rugała"
+    },
+    {
       "id": "jan-pawelek-1714",
       "givenName": "Jan",
       "surname": "Pawełek",
@@ -3555,6 +3576,26 @@
       "lat": 50.476111,
       "lon": 21.240556,
       "people": ["franciszek-chyla-1718"]
+    }, 
+    {
+      "id": "birth-szymon-chyla-1687",
+      "type": "birth",
+      "year": 1687,
+      "date": "28 X 1687",
+      "place": "Ruda",
+      "lat": 50.476111,
+      "lon": 21.240556,
+      "people": ["szymon-chyla-1687"]
+    },
+    {
+      "id": "marriage-mikolaj-chyla-katarzyna-chylowa-1683",
+      "type": "marriage",
+      "year": 1683,
+      "date": "7 XI 1683",
+      "place": "Połaniec",
+      "lat": 50.432778,
+      "lon": 21.280278,
+      "people": ["mikolaj-chyla-bd", "katarzyna-chylowa-bd"]
     }, 
     {
       "id": "birth-jan-pawelek-1714",
