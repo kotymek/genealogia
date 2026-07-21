@@ -40,7 +40,7 @@ const HISTORICAL_LAYER_CONFIG = {
     fillColor: "#d9822b",
     fillOpacity: 0.07,
     dashArray: "4 4",
-  },
+    },
   },
 };
 
