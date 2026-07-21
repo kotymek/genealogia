@@ -953,6 +953,13 @@
       "line": "Rugała"
     },
     {
+      "id": "franciszek-chyla-1718",
+      "givenName": "Franciszek",
+      "surname": "Chyla",
+      "relation": "prapraprapraprapradziadek",
+      "line": "Rugała"
+    },
+    {
       "id": "jan-pawelek-1714",
       "givenName": "Jan",
       "surname": "Pawełek",
@@ -3528,6 +3535,26 @@
       "lat": 50.476111,
       "lon": 21.240556,
       "people": ["malgorzata-hyla-1755"]
+    }, 
+    {
+      "id": "birth-franciszek-chyla-1718",
+      "type": "birth",
+      "year": 1718,
+      "date": "28 XII 1718",
+      "place": "Ruda",
+      "lat": 50.476111,
+      "lon": 21.240556,
+      "people": ["franciszek-chyla-1718"]
+    }, 
+    {
+      "id": "death-franciszek-chyla-1804",
+      "type": "death",
+      "year": 1804,
+      "date": "8 IV 1804",
+      "place": "Ruda",
+      "lat": 50.476111,
+      "lon": 21.240556,
+      "people": ["franciszek-chyla-1718"]
     }, 
     {
       "id": "birth-jan-pawelek-1714",
