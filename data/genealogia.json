@@ -2514,7 +2514,7 @@
       "type": "marriage",
       "year": 1868,
       "date": "18 XI 1868",
-      "place": "Wiązownica-Kolonia",
+      "place": "Wiązownica",
       "lat": 50.585833,
       "lon": 21.393056,
       "people": ["walenty-maciag-1837", "julianna-stasiak-1844"]
@@ -2530,6 +2530,16 @@
       "people": ["wojciech-maciag-1756"]
     },
     {
+      "id": "death-wojciech-maciag-1832",
+      "type": "death",
+      "year": 1832,
+      "date": "21 I 1832",
+      "place": "Bazów",
+      "lat": 50.595,
+      "lon": 21.448056,
+      "people": ["wojciech-maciag-1756"]
+    },
+    {
       "id": "birth-kunegunda-chochol-1763",
       "type": "birth",
       "year": 1763,
@@ -2537,6 +2547,16 @@
       "place": "Królewice",
       "lat": 50.593056,
       "lon": 21.425833,
+      "people": ["kunegunda-chochol-1763"]
+    },
+    {
+      "id": "death-kunegunda-chochol-1833",
+      "type": "death",
+      "year": 1833,
+      "date": "12 I 1833",
+      "place": "Bazów",
+      "lat": 50.595,
+      "lon": 21.448056,
       "people": ["kunegunda-chochol-1763"]
     },
     {
