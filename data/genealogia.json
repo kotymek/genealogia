@@ -974,9 +974,9 @@
       "line": "Rugała"
     },
     {
-      "id": "katarzyna-chylowa-bd",
+      "id": "katarzyna-kubik-bd",
       "givenName": "Katarzyna",
-      "surname": "Chylowa",
+      "surname": "Kubik",
       "relation": "praprapraprapraprapraprababcia",
       "line": "Rugała"
     },
@@ -3588,14 +3588,24 @@
       "people": ["szymon-chyla-1687"]
     },
     {
-      "id": "marriage-mikolaj-chyla-katarzyna-chylowa-1683",
+      "id": "birth-mikolaj-chyla-1666",
+      "type": "birth",
+      "year": 1666,
+      "date": "XII 1666",
+      "place": "Ruda",
+      "lat": 50.476111,
+      "lon": 21.240556,
+      "people": ["mikolaj-chyla-1666"]
+    },
+    {
+      "id": "marriage-mikolaj-chyla-katarzyna-kubik-1683",
       "type": "marriage",
       "year": 1683,
       "date": "7 XI 1683",
       "place": "Połaniec",
       "lat": 50.432778,
       "lon": 21.280278,
-      "people": ["mikolaj-chyla-bd", "katarzyna-chylowa-bd"]
+      "people": ["mikolaj-chyla-bd", "katarzyna-kubik-bd"]
     }, 
     {
       "id": "birth-jan-pawelek-1714",
