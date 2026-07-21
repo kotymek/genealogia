@@ -967,7 +967,7 @@
       "line": "Rugała"
     },
     {
-      "id": "mikolaj-chyla-bd",
+      "id": "mikolaj-chyla-1666",
       "givenName": "Mikołaj",
       "surname": "Chyla",
       "relation": "prapraprapraprapraprapradziadek",
@@ -3605,7 +3605,7 @@
       "place": "Połaniec",
       "lat": 50.432778,
       "lon": 21.280278,
-      "people": ["mikolaj-chyla-bd", "katarzyna-kubik-bd"]
+      "people": ["mikolaj-chyla-1666", "katarzyna-kubik-bd"]
     }, 
     {
       "id": "birth-jan-pawelek-1714",
