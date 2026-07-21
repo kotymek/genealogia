@@ -1023,6 +1023,13 @@
       "line": "Rugała"
     },
     {
+      "id": "jadwiga-kopytowa-1744",
+      "givenName": "Jadwiga",
+      "surname": "Kopytowa",
+      "relation": "praprapraprapraprababcia",
+      "line": "Rugała"
+    },
+    {
       "id": "ludwik-kielbasa-1767",
       "givenName": "Ludwik",
       "surname": "Kiełbasa",
@@ -3643,7 +3650,7 @@
       "people": ["waclaw-sadlocha-1782"]
     }, 
     {
-      "id": "death-marianna-kopyto-1776",
+      "id": "death-marianna-kopyto-1826",
       "type": "death",
       "year": 1826,
       "date": "18 XII 1826",
@@ -3651,6 +3658,16 @@
       "lat": 50.480556,
       "lon": 21.2625,
       "people": ["marianna-kopyto-1776"]
+    }, 
+    {
+      "id": "death-jadwiga-kopytowa-1814",
+      "type": "death",
+      "year": 1814,
+      "date": "24 IX 1814",
+      "place": "Szczeka",
+      "lat": 50.493611,
+      "lon": 21.263333,
+      "people": ["jadwiga-kopytowa-1744"]
     }, 
     {
       "id": "birth-ludwik-kielbasa-1767",
