@@ -31,6 +31,7 @@ const HISTORICAL_LAYER_CONFIG = {
       fillColor: "#3b82f6",
       fillOpacity: 0.07,
     },
+  },
   crownPoland: {
     label: "Korona Polska w XVI w.",
     url: "data/granice/korona-xviw.geojson",
