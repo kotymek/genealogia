@@ -1,0 +1,269 @@
+{
+  "type": "FeatureCollection",
+  "name": "Granica Korony Polskiej i Nowej Marchii – okolice Krzyża Wielkopolskiego, rekonstrukcja 1564/65",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Granica Korona Polska – Nowa Marchia (odcinek Drawy)",
+        "date_ref": "1564/1565",
+        "status": "rekonstrukcja przybliżona",
+        "confidence": "wysoka co do zasady przebiegu wzdłuż Drawy; umiarkowana co do dokładnego XVI-wiecznego koryta",
+        "east_side": "Korona Królestwa Polskiego / województwo poznańskie",
+        "west_side": "Nowa Marchia / Brandenburgia",
+        "historical_source": "Słownik historyczno-geograficzny ziem polskich w średniowieczu, hasło Wielkopolska; opis lustracji 1564/65 (LWK 1, 210)",
+        "geometry_basis": "współczesny przebieg Drawy odtworzony z mapy użytkownika; końcowy punkt ujścia wg współczesnych danych OSM",
+        "note": "Linia nadaje się do wizualizacji historycznej w Leaflet, ale nie powinna być traktowana jako geodezyjnie dokładny przebieg granicy z XVI wieku; koryto rzeki mogło się zmieniać."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            15.980584,
+            52.937033
+          ],
+          [
+            15.980584,
+            52.934964
+          ],
+          [
+            15.980927,
+            52.932895
+          ],
+          [
+            15.978867,
+            52.931032
+          ],
+          [
+            15.978181,
+            52.929791
+          ],
+          [
+            15.978867,
+            52.927721
+          ],
+          [
+            15.978867,
+            52.926272
+          ],
+          [
+            15.979211,
+            52.924616
+          ],
+          [
+            15.980241,
+            52.922547
+          ],
+          [
+            15.979897,
+            52.920891
+          ],
+          [
+            15.978867,
+            52.918821
+          ],
+          [
+            15.980241,
+            52.917372
+          ],
+          [
+            15.981614,
+            52.915715
+          ],
+          [
+            15.981957,
+            52.913852
+          ],
+          [
+            15.982301,
+            52.912196
+          ],
+          [
+            15.981957,
+            52.91054
+          ],
+          [
+            15.981614,
+            52.90909
+          ],
+          [
+            15.978867,
+            52.908055
+          ],
+          [
+            15.977494,
+            52.906399
+          ],
+          [
+            15.975434,
+            52.905777
+          ],
+          [
+            15.974747,
+            52.904328
+          ],
+          [
+            15.976121,
+            52.903085
+          ],
+          [
+            15.977837,
+            52.90205
+          ],
+          [
+            15.975777,
+            52.901429
+          ],
+          [
+            15.973374,
+            52.900807
+          ],
+          [
+            15.972001,
+            52.899565
+          ],
+          [
+            15.972688,
+            52.898115
+          ],
+          [
+            15.974747,
+            52.897287
+          ],
+          [
+            15.976121,
+            52.896044
+          ],
+          [
+            15.976464,
+            52.894594
+          ],
+          [
+            15.974747,
+            52.893559
+          ],
+          [
+            15.974404,
+            52.892316
+          ],
+          [
+            15.976121,
+            52.89128
+          ],
+          [
+            15.977494,
+            52.890037
+          ],
+          [
+            15.976807,
+            52.889002
+          ],
+          [
+            15.978867,
+            52.887759
+          ],
+          [
+            15.981614,
+            52.886516
+          ],
+          [
+            15.982301,
+            52.885273
+          ],
+          [
+            15.981957,
+            52.883823
+          ],
+          [
+            15.982301,
+            52.882372
+          ],
+          [
+            15.984017,
+            52.881129
+          ],
+          [
+            15.984017,
+            52.879265
+          ],
+          [
+            15.983331,
+            52.877607
+          ],
+          [
+            15.982987,
+            52.875949
+          ],
+          [
+            15.982644,
+            52.874499
+          ],
+          [
+            15.983331,
+            52.873048
+          ],
+          [
+            15.98539,
+            52.871805
+          ],
+          [
+            15.98642,
+            52.870354
+          ],
+          [
+            15.98539,
+            52.869111
+          ],
+          [
+            15.986077,
+            52.867867
+          ],
+          [
+            15.987794,
+            52.866624
+          ],
+          [
+            15.987794,
+            52.865173
+          ],
+          [
+            15.988824,
+            52.863722
+          ],
+          [
+            15.98951,
+            52.862479
+          ],
+          [
+            15.98951,
+            52.86082
+          ],
+          [
+            15.989167,
+            52.859369
+          ],
+          [
+            15.989167,
+            52.858333
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ujście Drawy do Noteci",
+        "role": "punkt załamania granicy opisany w źródle",
+        "date_ref": "1564/1565",
+        "note": "Od tego miejsca opis granicy prowadzi dalej Notecią."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.989167,
+          52.858333
+        ]
+      }
+    }
+  ]
+}
