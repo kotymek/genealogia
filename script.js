@@ -44,7 +44,7 @@ const HISTORICAL_LAYER_CONFIG = {
     },
   },
   crownPoland2: {
-    label: "poprawka granicy XVI w. Łokacz",
+    label: "poprawka granicy XVI w. - Łokacz",
     url: "data/granice/granica_korony_nowa_marchia_krzyz_1564_65.geojson",
     style: {
     color: "#9f5f22",
