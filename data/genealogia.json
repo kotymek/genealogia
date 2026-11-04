@@ -1282,13 +1282,6 @@
       "line": "Rugała"
     },
     {
-      "id": "franciszka-rejmentowa-1747",
-      "givenName": "Franciszka",
-      "surname": "Rejmentowa",
-      "relation": "praprapraprapraprababcia",
-      "line": "Rugała"
-    },
-    {
       "id": "jan-szuba-1772",
       "givenName": "Jan",
       "surname": "Szuba",
@@ -4276,16 +4269,6 @@
       "lat": 50.733889,
       "lon": 20.639722,
       "people": ["joachim-rejment-1766"]
-    },
-    {
-      "id": "death-franciszka-rejmentowa-1787",
-      "type": "death",
-      "year": 1787,
-      "date": "5 III 1787",
-      "place": "Wola Morawicka",
-      "lat": 50.733889,
-      "lon": 20.639722,
-      "people": ["franciszka-rejmentowa-1747"]
     },
     {
       "id": "marriage-jan-szuba-katarzyna-orlanska-1796",
