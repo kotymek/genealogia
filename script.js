@@ -1,430 +1,111 @@
-const EVENT_LABELS = {
-  birth: "urodzenie",
-  marriage: "ślub",
-  death: "zgon",
-};
-
-const EVENT_COLORS = {
-  birth: "#237a57",
-  marriage: "#7a4bc2",
-  death: "#5c677d",
-};
-
-const HISTORICAL_LAYER_CONFIG = {
-  congressPoland: {
-    label: "Królestwo Polskie 1815-1914",
-    url: "data/granice/krolestwo-polskie-1830.geojson",
-    style: {
-      color: "#b45309",
-      weight: 2,
-      fillColor: "#f59e0b",
-      fillOpacity: 0.08,
-      dashArray: "6 5",
-    },
-  },
-  secondRepublic: {
-    label: "II Rzeczpospolita",
-    url: "data/granice/ii-rp.geojson",
-    style: {
-      color: "#1d4ed8",
-      weight: 2,
-      fillColor: "#3b82f6",
-      fillOpacity: 0.07,
-    },
-  },
-  crownPoland: {
-    label: "Korona Polska w XVI w.",
-    url: "data/granice/korona-xviw.geojson",
-    style: {
-    color: "#9f5f22",
-    weight: 2,
-    fillColor: "#d9822b",
-    fillOpacity: 0.07,
-    dashArray: "4 4",
-    },
-  },
-  crownPoland2: {
-    label: "poprawka granicy XVI w. - Łokacz",
-    url: "data/granice/granica_korony_nowa_marchia_krzyz_1564_65.geojson",
-    style: {
-    color: "#9f5f22",
-    weight: 2,
-    fillColor: "#d9822b",
-    fillOpacity: 0.07,
-    dashArray: "4 4",
-    },
-  },
-};
-
-const map = L.map("map", {
-  scrollWheelZoom: true,
-});
-
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  attribution: "&copy; OpenStreetMap",
-}).addTo(map);
-
-const markerLayer = L.layerGroup().addTo(map);
-const historicalLayers = {};
-
-const state = {
-  people: [],
-  events: [],
-  filters: {
-    query: "",
-    types: new Set(["birth", "marriage", "death"]),
-    line: "",
-    yearFrom: null,
-    yearTo: null,
-  },
-};
-
-const elements = {
-  search: document.querySelector("#search"),
-  typeFilters: document.querySelectorAll("input[name='type']"),
-  historicalToggles: document.querySelectorAll("[data-historical-layer]"),
-  lineFilter: document.querySelector("#line-filter"),
-  yearFrom: document.querySelector("#year-from"),
-  yearTo: document.querySelector("#year-to"),
-  reset: document.querySelector("#reset"),
-  events: document.querySelector("#events"),
-  historicalStatus: document.querySelector("#historical-status"),
-  statEvents: document.querySelector("#stat-events"),
-  statPeople: document.querySelector("#stat-people"),
-  statPlaces: document.querySelector("#stat-places"),
-};
-
-fetch("data/genealogia.json")
-  .then((response) => {
-    if (!response.ok) {
-      throw new Error(`Nie udało się wczytać danych: ${response.status}`);
-    }
-    return response.json();
-  })
-  .then((data) => {
-    state.people = data.people || [];
-    state.events = normalizeEvents(data.events || []);
-    hydrateControls();
-    attachListeners();
-    render();
-  })
-  .catch((error) => {
-    console.error(error);
-    elements.events.innerHTML = `<p class="empty">Nie udało się wczytać danych mapy.</p>`;
-    map.setView([52.0, 19.0], 6);
-  });
-
-function normalizeEvents(events) {
-  return events
-    .map((event) => ({
-      ...event,
-      year: Number(event.year || extractYear(event.date)),
-      peopleDetails: (event.people || [])
-        .map((id) => state.people.find((person) => person.id === id))
-        .filter(Boolean),
-    }))
-    .sort((a, b) => (a.year || 9999) - (b.year || 9999));
-}
-
-function extractYear(date) {
-  const match = String(date || "").match(/\d{4}/);
-  return match ? Number(match[0]) : null;
-}
-
-function hydrateControls() {
-  const years = state.events.map((event) => event.year).filter(Boolean);
-  const lines = [...new Set(state.people.map((person) => person.line).filter(Boolean))].sort();
-
-  if (years.length) {
-    elements.yearFrom.value = Math.min(...years);
-    elements.yearTo.value = Math.max(...years);
-    state.filters.yearFrom = Number(elements.yearFrom.value);
-    state.filters.yearTo = Number(elements.yearTo.value);
+/* Atlas rodzinny — aplikacja statyczna, bez kont, analityki i przesyłania drzewa. */
+(()=>{'use strict';
+const C=window.AtlasCore,$=id=>document.getElementById(id),esc=C.escape;
+const labels={birth:'Narodziny',marriage:'Ślub',death:'Zgon',burial:'Pochówek',occupation:'Zawód',residence:'Zamieszkanie',divorce:'Rozwód',census:'Spis ludności',event:'Wydarzenie',christening:'Chrzest',baptism:'Chrzest',emigration:'Emigracja',immigration:'Imigracja'};
+const symbols={birth:'✳',marriage:'∞',death:'†',burial:'◇',occupation:'⌁',residence:'⌂'};
+const state={view:'map',query:'',type:'',line:'',from:null,to:null,unknown:true,located:false,person:'',limit:70,detail:null,route:false};
+let data,map,markers,route,visible=[],returnFocus=null,toastTimer;
+const selectedLayers=new Map();
+const counted=(n,kind)=>{const forms={events:['wydarzenie','wydarzenia','wydarzeń'],people:['osoba','osoby','osób'],places:['miejsce','miejsca','miejsc']}[kind];return n+' '+forms[n===1?0:n%10>=2&&n%10<=4&&(n%100<12||n%100>14)?1:2];};
+const layerFiles={congress:'krolestwo-polskie-1830.geojson',republic:'ii-rp.geojson',crown:'korona-xviw.geojson',correction:'granica_korony_nowa_marchia_krzyz_1564_65.geojson'};
+const displayDate=e=>(e.date?.raw||'Data nieznana').replace(/\b(ABT|AFT|BEF|CAL|EST|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)\b/g,t=>({ABT:'ok.',AFT:'po',BEF:'przed',CAL:'wyliczono:',EST:'szacunkowo:',JAN:'sty',FEB:'lut',MAR:'mar',APR:'kwi',MAY:'maj',JUN:'cze',JUL:'lip',AUG:'sie',SEP:'wrz',OCT:'paź',NOV:'lis',DEC:'gru'}[t]));
+const yearLabel=e=>e.date.kind==='after'?'po '+e.year:e.date.kind==='before'?'przed '+e.year:e.year?(['approximate','estimated','calculated'].includes(e.date.kind)?'ok. ':'')+e.year:e.date.start?e.date.start.year+'–'+e.date.end.year:'bez daty';
+const name=id=>data.byPerson.get(id)?.name||'Osoba niepowiązana w danych';
+const initials=p=>[p.givenName,p.surname].map(s=>Array.from(s||'')[0]||'').join('')||'?';
+function toast(message){$('toast').textContent=message;$('toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').hidden=true,3500);}
+function saveState(){const p=new URLSearchParams();if(state.view!=='map')p.set('view',state.view);for(const k of ['query','type','line','person','from','to'])if(state[k]!==''&&state[k]!=null)p.set(k,String(state[k]));if(!state.unknown)p.set('unknown','0');if(state.located)p.set('located','1');if(state.detail)p.set('detail',state.detail.kind+':'+state.detail.id);try{history.replaceState(null,'',location.pathname+location.search+(p.size?'#'+p:''));}catch{/* file:// ma ograniczenia zależne od przeglądarki */}}
+function readState(){const p=new URLSearchParams(location.hash.slice(1));if(['map','people','places','timeline'].includes(p.get('view')))state.view=p.get('view');for(const k of ['query','type','line','person'])state[k]=p.get(k)||'';for(const k of ['from','to'])state[k]=p.has(k)&&Number.isFinite(+p.get(k))?+p.get(k):null;state.unknown=p.get('unknown')!=='0';state.located=p.get('located')==='1';return p.get('detail');}
+function syncControls(){for(const [id,key] of [['search','query'],['type-filter','type'],['line-filter','line'],['year-from','from'],['year-to','to']])$(id).value=state[key]??'';$('unknown-dates').checked=state.unknown;$('located-only').checked=state.located;}
+function eventCard(e){return `<button class="event-card" data-event="${esc(e.id)}"><span class="event-dot ${esc(e.type)}" aria-hidden="true">${symbols[e.type]||'·'}</span><span class="card-body"><span class="card-top"><span class="card-type">${esc(labels[e.type]||e.type)}</span><span class="card-year">${esc(yearLabel(e))}</span></span><strong>${esc(e.names.join(' i ')||'Osoba nieustalona')}</strong><span class="card-meta">${C.located(e)?'⌖ ':''}${esc(e.place||'Miejsce nieznane')}</span></span><span class="arrow" aria-hidden="true">›</span></button>`;}
+function personCard(p){const es=data.personEvents.get(p.id)||[],places=[...new Set(es.map(e=>e.place).filter(Boolean))];return `<button class="person-card" data-person="${esc(p.id)}"><span class="avatar" aria-hidden="true">${esc(initials(p))}</span><span class="card-body"><strong>${esc(p.name)}</strong><span class="card-meta">${esc(C.lifespan(p.id,data))}</span><span class="card-meta">${esc(places.slice(0,2).join(' · ')||p.relation||'Poznaj powiązania rodzinne')}${places.length>2?' +'+(places.length-2):''}</span></span><span class="arrow" aria-hidden="true">›</span></button>`;}
+function placeCard(p,es){const count=es.filter(e=>e.placeId===p.id).length;return `<button class="place-card" data-place="${esc(p.id)}"><span class="avatar place-avatar" aria-hidden="true">⌖</span><span class="card-body"><strong>${esc(p.name)}</strong><span class="card-meta">${count} wydarzeń · ${C.located(p)?'na mapie':'lokalizacja do ustalenia'}</span></span><span class="arrow" aria-hidden="true">›</span></button>`;}
+function render(){
+  visible=data.events.filter(e=>C.matches(e,state,data)).sort(C.compareEvents);
+  document.body.dataset.view=state.view;
+  document.querySelectorAll('[data-view]').forEach(b=>{const on=b.dataset.view===state.view;b.classList.toggle('active',on);if(on)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
+  const invalid=state.from!=null&&state.to!=null&&state.from>state.to;
+  $('filter-error').hidden=!invalid;$('filter-error').textContent=invalid?'Rok początkowy nie może być późniejszy niż końcowy.':'';
+  const fc=[state.type,state.line,state.from!==null,state.to!==null,!state.unknown,state.located].filter(Boolean).length;$('filter-count').textContent=fc;$('filter-count').hidden=!fc;
+  $('person-filter').hidden=!state.person;$('person-filter').querySelector('span').textContent=state.person?name(state.person):'';
+  const pids=new Set(visible.flatMap(e=>e.people||[])),placeIds=new Set(visible.map(e=>e.placeId).filter(Boolean));
+  let items,title,kicker,html;
+  if(state.view==='people'){
+    const eventConstraints=state.type||state.from!=null||state.to!=null||state.located||!state.unknown||invalid;
+    items=data.people.filter(p=>(!state.person||p.id===state.person)&&(!state.line||p.line===state.line)&&(!state.query||state.query.split(/\s+/).every(q=>(p.search+' '+C.fold((data.personEvents.get(p.id)||[]).map(e=>e.place).join(' '))).includes(C.fold(q))))&&(!eventConstraints||pids.has(p.id))).sort((a,b)=>(a.surname+' '+a.givenName).localeCompare(b.surname+' '+b.givenName,'pl'));
+    title='Ludzie w naszej historii';kicker='POZNAJ RODZINĘ';html=items.slice(0,state.limit).map(personCard).join('');
+  }else if(state.view==='places'){
+    items=data.places.filter(p=>placeIds.has(p.id)).sort((a,b)=>a.name.localeCompare(b.name,'pl'));title='Miejsca rodzinne';kicker='GEOGRAFIA WSPOMNIEŃ';html=items.slice(0,state.limit).map(p=>placeCard(p,visible)).join('');
+  }else{
+    items=visible;title=state.view==='timeline'?'Przez pokolenia':'Wydarzenia';kicker=state.view==='timeline'?'RODZINNA CHRONOLOGIA':'RODZINNE ŚLADY';
+    let last=null;html=items.slice(0,state.limit).map(e=>{const group=e.year?Math.floor(e.year/10)*10:null;let heading='';if(state.view==='timeline'&&group!==last){heading=`<h3 class="timeline-year">${group===null?'Bez daty':group+'–'+(group+9)}</h3>`;last=group;}return heading+eventCard(e);}).join('');
   }
-
-  lines.forEach((line) => {
-    const option = document.createElement("option");
-    option.value = line;
-    option.textContent = line;
-    elements.lineFilter.append(option);
-  });
+  $('list-title').textContent=title;$('list-kicker').textContent=kicker;$('result-count').textContent=items.length;
+  $('result-summary').textContent=`${counted(visible.length,'events')} · ${counted([...pids].filter(id=>data.byPerson.has(id)).length,'people')} · ${counted(placeIds.size,'places')}`;
+  $('results').innerHTML=html||'<p class="empty">Brak wyników dla tych filtrów.<br>Spróbuj krótszej frazy lub wybierz „Wyczyść”.</p>';
+  $('show-more').hidden=items.length<=state.limit;
+  drawMarkers();drawTimeline();saveState();requestAnimationFrame(()=>map?.invalidateSize({pan:false}));
 }
-
-function attachListeners() {
-  elements.search.addEventListener("input", () => {
-    state.filters.query = elements.search.value.trim().toLowerCase();
-    render();
-  });
-
-  elements.typeFilters.forEach((checkbox) => {
-    checkbox.addEventListener("change", () => {
-      state.filters.types = new Set(
-        [...elements.typeFilters].filter((input) => input.checked).map((input) => input.value)
-      );
-      render();
-    });
-  });
-
-  elements.historicalToggles.forEach((checkbox) => {
-    checkbox.addEventListener("change", () => {
-      toggleHistoricalLayer(checkbox.dataset.historicalLayer, checkbox.checked);
-    });
-  });
-
-  elements.lineFilter.addEventListener("change", () => {
-    state.filters.line = elements.lineFilter.value;
-    render();
-  });
-
-  [elements.yearFrom, elements.yearTo].forEach((input) => {
-    input.addEventListener("input", () => {
-      state.filters.yearFrom = elements.yearFrom.value ? Number(elements.yearFrom.value) : null;
-      state.filters.yearTo = elements.yearTo.value ? Number(elements.yearTo.value) : null;
-      render();
-    });
-  });
-
-  elements.reset.addEventListener("click", resetFilters);
-}
-
-function resetFilters() {
-  elements.search.value = "";
-  elements.typeFilters.forEach((input) => {
-    input.checked = true;
-  });
-  elements.lineFilter.value = "";
-
-  const years = state.events.map((event) => event.year).filter(Boolean);
-  elements.yearFrom.value = years.length ? Math.min(...years) : "";
-  elements.yearTo.value = years.length ? Math.max(...years) : "";
-
-  state.filters.query = "";
-  state.filters.types = new Set(["birth", "marriage", "death"]);
-  state.filters.line = "";
-  state.filters.yearFrom = elements.yearFrom.value ? Number(elements.yearFrom.value) : null;
-  state.filters.yearTo = elements.yearTo.value ? Number(elements.yearTo.value) : null;
-  render();
-}
-
-function toggleHistoricalLayer(key, enabled) {
-  const config = HISTORICAL_LAYER_CONFIG[key];
-
-  if (!config) return;
-
-  if (!enabled) {
-    if (historicalLayers[key]) {
-      map.removeLayer(historicalLayers[key]);
-    }
-    setHistoricalStatus("");
-    return;
+function drawMarkers(){
+  if(!map)return;markers.clearLayers();
+  const es=visible.filter(C.located),groups=new Map();
+  for(const e of es){const point=map.project([e.lat,e.lon],map.getZoom()),key=map.getZoom()<11?Math.floor(point.x/48)+','+Math.floor(point.y/48):e.lat+','+e.lon;if(!groups.has(key))groups.set(key,[]);groups.get(key).push(e);}
+  for(const entries of groups.values()){
+    const lat=entries.reduce((s,e)=>s+e.lat,0)/entries.length,lon=entries.reduce((s,e)=>s+e.lon,0)/entries.length,count=entries.length;
+    const size=count===1?16:count<10?29:count<50?36:43;
+    const m=L.marker([lat,lon],{icon:L.divIcon({className:'atlas-pin'+(count===1?' single':''),html:`<span>${count}</span>`,iconSize:[size,size],iconAnchor:[size/2,size/2]}),keyboard:true,title:`${[...new Set(entries.map(e=>e.place))].slice(0,3).join(', ')}: ${count} wydarzeń`}).addTo(markers);
+    const names=[...new Set(entries.map(e=>e.place))];m.bindTooltip(esc(names.slice(0,3).join(' · '))+'<br>'+count+' wydarzeń');
+    m.on('click',()=>{const coords=new Set(entries.map(e=>e.lat+','+e.lon));if(coords.size>1&&map.getZoom()<11){map.fitBounds(entries.map(e=>[e.lat,e.lon]),{padding:[70,70],maxZoom:12});}else openPlace(entries[0].placeId,true,entries);});
   }
-
-  if (historicalLayers[key]) {
-    historicalLayers[key].addTo(map);
-    setHistoricalStatus(`Włączono warstwę: ${config.label}.`);
-    return;
-  }
-
-  setHistoricalStatus(`Wczytuję warstwę: ${config.label}...`);
-
-  fetch(config.url)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error(`Brakuje pliku ${config.url} albo serwer zwrócił ${response.status}.`);
-      }
-      return response.text();
-    })
-    .then((text) => {
-      try {
-        return JSON.parse(text);
-      } catch {
-        throw new Error(`Plik ${config.url} istnieje, ale nie jest poprawnym GeoJSON-em.`);
-      }
-    })
-    .then((geojson) => {
-      if (!geojson.features?.length) {
-        throw new Error(`Plik ${config.url} nie zawiera żadnych obiektów GeoJSON.`);
-      }
-
-      historicalLayers[key] = L.geoJSON(geojson, {
-        style: config.style,
-        onEachFeature: (feature, layer) => {
-          layer.bindPopup(getHistoricalFeatureName(feature, config.label));
-        },
-      }).addTo(map);
-
-      historicalLayers[key].bringToBack();
-      markerLayer.eachLayer((layer) => layer.bringToFront());
-      setHistoricalStatus(`Włączono warstwę: ${config.label}.`);
-    })
-    .catch((error) => {
-      console.error(error);
-      uncheckHistoricalToggle(key);
-      setHistoricalStatus(error.message, true);
-    });
+  $('map-count').textContent=`${counted(new Set(es.map(e=>e.placeId)).size,'places')} · ${counted(es.length,'events')}`;
+  if(!es.length){$('map-notice').hidden=false;$('map-notice').textContent=visible.length?'Te wydarzenia nie mają jeszcze współrzędnych. Ich szczegóły są dostępne na liście.':'Brak punktów dla wybranych filtrów.';}else if(!$('map-notice').dataset.tileError){$('map-notice').hidden=true;}
 }
-
-function getHistoricalFeatureName(feature, fallback) {
-  const properties = feature.properties || {};
-  return escapeHtml(
-    properties.name ||
-      properties.nazwa ||
-      properties.NAZWA ||
-      properties.gubernia ||
-      properties.wojewodztw ||
-      properties.wojewodztwo ||
-      fallback
-  );
+function fitEvents(es=visible){if(!map)return;const coords=es.filter(C.located).map(e=>[e.lat,e.lon]);if(coords.length)map.fitBounds(coords,{padding:[55,55],maxZoom:11,animate:false});}
+function drawTimeline(){
+  const es=data.events.filter(e=>C.matches(e,state,data,true)&&e.year),years=es.map(e=>e.year);
+  if(!years.length){$('time-chart').innerHTML='';$('time-labels').textContent='Brak dat dla wybranych osób';$('time-range').textContent='Daty nieznane';return;}
+  const min=Math.floor(Math.min(...years)/10)*10,max=Math.floor(Math.max(...years)/10)*10,bins=new Map();for(let y=min;y<=max;y+=10)bins.set(y,0);es.forEach(e=>{const y=Math.floor(e.year/10)*10;bins.set(y,bins.get(y)+1);});const peak=Math.max(...bins.values());
+  $('time-chart').innerHTML=[...bins].map(([y,n])=>`<button style="--height:${Math.max(5,n/peak*100)}%" data-decade="${y}" class="${state.from===y&&state.to===y+9?'selected':''}" title="${y}–${y+9}: ${n} wydarzeń" aria-label="Lata ${y}–${y+9}, ${n} wydarzeń" ${n?'':'disabled'}></button>`).join('');
+  $('time-labels').innerHTML=`<span>${min}</span><span>${Math.floor((min+max)/20)*10}</span><span>${max+9}</span>`;
+  $('time-range').textContent=state.from!=null||state.to!=null?`${state.from??'…'} — ${state.to??'…'}`:`${Math.min(...years)} — ${Math.max(...years)}`;
+  $('time-reset').hidden=state.from===null&&state.to===null;
 }
-
-function uncheckHistoricalToggle(key) {
-  const checkbox = document.querySelector(`[data-historical-layer="${key}"]`);
-  if (checkbox) checkbox.checked = false;
+function detail(html,kind,id){route?.clearLayers();state.route=false;returnFocus=document.activeElement;$('detail-content').innerHTML=html;$('detail').hidden=false;$('detail').scrollTop=0;state.detail={kind,id};$('close-detail').focus({preventScroll:true});saveState();}
+function closeDetail(){ $('detail').hidden=true;state.detail=null;state.route=false;route?.clearLayers();saveState();if(returnFocus?.isConnected)returnFocus.focus({preventScroll:true});}
+function sourceHTML(sources){if(!sources?.length)return '';return `<details class="source-details"><summary>Źródła (${sources.length})</summary>${sources.map(c=>{const s=data.sources.find(s=>s.id===c.sourceId);return `<p>${esc(s?.title||c.description||'Źródło bez tytułu')}${c.page?' · '+esc(c.page):''}</p>${c.text?'<p>'+esc(c.text)+'</p>':''}`;}).join('')}</details>`;}
+function lifeHTML(e,withPeople=false){return `<div class="life-event"><div class="event-date">${esc(displayDate(e))}</div><h4>${esc(labels[e.type]||'Wydarzenie')}</h4>${withPeople?e.people.map(id=>data.byPerson.has(id)?`<button class="relative-link" data-person="${esc(id)}">${esc(name(id))} ›</button>`:'<p>Osoba niepowiązana w danych</p>').join(''):''}${e.place?`<button class="place-link" data-place="${esc(e.placeId)}">${esc(e.place)} ${C.located(e)?'↗':''}</button>`:'<small>Miejsce nieznane</small>'}${e.detail&&e.detail!=='Y'?'<p>'+esc(e.detail)+'</p>':''}${e.notes.map(n=>'<p>'+esc(n)+'</p>').join('')}${sourceHTML(e.sources)}</div>`;}
+function familyHTML(id){const r=C.relatives(id,data),names={parents:'Rodzice',spouses:'Małżonkowie',children:'Dzieci',siblings:'Rodzeństwo'};const content=Object.entries(r).filter(([,ids])=>ids.length).map(([key,ids])=>`<p class="relative-label">${names[key]}</p>${ids.map(id=>`<button class="relative-link" data-person="${esc(id)}">${esc(name(id))} <span class="card-meta">${esc(C.lifespan(id,data))}</span></button>`).join('')}`).join('');return content||'<p>Brak powiązań rodzinnych w tym zbiorze.</p>';}
+function openPerson(id){const p=data.byPerson.get(id);if(!p)return;const es=data.personEvents.get(id)||[],meaningful=es.filter(e=>e.meaningful),places=[...new Set(es.filter(C.located).map(e=>e.placeId))];
+  detail(`<div class="detail-head"><div class="avatar">${esc(initials(p))}</div><p class="eyebrow">KARTA OSOBY</p><h2>${esc(p.name)}</h2><p class="detail-subtitle">${esc(C.lifespan(id,data))}${p.relation?'<br>'+esc(p.relation):''}${p.line?' · linia '+esc(p.line):''}</p><div class="detail-toolbar"><button class="primary" data-focus-person="${esc(id)}">Wydarzenia na mapie</button><button class="secondary" data-share>Kopiuj odnośnik</button></div></div><div class="detail-body"><section class="detail-section"><h3>Zapisane życie</h3>${meaningful.length?meaningful.map(e=>lifeHTML(e)).join(''):'<p>Daty i miejsca nie zostały jeszcze uzupełnione.</p>'}</section>${places.length>1?`<section class="detail-section"><button class="secondary" data-route="${esc(id)}">Połącz miejsca życia</button><p style="margin-top:8px">Połączenia wydarzeń, nie potwierdzona trasa podróży.</p></section>`:''}<section class="detail-section"><h3>Najbliższa rodzina</h3>${familyHTML(id)}</section>${p.notes?.length?'<section class="detail-section"><h3>Notatki</h3>'+p.notes.map(n=>'<p>'+esc(n)+'</p>').join('')+'</section>':''}${sourceHTML(p.sources)}</div>`,'person',id);
 }
-
-function setHistoricalStatus(message, isError = false) {
-  elements.historicalStatus.textContent = message;
-  elements.historicalStatus.classList.toggle("is-error", isError);
+function openEvent(id){const e=data.byEvent.get(id);if(!e)return;detail(`<div class="detail-head"><p class="eyebrow">RODZINNY ŚLAD</p><h2>${esc(labels[e.type]||e.type)}</h2><p class="detail-subtitle">${esc(displayDate(e))}</p></div><div class="detail-body">${lifeHTML(e,true)}${C.located(e)?`<div class="detail-toolbar"><button class="primary" data-locate="${esc(e.id)}">Pokaż to miejsce</button></div>`:''}</div>`,'event',id);if(C.located(e))map?.setView([e.lat,e.lon],Math.max(map.getZoom(),9),{animate:false});}
+function openPlace(id,fromMap=false,group=null){const p=data.byPlace.get(id);if(!p)return;const es=(group||visible.filter(e=>e.placeId===id)).sort(C.compareEvents);const list=es.length?es:data.events.filter(e=>e.placeId===id&&e.meaningful).sort(C.compareEvents);const names=[...new Set(list.map(e=>e.place))];detail(`<div class="detail-head"><p class="eyebrow">MIEJSCE W HISTORII RODZINY</p><h2>${esc(names.length>1?names.join(' / '):p.name)}</h2><p class="detail-subtitle">${list.length} wydarzeń · ${new Set(list.flatMap(e=>e.people)).size} osób${!C.located(p)?'<br>Lokalizacja do ustalenia':''}</p></div><div class="detail-body"><section class="detail-section"><h3>Wydarzyło się tutaj</h3>${list.length?list.map(e=>lifeHTML(e,true)).join(''):'<p>Brak opisanych wydarzeń.</p>'}</section></div>`,'place',id);if(!fromMap&&C.located(p))map?.setView([p.lat,p.lon],10,{animate:false});}
+function focusPerson(id){state.person=id;state.query='';state.from=null;state.to=null;state.type='';state.line='';state.unknown=true;state.located=false;state.limit=70;syncControls();render();fitEvents();closeDetail();}
+function drawRoute(id){if(!map)return;route.clearLayers();state.route=!state.route;if(state.route){const es=(data.personEvents.get(id)||[]).filter(e=>e.meaningful&&C.located(e)&&e.year).sort(C.compareEvents);const coords=es.map(e=>[e.lat,e.lon]).filter((p,i,a)=>!i||p[0]!==a[i-1][0]||p[1]!==a[i-1][1]);if(coords.length>1){L.polyline(coords,{color:'#b58e51',weight:2,dashArray:'6 8',opacity:.85}).addTo(route);fitEvents(es);}else{state.route=false;toast('Za mało datowanych wydarzeń w różnych miejscach.');}}const b=$('detail-content').querySelector('[data-route]');if(b)b.textContent=state.route?'Ukryj połączenia':'Połącz miejsca życia';}
+function reset(){Object.assign(state,{query:'',type:'',line:'',from:null,to:null,unknown:true,located:false,person:'',limit:70});syncControls();closeDetail();render();fitEvents();}
+async function toggleLayer(input){const key=input.dataset.layer;if(!input.checked){if(selectedLayers.has(key))map.removeLayer(selectedLayers.get(key));return;}$('layer-status').textContent='Wczytywanie warstwy…';try{let geo=window.ATLAS_LAYERS?.[key];if(!geo&&!selectedLayers.has(key)){const res=await fetch('data/granice/'+layerFiles[key]);if(!res.ok)throw Error('HTTP '+res.status);geo=await res.json();}if(!selectedLayers.has(key))selectedLayers.set(key,L.geoJSON(geo,{style:{color:key==='republic'?'#6a7c96':'#b38a50',weight:1.5,fillOpacity:.055,dashArray:'5 5'},onEachFeature:(f,l)=>{const el=document.createElement('span');el.textContent=f.properties?.name||f.properties?.nazwa||'Granica historyczna';l.bindPopup(el);}}));if(input.checked)selectedLayers.get(key).addTo(map).bringToBack();$('layer-status').textContent='Warstwa orientacyjna; nie zmienia zakresu dat.';}catch{input.checked=false;$('layer-status').textContent='Nie udało się wczytać tej warstwy.';}}
+function bind(){
+  document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>{state.view=b.dataset.view;state.limit=70;render();}));
+  $('search').addEventListener('input',e=>{state.query=e.target.value.trim();state.limit=70;render();});
+  for(const [id,key] of [['type-filter','type'],['line-filter','line'],['year-from','from'],['year-to','to'],['unknown-dates','unknown'],['located-only','located']])$(id).addEventListener($(id).type==='number'?'input':'change',e=>{state[key]=e.target.type==='checkbox'?e.target.checked:e.target.type==='number'?(e.target.value===''?null:Number(e.target.value)):e.target.value;state.limit=70;render();});
+  $('filters-toggle').addEventListener('click',()=>{const show=$('filters').hidden;$('filters').hidden=!show;$('filters-toggle').setAttribute('aria-expanded',String(show));});
+  $('reset').addEventListener('click',reset);$('person-filter').querySelector('button').addEventListener('click',()=>{state.person='';render();});
+  $('show-more').addEventListener('click',()=>{state.limit+=70;render();});$('fit-map').addEventListener('click',()=>fitEvents());$('zoom-in').addEventListener('click',()=>map?.zoomIn());$('zoom-out').addEventListener('click',()=>map?.zoomOut());
+  $('layers-toggle').addEventListener('click',()=>{const show=$('layer-panel').hidden;$('layer-panel').hidden=!show;$('layers-toggle').setAttribute('aria-expanded',String(show));});document.querySelectorAll('[data-layer]').forEach(i=>i.addEventListener('change',()=>toggleLayer(i)));
+  $('close-detail').addEventListener('click',closeDetail);
+  $('time-chart').addEventListener('click',e=>{const b=e.target.closest('[data-decade]');if(b){state.from=+b.dataset.decade;state.to=state.from+9;state.unknown=false;state.limit=70;syncControls();render();}});$('time-reset').addEventListener('click',()=>{state.from=null;state.to=null;state.unknown=true;syncControls();render();});
+  document.addEventListener('click',async e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.person)openPerson(b.dataset.person);else if(b.dataset.event)openEvent(b.dataset.event);else if(b.dataset.place)openPlace(b.dataset.place);else if(b.dataset.focusPerson)focusPerson(b.dataset.focusPerson);else if(b.dataset.route)drawRoute(b.dataset.route);else if(b.dataset.locate){const ev=data.byEvent.get(b.dataset.locate);closeDetail();map?.setView([ev.lat,ev.lon],12,{animate:false});}else if(b.hasAttribute('data-share')){if(location.protocol==='file:'){toast('To odnośnik do pliku na tym komputerze. Nie udostępnia prywatnego atlasu w sieci.');return;}try{await navigator.clipboard.writeText(location.href);toast('Odnośnik skopiowany.');}catch{toast('Skopiuj adres z paska przeglądarki.');}}});
+  $('about').addEventListener('click',()=>$('about-dialog').showModal());$('about-dialog').querySelector('button').addEventListener('click',()=>$('about-dialog').close());
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('detail').hidden)closeDetail();if(e.key==='/'&&!/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)){e.preventDefault();$('search').focus();}});
+  window.addEventListener('hashchange',()=>{const d=readState();syncControls();render();if(d)openHashDetail(d);});
 }
-
-function render() {
-  const filtered = state.events.filter(matchesFilters);
-  renderStats(filtered);
-  renderMarkers(filtered);
-  renderList(filtered);
-}
-
-function matchesFilters(event) {
-  if (!state.filters.types.has(event.type)) return false;
-  if (state.filters.yearFrom && event.year < state.filters.yearFrom) return false;
-  if (state.filters.yearTo && event.year > state.filters.yearTo) return false;
-
-  if (state.filters.line) {
-    const hasLine = event.peopleDetails.some((person) => person.line === state.filters.line);
-    if (!hasLine) return false;
-  }
-
-  if (state.filters.query) {
-    const haystack = [
-      event.place,
-      event.note,
-      event.source,
-      ...event.peopleDetails.flatMap((person) => [person.givenName, person.surname, person.relation]),
-    ]
-      .join(" ")
-      .toLowerCase();
-
-    if (!haystack.includes(state.filters.query)) return false;
-  }
-
-  return true;
-}
-
-function renderStats(events) {
-  const people = new Set(events.flatMap((event) => event.people || []));
-  const places = new Set(events.map(placeKey));
-
-  elements.statEvents.textContent = events.length;
-  elements.statPeople.textContent = people.size;
-  elements.statPlaces.textContent = places.size;
-}
-
-function renderMarkers(events) {
-  markerLayer.clearLayers();
-
-  const grouped = events.reduce((groups, event) => {
-    const key = placeKey(event);
-    groups.set(key, [...(groups.get(key) || []), event]);
-    return groups;
-  }, new Map());
-
-  const bounds = [];
-
-  grouped.forEach((placeEvents) => {
-    const first = placeEvents[0];
-    const marker = L.circleMarker([first.lat, first.lon], {
-      radius: Math.min(18, 8 + placeEvents.length * 1.5),
-      weight: 2,
-      color: "#ffffff",
-      fillColor: placeEvents.length > 1 ? "#244c73" : EVENT_COLORS[first.type],
-      fillOpacity: 0.92,
-    }).addTo(markerLayer);
-
-    marker.bindPopup(buildPopup(first.place, placeEvents), {
-      maxWidth: 340,
-    });
-    bounds.push([first.lat, first.lon]);
-  });
-
-  if (bounds.length) {
-    map.fitBounds(bounds, { padding: [45, 45], maxZoom: 11 });
-  } else {
-    map.setView([52.0, 19.0], 6);
-  }
-}
-
-function buildPopup(place, events) {
-  return `
-    <article class="popup">
-      <h3>${escapeHtml(place)}</h3>
-      ${events.map((event) => `
-        <div class="popup-event">
-          <strong>${escapeHtml(formatEventTitle(event))}</strong>
-          <span>${escapeHtml(formatPeople(event))}</span>
-          ${event.note ? `<p>${escapeHtml(event.note)}</p>` : ""}
-          ${event.source ? `<small>Źródło: ${escapeHtml(event.source)}</small>` : ""}
-        </div>
-      `).join("")}
-    </article>
-  `;
-}
-
-function renderList(events) {
-  if (!events.length) {
-    elements.events.innerHTML = `<p class="empty">Brak zdarzeń dla wybranych filtrów.</p>`;
-    return;
-  }
-
-  elements.events.innerHTML = events
-    .map((event) => `
-      <button class="event-card" type="button" data-event-id="${event.id}">
-        <span class="event-type ${event.type}">${EVENT_LABELS[event.type] || event.type}</span>
-        <strong>${escapeHtml(formatPeople(event))}</strong>
-        <span>${escapeHtml(event.year || "bez daty")} · ${escapeHtml(event.place)}</span>
-      </button>
-    `)
-    .join("");
-
-  elements.events.querySelectorAll(".event-card").forEach((card) => {
-    card.addEventListener("click", () => {
-      const event = state.events.find((item) => item.id === card.dataset.eventId);
-      if (event) {
-        map.setView([event.lat, event.lon], 11);
-      }
-    });
-  });
-}
-
-function formatPeople(event) {
-  return event.peopleDetails
-    .map((person) => `${person.givenName} ${person.surname}`)
-    .join(" i ");
-}
-
-function formatEventTitle(event) {
-  const label = EVENT_LABELS[event.type] || event.type;
-  return `${label}, ${event.date || event.year || "data nieznana"}`;
-}
-
-function placeKey(event) {
-  return `${event.place}|${event.lat}|${event.lon}`;
-}
-
-function escapeHtml(value) {
-  return String(value ?? "")
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
-}
+function openHashDetail(d){const pos=d.indexOf(':'),kind=d.slice(0,pos),id=d.slice(pos+1);if(kind==='person')openPerson(id);else if(kind==='event')openEvent(id);else if(kind==='place')openPlace(id);}
+async function start(){try{
+  let raw=window.ATLAS_DATA;if(!raw){const r=await fetch('data/genealogia.json');if(!r.ok)throw Error('Dane niedostępne');raw=await r.json();}data=C.normalize(raw);const hashDetail=readState();
+  const years=data.events.filter(e=>e.year).map(e=>e.year);$('total-people').textContent=data.people.length.toLocaleString('pl-PL');$('total-places').textContent=data.places.length;$('total-years').textContent=years.length?Math.max(...years)-Math.min(...years):'—';
+  $('private-banner').hidden=!data.private;$('scope-label').textContent=data.private?'Pełne drzewo · lokalnie':'Publiczny zbiór rodzinny';$('about-scope').textContent=data.private?'To pełna, prywatna kopia drzewa. Sam atlas działa z lokalnych plików; podkład mapowy wymaga internetu.':'Ta wersja pokazuje publiczny zbiór z dotychczasowej strony. Pełne drzewo GEDCOM nie jest publikowane.';
+  const lines=[...new Set(data.people.map(p=>p.line).filter(Boolean))].sort();$('line-filter').innerHTML='<option value="">Wszystkie linie</option>'+lines.map(l=>`<option>${esc(l)}</option>`).join('');$('line-label').hidden=!lines.length;syncControls();
+  if(window.L){map=L.map('map',{zoomControl:false,scrollWheelZoom:true,minZoom:2}).setView([52,19],6);markers=L.layerGroup().addTo(map);route=L.layerGroup().addTo(map);const tiles=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',maxZoom:19}).addTo(map);let errors=0;tiles.on('tileerror',()=>{if(++errors>5){$('map-notice').dataset.tileError='1';$('map-notice').hidden=false;$('map-notice').textContent='Podkład mapy jest niedostępny. Katalog osób, wydarzenia i punkty nadal działają.';}});tiles.on('tileload',()=>{errors=0;delete $('map-notice').dataset.tileError;if(visible.some(C.located))$('map-notice').hidden=true;});map.on('zoomend',drawMarkers);new ResizeObserver(()=>map.invalidateSize({pan:false})).observe($('map'));}else{$('map-notice').hidden=false;$('map-notice').textContent='Nie udało się wczytać mapy. Możesz korzystać z katalogu i osi czasu.';}
+  bind();render();fitEvents();if(hashDetail)openHashDetail(hashDetail);
+}catch(e){$('results').innerHTML='<p class="empty error">Nie udało się wczytać atlasu. Sprawdź, czy wszystkie pliki są w jednym katalogu, i odśwież stronę.</p>';console.error(e);}}
+start();
+})();

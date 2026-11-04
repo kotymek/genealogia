@@ -1,96 +1,36 @@
 <!doctype html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mapa genealogiczna rodziny</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#244d43">
+<meta name="description" content="Rodzinny atlas miejsc, ludzi i wspomnień. Odkrywaj wydarzenia na mapie i poznawaj historie przodków.">
+<title>Miejsca, z których jesteśmy · Atlas rodzinny</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="vendor/leaflet/leaflet.css"><link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="app-shell">
-    <aside class="panel" aria-label="Panel mapy genealogicznej">
-      <header class="brand">
-        <p class="eyebrow">Genealogia</p>
-        <h1>Mapa miejsc rodzinnych</h1>
-        <p class="lead">Urodzenia, śluby i zgony przodków.</p>
-      </header>
-
-      <section class="summary" aria-label="Podsumowanie">
-        <div>
-          <strong id="stat-events">0</strong>
-          <span>zdarzeń</span>
-        </div>
-        <div>
-          <strong id="stat-people">0</strong>
-          <span>osób</span>
-        </div>
-        <div>
-          <strong id="stat-places">0</strong>
-          <span>miejsc</span>
-        </div>
-      </section>
-
-      <section class="filters" aria-label="Filtry">
-        <label>
-          <span>Szukaj</span>
-          <input id="search" type="search" placeholder="Nazwisko, imię, miejscowość">
-        </label>
-
-        <div class="filter-row" aria-label="Typ zdarzenia">
-          <label><input type="checkbox" name="type" value="birth" checked> Urodzenia</label>
-          <label><input type="checkbox" name="type" value="marriage" checked> Śluby</label>
-          <label><input type="checkbox" name="type" value="death" checked> Zgony</label>
-        </div>
-
-        <label>
-          <span>Linia rodzinna</span>
-          <select id="line-filter">
-            <option value="">Wszystkie linie</option>
-          </select>
-        </label>
-
-        <div class="years">
-          <label>
-            <span>Od roku</span>
-            <input id="year-from" type="number" inputmode="numeric">
-          </label>
-          <label>
-            <span>Do roku</span>
-            <input id="year-to" type="number" inputmode="numeric">
-          </label>
-        </div>
-
-        <button id="reset" type="button">Wyczyść filtry</button>
-      </section>
-
-      <section class="legend" aria-label="Legenda">
-        <span><i class="dot birth"></i> urodzenie</span>
-        <span><i class="dot marriage"></i> ślub</span>
-        <span><i class="dot death"></i> zgon</span>
-      </section>
-
-      <section class="historical-layers" aria-label="Granice historyczne">
-        <h2>Granice historyczne</h2>
-        <label><input type="checkbox" data-historical-layer="congressPoland"> Królestwo Polskie (1815-1914)</label>
-        <label><input type="checkbox" data-historical-layer="secondRepublic"> II RP (1919-1939)</label>
-        <label><input type="checkbox" data-historical-layer="crownPoland"> Korona Polska w XVI w.</label>
-        <label><input type="checkbox" data-historical-layer="crownPoland2"> poprawka granicy XVI w. - Łokacz</label>
-        <p id="historical-status" class="layer-status" aria-live="polite"></p>
-      </section>
-
-      <section class="event-list" aria-label="Lista zdarzeń">
-        <h2>Zdarzenia</h2>
-        <div id="events"></div>
-      </section>
-    </aside>
-
-    <section class="map-area" aria-label="Mapa">
-      <div id="map"></div>
-    </section>
-  </main>
-
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="script.js"></script>
-</body>
-</html>
+<a class="skip-link" href="#workspace">Przejdź do atlasu</a>
+<header class="site-header">
+<a class="brand" href="#" aria-label="Atlas rodzinny — początek"><span class="brand-mark" aria-hidden="true">✳</span><span>Atlas <em>rodzinny</em><small>MAŁE MIEJSCA. WIELKIE HISTORIE.</small></span></a>
+<nav aria-label="Widoki atlasu" class="main-nav"><button data-view="map" class="active" aria-current="page">Mapa</button><button data-view="people">Osoby</button><button data-view="places">Miejsca</button><button data-view="timeline">Oś czasu</button></nav>
+<button id="about" class="quiet header-info">O atlasie ↗</button>
+</header>
+<section class="intro" aria-labelledby="intro-title"><div><p class="eyebrow"><span class="little-line"></span> KORZENIE ZAPISANE NA MAPIE</p><h1 id="intro-title">Miejsca, z których <em>jesteśmy.</em></h1><p class="intro-copy">Każde miejsce to czyjeś życie. Odkryj ślady, które nas łączą.</p></div><div class="totals" aria-label="Zawartość atlasu"><div><strong id="total-people">—</strong><span>osób</span></div><div><strong id="total-places">—</strong><span>miejsc</span></div><div><strong id="total-years">—</strong><span>lat historii</span></div></div></section>
+<div id="private-banner" class="private-banner" hidden>WERSJA PRYWATNA · Pełne drzewo z pliku GEDCOM. Dane są odczytywane z tej lokalnej kopii.</div>
+<main id="workspace" class="workspace" tabindex="-1">
+<aside class="explorer" aria-label="Przeglądanie atlasu">
+<div class="explorer-tools"><label class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Osoba, nazwisko, miejscowość…" aria-label="Szukaj w atlasie" autocomplete="off"><kbd aria-hidden="true">/</kbd></label>
+<div class="filter-actions"><button id="filters-toggle" aria-expanded="false" aria-controls="filters">☷ <span>Filtry</span><span id="filter-count" class="tiny-count" hidden></span></button><button id="reset" class="quiet">Wyczyść</button></div>
+<div id="filters" class="filters" hidden><label>Rodzaj wydarzenia<select id="type-filter"><option value="">Wszystkie wydarzenia</option><option value="birth">Narodziny</option><option value="marriage">Śluby</option><option value="death">Zgony</option><option value="burial">Pochówki</option><option value="other">Pozostałe</option></select></label><label id="line-label">Linia rodzinna<select id="line-filter"><option value="">Wszystkie linie</option></select></label>
+<div class="year-inputs"><label>Od roku<input id="year-from" type="number" inputmode="numeric" placeholder="Najwcześniej" min="1" max="2100"></label><span>–</span><label>Do roku<input id="year-to" type="number" inputmode="numeric" placeholder="Najpóźniej" min="1" max="2100"></label></div><label class="check-label"><input id="unknown-dates" type="checkbox" checked> Uwzględnij nieznane daty</label><label class="check-label"><input id="located-only" type="checkbox"> Tylko wydarzenia na mapie</label><p id="filter-error" role="status" class="error" hidden></p></div>
+<div id="person-filter" class="person-filter" hidden><span></span><button aria-label="Usuń filtr osoby">×</button></div></div>
+<div class="list-heading"><div><p class="eyebrow" id="list-kicker">RODZINNE ŚLADY</p><h2 id="list-title">Wydarzenia</h2></div><span id="result-count" class="count-pill">—</span></div><p id="result-summary" class="result-summary" aria-live="polite"></p><div id="results" class="results"><p class="empty">Wczytuję atlas…</p></div><div class="explorer-footer"><span class="status-dot"></span><span id="scope-label">Atlas rodzinny</span><button id="show-more" hidden>Pokaż więcej ↓</button></div>
+</aside>
+<section class="map-stage" aria-label="Mapa miejsc rodzinnych"><div id="map"></div><div class="map-topline"><span class="map-label"><span class="status-dot"></span><span id="map-count">Miejsca rodzinne</span></span><button id="fit-map" class="map-button">⌖ Pokaż wyniki</button></div><div class="map-controls"><button id="zoom-in" class="map-button square" aria-label="Przybliż mapę">+</button><button id="zoom-out" class="map-button square" aria-label="Oddal mapę">−</button><button id="layers-toggle" class="map-button square" aria-label="Warstwy historyczne" aria-expanded="false" aria-controls="layer-panel">▱</button></div>
+<section id="layer-panel" class="layer-panel" hidden><h3>Mapa w czasie</h3><p>Granice historyczne jako tło rodzinnych wydarzeń.</p><label><input type="checkbox" data-layer="congress"> Królestwo Polskie · warstwa 1830</label><label><input type="checkbox" data-layer="republic"> II Rzeczpospolita</label><label><input type="checkbox" data-layer="crown"> Korona Polska · XVI wiek</label><label><input type="checkbox" data-layer="correction"> Pogranicze Korony · Łokacz</label><small>Warstwy archiwalne z dotychczasowego atlasu; mają charakter orientacyjny.</small><p id="layer-status" role="status"></p></section>
+<div class="map-legend"><span class="legend-symbol">12</span> Liczba wydarzeń <span class="legend-divider"></span><span class="legend-single"></span> Jedno wydarzenie</div><div id="map-notice" class="map-notice" role="status" hidden></div>
+<aside id="detail" class="detail-panel" aria-label="Szczegóły" hidden><button id="close-detail" class="close-detail" aria-label="Zamknij szczegóły">×</button><div id="detail-content"></div></aside>
+</section>
+<section class="time-strip" aria-label="Przegląd wydarzeń według czasu"><div class="time-title"><span class="eyebrow">PRZEZ POKOLENIA</span><strong id="time-range">Oś czasu</strong><button id="time-reset" class="quiet" hidden>Cały okres</button></div><div class="time-chart-wrap"><div id="time-chart" class="time-chart"></div><div id="time-labels" class="time-labels"></div></div><p class="time-hint">Wybierz słupek,<br>by odkryć dekadę.</p></section>
+</main>
+<dialog id="about-dialog"><button class="dialog-close" aria-label="Zamknij" autofocus>×</button><p class="eyebrow">ATLAS RODZINNY</p><h2>Wiele miejsc.<br>Jedna opowieść.</h2><p>Ta mapa łączy ludzi, miejsca i wydarzenia zapisane w historii rodziny. Zacznij od nazwiska, wybierz miejscowość lub zajrzyj do wybranej dekady.</p><p id="about-scope"></p><p>Daty przybliżone pozostają przybliżone. Linie pomiędzy miejscami łączą zapisane wydarzenia — nie przedstawiają potwierdzonych tras podróży.</p><p>Brak miejsca lub daty nie usuwa osoby z katalogu. Wyszukiwarka rozpoznaje polskie litery także wtedy, gdy wpiszesz nazwisko bez znaków diakrytycznych.</p><small>Podkład: © OpenStreetMap contributors. Biblioteka: Leaflet. Granice historyczne pochodzą z dotychczasowego projektu.</small></dialog><div id="toast" role="status" class="toast" hidden></div>
+<script src="vendor/leaflet/leaflet.js"></script><script src="data/atlas-data.js"></script><script src="atlas-core.js"></script><script src="script.js"></script>
+</body></html>

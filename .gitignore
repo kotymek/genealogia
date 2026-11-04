@@ -1,0 +1,7 @@
+node_modules/
+.qa/
+*.ged
+*-prywatny*/
+*-prywatny.json
+raport-importu.json
+miejscowosci-do-uzupelnienia.json
