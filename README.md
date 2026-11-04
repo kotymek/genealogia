@@ -13,7 +13,7 @@ node tools/build-public.cjs
 node tools/test.cjs
 ```
 
-`data/atlas-data.js` jest generowaną kopią tego JSON-a. Dzięki niej katalog może działać także przy otwieraniu lokalnego `index.html`. Podkład mapy wymaga internetu. GitHub Pages nadal publikuje stronę z głównego katalogu repozytorium.
+`data/atlas-data.js` jest generowaną kopią tego JSON-a. Dzięki niej katalog może działać także przy otwieraniu lokalnego `index.html`. Podkład mapy wymaga internetu oraz uruchomienia przez HTTP; w trybie file:// jest wyłączony. GitHub Pages nadal publikuje stronę z głównego katalogu repozytorium.
 
 ## Pełna kopia lokalna
 
@@ -21,7 +21,7 @@ node tools/test.cjs
 node tools/build-private.cjs /sciezka/drzewo.ged /sciezka/miejsca.json /katalog/poza/repozytorium
 ```
 
-Katalog docelowy **musi znajdować się poza repozytorium**. Otwórz jego `index.html` w przeglądarce. Drzewo pozostaje na komputerze; jedyne zewnętrzne żądania aplikacji to kafelki mapy. Pełnej kopii nie należy publikować w GitHub Pages ani kopiować do repozytorium. Nie jest to serwis z logowaniem.
+Katalog docelowy **musi znajdować się poza repozytorium**. Uruchom `URUCHOM-ATLAS.cmd` (Windows, wymaga Node.js) lub `node start-atlas.cjs` i otwórz wyświetlony adres lokalny. Serwer nasłuchuje tylko na 127.0.0.1. Drzewo pozostaje na komputerze; jedyne zewnętrzne żądania aplikacji to kafelki mapy. Pełnej kopii nie należy publikować w GitHub Pages ani kopiować do repozytorium. Nie jest to serwis z logowaniem.
 
 Importer zachowuje identyfikatory osób, relacje rodzinne, daty przybliżone i nieznane, źródła oraz notatki. Zdjęcia są pomijane. Współrzędne są kojarzone po identyfikatorze miejsca lub dokładnej nazwie (bez rozróżniania wielkości liter), nie po identyfikatorach wydarzeń ze starszego eksportu. Braki współrzędnych pozostają brakami — nigdy punktem 0,0. Kopia lokalna zawiera raport i listę miejsc do uzupełnienia.
 
